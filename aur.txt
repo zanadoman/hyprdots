@@ -1,0 +1,5 @@
+gromit-mpx
+android-ndk
+android-studio
+google-chrome
+minecraft-launcher

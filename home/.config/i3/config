@@ -1,0 +1,178 @@
+# -------------------------- I3 WM --------------------------
+
+set $mod Mod4
+set $alt Mod1
+
+# -------------------------- WINDOWS --------------------------
+
+# Direction
+bindsym $mod+v split horizontal
+bindsym $mod+s split vertical
+
+# Focus
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+k focus up
+bindsym $mod+j focus down
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+focus_follows_mouse no
+
+# Move
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+floating_modifier $mod
+tiling_drag off
+
+# Resize
+bindsym $alt+Up resize grow height 5 px or 5 ppt
+bindsym $alt+Down resize shrink height 5 px or 5 ppt
+bindsym $alt+Left resize shrink width 5 px or 5 ppt
+bindsym $alt+Right resize grow width 5 px or 5 ppt
+bindsym $alt+k resize grow height 5 px or 5 ppt
+bindsym $alt+j resize shrink height 5 px or 5 ppt
+bindsym $alt+h resize shrink width 5 px or 5 ppt
+bindsym $alt+l resize grow width 5 px or 5 ppt
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+# Kill
+bindsym $mod+q kill
+
+# -------------------------- WORKSPACES --------------------------
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+
+# Switch
+bindsym $mod+comma workspace prev
+bindsym $mod+period workspace next
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+
+# Move
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+
+# Move and switch
+bindsym $alt+Shift+1 move container to workspace number $ws1, workspace number $ws1
+bindsym $alt+Shift+2 move container to workspace number $ws2, workspace number $ws2
+bindsym $alt+Shift+3 move container to workspace number $ws3, workspace number $ws3
+bindsym $alt+Shift+4 move container to workspace number $ws4, workspace number $ws4
+bindsym $alt+Shift+5 move container to workspace number $ws5, workspace number $ws5
+bindsym $alt+Shift+6 move container to workspace number $ws6, workspace number $ws6
+bindsym $alt+Shift+7 move container to workspace number $ws7, workspace number $ws7
+bindsym $alt+Shift+8 move container to workspace number $ws8, workspace number $ws8
+bindsym $alt+Shift+9 move container to workspace number $ws9, workspace number $ws9
+
+# -------------------------- UTILITIES --------------------------
+
+# Launcher
+bindsym $mod+d exec --no-startup-id dmenu_run -nb "#16161e" -nf "#c0caf5" -sb "#c0caf5" -sf "#16161e" -fn "hacknerdfont:size=14"
+
+# Statusbar
+bar {
+    position top
+    status_command i3status
+    colors {
+        background #16161e
+        separator #ffffff
+        focused_workspace #c0caf5 #c0caf5 #16161e
+        active_workspace #c0caf5 #16161e #c0caf5
+        inactive_workspace #16161e #16161e #c0caf5
+    }
+}
+
+# -------------------------- APPEREANCE --------------------------
+
+# Font
+font xft:hacknerdfont 11
+
+# Borders
+default_border pixel 3
+default_floating_border pixel 3
+client.focused          #16161e #1a1b26 #c0caf5 #c0caf5 #0db9d7
+client.focused_inactive #16161e #1a1b26 #c0caf5 #16161e #16161e
+client.unfocused        #16161e #1a1b26 #c0caf5 #16161e #16161e
+client.urgent           #16161e #1a1b26 #c0caf5 #16161e #16161e
+client.placeholder      #16161e #1a1b26 #c0caf5 #16161e #16161e
+client.background       #16161e
+
+# Compositor
+exec_always --no-startup-id picom -b
+
+# Wallpaper
+exec_always --no-startup-id feh --no-fehbg --bg-fill "$HOME/.wallpaper1.png" --bg-fill "$HOME/.wallpaper2.png"
+
+# -------------------------- SHORTCUTS --------------------------
+
+# Reload
+bindsym $mod+Shift+r restart
+
+# Terminal
+bindsym $mod+Return exec --no-startup-id alacritty
+
+# Browser
+bindsym $mod+b exec --no-startup-id google-chrome-stable
+
+# Screenshot
+bindsym Print exec --no-startup-id maim --hidecursor --select | xclip -selection clipboard -t image/png
+
+# Annotation
+exec_always --no-startup-id gromit-mpx
+
+# -------------------------- PERIPHERALS --------------------------
+
+# Keyboard
+bindsym $mod+space exec --no-startup-id fish -c cyclexkbmap
+
+# Touchpad
+exec_always --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2C Touchpad" "libinput Tapping Enabled" 1
+exec_always --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2C Touchpad" "libinput Natural Scrolling Enabled" 1
+
+# Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1
+bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+# Brightness
+exec_always --no-startup-id brightnessctl set 40%
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+
+# Displays
+exec_always --no-startup-id xrandr --output DP-2 --auto --primary
+exec_always --no-startup-id xrandr --output HDMI-1 --auto --pos 1920x-600 --rotate left
+#exec_always --no-startup-id xrandr --output eDP-1 --auto --primary
+#exec_always --no-startup-id xrandr --output HDMI-1 --auto --same-as eDP-1 --mode 1920x1080

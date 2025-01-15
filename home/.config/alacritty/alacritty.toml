@@ -1,0 +1,65 @@
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 13
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[colors.primary]
+background = "#1a1b26"
+foreground = "#c0caf5"
+dim_foreground = "#c0caf5"
+bright_foreground = "#c0caf5"
+
+[colors.cursor]
+text = "#1a1b26"
+cursor = "#565f89"
+
+[colors.normal]
+black = "#565f89"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#c0caf5"
+
+[colors.bright]
+black = "#565f89"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#c0caf5"
+
+[colors.dim]
+black = "#565f89"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#c0caf5"
+
+[keyboard]
+bindings = [{ key = "S", mods = "Control", action = "SpawnNewInstance" }]
