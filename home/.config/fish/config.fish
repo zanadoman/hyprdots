@@ -59,14 +59,3 @@ function frg
         rg -.lF $selected
     end
 end
-
-function cyclexkbmap
-    switch (setxkbmap -query | awk '(NR == 3) {print $2}')
-        case hu
-            setxkbmap us
-        case us
-            setxkbmap hu
-        case '*'
-            setxkbmap hu
-    end
-end
