@@ -13,12 +13,14 @@
 #window,
 #clock,
 #cpu,
+#cpu,
 #disk,
 #network,
 #memory,
 #pulseaudio,
 #battery,
-#tray {
+#tray,
+tooltip {
     background-color: rgba(26, 27, 38, 0.95);
     color: rgba(192, 202, 245, 0.95);
     border-radius: 0.75rem;
