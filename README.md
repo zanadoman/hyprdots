@@ -52,6 +52,7 @@
   - gnu-netcat
   - gradle
   - libbsd
+  - lld
   - mariadb
   - mingw-w64
   - npm
