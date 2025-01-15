@@ -34,7 +34,6 @@
   - tree-sitter-cli
 - File manager
   - ranger
-  - w3m
   - highlight
 - Archiving
   - atool
@@ -50,7 +49,6 @@
   - composer
   - dotnet-sdk
   - doxygen
-  - emscripten
   - gnu-netcat
   - gradle
   - libbsd

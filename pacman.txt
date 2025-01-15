@@ -24,7 +24,6 @@ sshfs
 neovim
 tree-sitter-cli
 ranger
-w3m
 highlight
 atool
 7zip
@@ -36,7 +35,6 @@ cmake
 composer
 dotnet-sdk
 doxygen
-emscripten
 gnu-netcat
 gradle
 libbsd
