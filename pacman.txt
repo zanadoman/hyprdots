@@ -1,10 +1,10 @@
-cliphist
 fuzzel
 grim
 hyprland
 hyprpaper
 slurp
 waybar
+wl-clipboard
 xdg-desktop-portal-hyprland
 kitty
 fastfetch

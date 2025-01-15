@@ -3,7 +3,6 @@
 # Packages (741)
 **Dependencies: git, yay**
 - Hyprland
-  - cliphist
   - fuzzel
   - grim
   - gromit-mpx (AUR)
@@ -11,6 +10,7 @@
   - hyprpaper
   - slurp
   - waybar
+  - wl-clipboard
   - xdg-desktop-portal-hyprland
 - Terminal
   - kitty
