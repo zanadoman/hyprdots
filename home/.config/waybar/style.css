@@ -1,0 +1,82 @@
+* {
+    all: unset;
+    font-family: "Nerd Font Hack";
+    font-weight: bold;
+}
+
+.modules-left, .modules-center, .modules-right {
+    margin: 10px 10px 0px 10px;
+    min-height: 2.25rem;
+}
+
+#workspaces,
+#window,
+#clock,
+#cpu,
+#disk,
+#network,
+#memory,
+#pulseaudio,
+#battery,
+#tray {
+    background-color: rgba(26, 27, 38, 0.95);
+    color: rgba(192, 202, 245, 0.95);
+    border-radius: 0.75rem;
+    padding: 0 0.5rem 0 0.5rem;
+    border: 1px solid rgba(13, 185, 215, 0.95);
+    font-size: 1.1rem;
+}
+
+#workspaces {
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.75rem;
+    color: rgba(86, 95, 137, 0.95);
+    transition: all 0.5s;
+}
+
+#workspaces button.visible {
+    color: rgba(192, 202, 245, 0.95);
+}
+
+#workspaces button.active {
+    background-color: rgba(192, 202, 245, 0.95);
+    color: rgba(26, 27, 38, 0.95);
+}
+
+#workspaces button.urgent {
+    color: rgba(219, 75, 75, 0.95);
+}
+
+window#waybar.empty #window {
+    all: unset;
+}
+
+#battery.warning {
+    color: rgba(224, 175, 104, 0.95);
+}
+
+#battery.critical {
+    color: rgba(219, 75, 75, 0.95);
+}
+
+#tray menu {
+    background-color: rgba(26, 27, 38, 0.95);
+    border: 1px solid rgba(13, 185, 215, 0.95);
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+#tray menuitem {
+    color: rgba(192, 202, 245, 0.95);
+    font-size: 1rem;
+    margin: 0.1rem;
+    transition: all 0.25s;
+}
+
+#tray menuitem:hover {
+    color: rgba(86, 95, 137, 0.95);
+}

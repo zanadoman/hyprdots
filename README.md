@@ -2,20 +2,18 @@
 
 # Packages (741)
 **Dependencies: git, yay**
-- X11
-  - xclip
-  - xorg-server
-  - xorg-xinit
-  - xorg-xinput
-- i3
-  - dmenu
-  - feh
+- Hyprland
+  - cliphist
+  - fuzzel
+  - grim
   - gromit-mpx (AUR)
-  - i3-wm
-  - i3status
-  - maim
+  - hyprland
+  - hyprpaper
+  - slurp
+  - waybar
+  - xdg-desktop-portal-hyprland
 - Terminal
-  - alacritty
+  - kitty
   - fastfetch
   - fish
   - fzf
