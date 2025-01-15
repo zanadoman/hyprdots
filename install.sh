@@ -16,7 +16,6 @@ chsh -s /bin/fish
 sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
 sudo systemctl start mariadb.service
 sudo mariadb-secure-installation
-sudo systemctl enable mariadb.service
 
 # Folders
 mkdir -p "$HOME/Desktop/"

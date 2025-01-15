@@ -81,9 +81,7 @@
   - wine
 
 # Manual setup
-- i3
-  - Layout
-  - Wallpaper
+- Hyprland
   - Displays
 - google-chrome
   - Login
@@ -98,18 +96,16 @@
   - Generate new token (classic)
 - android-studio
   - First start
-- onlyoffice-bin
-  - Interface scaling: 100%
 - discord
   - Login
   - Appearance: CHAT FONT SCALING: 20px
   - Notifications: Enable Desktop Notifications: off
-  - Keybinds: Toggle Mute
 - steam
   - Login
   - Compatibility: Enable Steam Play for supported titles: on
   - Download games
 - spotify-launcher
   - Login
+  - Startup and window behaviour: Close button should minimize Spotify window: on
 - wine
   - First start
