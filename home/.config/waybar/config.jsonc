@@ -1,6 +1,4 @@
 {
-    "spacing": 10,
-
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -20,56 +18,82 @@
         "tray"
     ],
 
+    "spacing": 10,
+
     "hyprland/window": {
         "max-length": 30,
-        "icon": true
+        "icon": true,
+        "icon-size": 16
     },
 
     "clock": {
-        "format": "  {:%a, %m.%d. 󰥔  %H:%M %p}"
+        "interval": 1,
+        "format": "  {:%a, %m.%d.  󰥔  %H:%M %p}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "format": {
+                "months": "<span color='#7dcfff'>{}</span>",
+                "days": "<span color='#c0caf5'>{}</span>",
+                "weeks": "<span color='#bb9af7'>{}</span>",
+                "weekdays": "<span color='#7aa2f7'>{}</span>",
+                "today": "<span color='#f7768e'><u>{}</u></span>"
+            }
+        },
+        "actions": {
+            "on-click-middle": "mode",
+            "on-click-right": "shift_up",
+            "on-click": "shift_down"
+        }
     },
 
     "cpu": {
-        "format": "󰻠 {usage}%",
+        "interval": 1,
+        "format": "󰻠  {usage}%",
         "tooltip": false
     },
 
     "memory": {
-        "format": "  {used:0.1f}GB",
+        "interval": 1,
+        "format": "   {used:0.1f}GB",
         "tooltip": false
     },
 
     "disk": {
-        "format": "󱛟 {specific_free:0.0f}GB",
+        "format": "󱛟  {specific_free:0.1f}GB",
         "unit": "GB",
         "tooltip": false
     },
 
     "network": {
-        "format-wifi": "󰤨  {essid} {signalStrength}%",
+        "interval": 1,
         "format-ethernet": "󰈁 {ipaddr}",
-        "format-disconnected": "󰪎",
+        "format-wifi": "󰤨  {essid} {signalStrength}%",
+        "format-disconnected": "󰪎  127.0.0.1",
         "tooltip": false
     },
 
     "pulseaudio": {
-        "format": "󰕾 {volume}% {format_source}",
+        "format": "󰕾  {volume}%  {format_source}",
         "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}%",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "tooltip": false
     },
 
     "battery": {
-        "format": "󰁹 {capacity}%",
+        "interval": 1,
         "states": {
             "warning": 40,
             "critical": 20
         },
+        "format": "󰁹 {capacity}%",
         "tooltip": false
     },
 
     "tray": {
+        "icon-size": 16,
         "spacing": 5
     }
 }

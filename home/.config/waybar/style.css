@@ -2,55 +2,66 @@
     all: unset;
     font-family: "Nerd Font Hack";
     font-weight: bold;
+    border-radius: 10px;
 }
 
-.modules-left, .modules-center, .modules-right {
-    margin: 10px 10px 0px 10px;
-    min-height: 2.25rem;
+.modules-left,
+.modules-center,
+.modules-right {
+    min-height: 32px;
+    margin: 10px 10px 0 10px;
 }
 
-#workspaces,
+tooltip {
+    opacity: 0.95;
+    background-color: #1a1b26;
+    color: #c0caf5;
+    font-size: 14px;
+    padding: 0 8px 0 8px;
+    border: 1px solid #0db9d7;
+}
+
 #window,
 #clock,
 #cpu,
-#cpu,
+#memory,
 #disk,
 #network,
-#memory,
 #pulseaudio,
 #battery,
-#tray,
-tooltip {
-    background-color: rgba(26, 27, 38, 0.95);
-    color: rgba(192, 202, 245, 0.95);
-    border-radius: 0.75rem;
-    padding: 0 0.5rem 0 0.5rem;
-    border: 1px solid rgba(13, 185, 215, 0.95);
-    font-size: 1.1rem;
+#tray {
+    opacity: 0.95;
+    background-color: #1a1b26;
+    color: #c0caf5;
+    font-size: 16px;
+    padding: 0 8px 0 8px;
+    border: 1px solid #0db9d7;
 }
 
 #workspaces {
-    padding: 0;
+    opacity: 0.95;
+    background-color: #1a1b26;
+    border: 1px solid #0db9d7;
 }
 
 #workspaces button {
-    padding: 0 0.5rem 0 0.5rem;
-    border-radius: 0.75rem;
-    color: rgba(86, 95, 137, 0.95);
+    color: #565f89;
+    font-size: 16px;
+    padding: 0 8px 0 8px;
     transition: all 0.5s;
 }
 
 #workspaces button.visible {
-    color: rgba(192, 202, 245, 0.95);
+    color: #c0caf5;
 }
 
 #workspaces button.active {
-    background-color: rgba(192, 202, 245, 0.95);
-    color: rgba(26, 27, 38, 0.95);
+    background-color: #c0caf5;
+    color: #1a1b26;
 }
 
 #workspaces button.urgent {
-    color: rgba(219, 75, 75, 0.95);
+    color: #f7768e;
 }
 
 window#waybar.empty #window {
@@ -58,27 +69,25 @@ window#waybar.empty #window {
 }
 
 #battery.warning {
-    color: rgba(224, 175, 104, 0.95);
+    color: #e0af68;
 }
 
 #battery.critical {
-    color: rgba(219, 75, 75, 0.95);
+    color: #f7768e;
 }
 
 #tray menu {
-    background-color: rgba(26, 27, 38, 0.95);
-    border: 1px solid rgba(13, 185, 215, 0.95);
-    padding: 1rem;
-    border-radius: 0.75rem;
+    background-color: #1a1b26;
+    padding: 8px;
+    border: 1px solid #0db9d7;
 }
 
 #tray menuitem {
-    color: rgba(192, 202, 245, 0.95);
-    font-size: 1rem;
-    margin: 0.1rem;
+    color: #c0caf5;
+    font-size: 14px;
     transition: all 0.25s;
 }
 
 #tray menuitem:hover {
-    color: rgba(86, 95, 137, 0.95);
+    color: #565f89;
 }
