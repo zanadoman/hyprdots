@@ -102,6 +102,7 @@
   - Login
   - Appearance: CHAT FONT SCALING: 20px
   - Notifications: Enable Desktop Notifications: off
+  - Show Member List
 - steam
   - Login
   - Compatibility: Enable Steam Play for supported titles: on
