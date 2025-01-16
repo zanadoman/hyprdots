@@ -12,8 +12,8 @@ fish
 fzf
 starship
 zoxide
+bluetui
 bluez
-bluez-utils
 brightnessctl
 btop
 less

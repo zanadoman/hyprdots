@@ -20,8 +20,8 @@
   - starship
   - zoxide
 - CLI tools
+  - bluetui
   - bluez
-  - bluez-utils
   - brightnessctl
   - btop
   - less
