@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (962)
+# Packages (966)
 **Dependencies: git, yay**
 - Hyprland
   - fuzzel
@@ -35,6 +35,7 @@
 - File manager
   - ranger
   - highlight
+  - python-pillow
 - Archiving
   - atool
   - 7zip

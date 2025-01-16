@@ -25,6 +25,7 @@ neovim
 tree-sitter-cli
 ranger
 highlight
+python-pillow
 atool
 7zip
 unrar
