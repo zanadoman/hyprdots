@@ -1,11 +1,10 @@
 ![Preview](/preview.png)
 
-# Packages (966)
+# Packages (964)
 **Dependencies: git, yay**
 - Hyprland
   - fuzzel
   - grim
-  - gromit-mpx (AUR)
   - hyprland
   - hyprpaper
   - slurp
