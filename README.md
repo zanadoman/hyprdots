@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (964)
+# Packages (965)
 **Dependencies: git, yay**
 - Hyprland
   - fuzzel
@@ -28,6 +28,7 @@
   - ripgrep
   - rocm-smi-lib
   - sshfs
+  - tree
 - Editor
   - neovim
   - tree-sitter-cli

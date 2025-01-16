@@ -21,6 +21,7 @@ pulsemixer
 ripgrep
 rocm-smi-lib
 sshfs
+tree
 neovim
 tree-sitter-cli
 ranger
