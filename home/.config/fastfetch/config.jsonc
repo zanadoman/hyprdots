@@ -1,5 +1,8 @@
 {
-    "logo": "~/.config/fastfetch/logo.txt",
+    "logo": {
+        "source": "~/.config/fastfetch/logo.png",
+        "type": "kitty-direct"
+    },
     "display": {
         "separator": "  "
     },
