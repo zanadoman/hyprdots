@@ -29,23 +29,7 @@
     "clock": {
         "interval": 1,
         "format": "  {:%a, %m.%d.  󰥔  %H:%M %p}",
-        "tooltip-format": "<tt>{calendar}</tt>",
-        "calendar": {
-            "mode-mon-col": 3,
-            "weeks-pos": "right",
-            "format": {
-                "months": "<span color='#7dcfff'>{}</span>",
-                "days": "<span color='#c0caf5'>{}</span>",
-                "weeks": "<span color='#bb9af7'>W{}</span>",
-                "weekdays": "<span color='#7aa2f7'>{}</span>",
-                "today": "<span color='#f7768e'><u>{}</u></span>"
-            }
-        },
-        "actions": {
-            "on-click-middle": "mode",
-            "on-click-right": "shift_up",
-            "on-click": "shift_down"
-        }
+        "tooltip": false
     },
 
     "cpu": {
