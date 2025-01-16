@@ -95,6 +95,6 @@
 
     "tray": {
         "icon-size": 16,
-        "spacing": 5
+        "spacing": 4
     }
 }
