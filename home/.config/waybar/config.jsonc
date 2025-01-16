@@ -21,6 +21,7 @@
     "spacing": 10,
 
     "hyprland/window": {
+        "max-length": 64,
         "icon": true,
         "icon-size": 16
     },
