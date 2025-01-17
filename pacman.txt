@@ -2,6 +2,7 @@ fuzzel
 grim
 hyprland
 hyprpaper
+hyprsunset
 slurp
 waybar
 wl-clipboard

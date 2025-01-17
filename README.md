@@ -1,12 +1,13 @@
 ![Preview](/preview.png)
 
-# Packages (966)
+# Packages (967)
 **Dependencies: git, yay**
 - Hyprland
   - fuzzel
   - grim
   - hyprland
   - hyprpaper
+  - hyprsunset
   - slurp
   - waybar
   - wl-clipboard
