@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (965)
+# Packages (966)
 **Dependencies: git, yay**
 - Hyprland
   - fuzzel
