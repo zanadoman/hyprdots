@@ -4,8 +4,8 @@ export LIBRARY_PATH="/usr/local/lib:$LIBRARY_PATH"
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export EDITOR=nvim
 export VISUAL=nvim
-export ANDROID_NDK_ROOT=/opt/android-ndk/
-export ANDROID_SDK_ROOT="$HOME/Android/Sdk/"
+export ANDROID_NDK_HOME=/opt/android-ndk/
+export ANDROID_HOME="$HOME/Android/Sdk/"
 alias clear='clear && fastfetch'
 alias startx='startx && clear'
 eval "$(zoxide init --cmd cd bash)"
