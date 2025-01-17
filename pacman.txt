@@ -47,7 +47,6 @@ npm
 sqlx-cli
 valgrind
 virtualbox
-ffmpeg
 gimp
 texlive-binextra
 texlive-fontsrecommended
@@ -56,6 +55,7 @@ texlive-langeuropean
 texlive-latexextra
 texlive-plaingeneric
 pandoc-cli
+wf-recorder
 discord
 noto-fonts-emoji
 spotify-launcher

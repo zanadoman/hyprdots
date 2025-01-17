@@ -61,7 +61,6 @@
   - valgrind
   - virtualbox
 - Media
-  - ffmpeg
   - gimp
   - google-chrome (AUR)
   - texlive-binextra
@@ -71,6 +70,7 @@
   - texlive-latexextra
   - texlive-plaingeneric
   - pandoc-cli
+  - wf-recorder
 - Entertainment
   - discord
   - minecraft-launcher (AUR)
