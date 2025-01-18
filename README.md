@@ -51,13 +51,13 @@
   - composer
   - dotnet-sdk
   - doxygen
-  - gnu-netcat
   - gradle
   - libbsd
   - lld
   - mariadb
   - mingw-w64
   - npm
+  - openbsd-netcat
   - sqlx-cli
   - valgrind
   - virtualbox
