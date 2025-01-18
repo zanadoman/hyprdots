@@ -2,13 +2,13 @@
 
 # Packages (968)
 
-## Prerequisites
+### Prerequisites
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | git                             | Version control system.                    |
 | yay                             | AUR package manager.                       |
 
-## Hyprland
+### Hyprland
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | fuzzel                          | Application launcher.                      |
@@ -23,7 +23,7 @@
 | wl-clipboard                    | Clipboard tool.                            |
 | xdg-desktop-portal-hyprland     | Screen sharing tool.                       |
 
-## Terminal
+### Terminal
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | kitty                           | Terminal emulator.                         |
@@ -33,7 +33,7 @@
 | starship                        | Improved prompt.                           |
 | zoxide                          | Smart cd.                                  |
 
-## CLI tools
+### CLI tools
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | bluetui                         | Bluetooth manager.                         |
@@ -46,20 +46,20 @@
 | sshfs                           | Network filesystem client.                 |
 | tree                            | Directory structure tool.                  |
 
-## Editor
+### Editor
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | neovim                          | Vim-based text editor.                     |
 | tree-sitter-cli                 | Improved syntax highlighting for NeoVim.   |
 
-## File manager
+### File manager
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | ranger                          | Vim-inspired filemanager.                  |
 | highlight                       | Syntax highlighting for ranger.            |
 | python-pillow                   | Image preview for ranger.                  |
 
-## Archiving
+### Archiving
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | atool                           | Archive manager.                           |
@@ -67,7 +67,7 @@
 | unrar                           | RAR support for atool.                     |
 | zip                             | Zip support for atool.                     |
 
-## Programming
+### Programming
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C/C++.          |
@@ -90,7 +90,7 @@
 | valgrind                        | Debugging tool for C/C++.                  |
 | virtualbox                      | Virtualization tool                        |
 
-## Media
+### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | gimp                            | Image manipulation program.                |
@@ -104,7 +104,7 @@
 | pandoc-cli                      | Universal document converter.              |
 | wf-recorder                     | Screen recording tool.                     |
 
-## Entertainment
+### Entertainment
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | discord                         | Discord client.                            |
@@ -113,7 +113,7 @@
 | spotify-launcher                | Music streaming service.                   |
 | steam                           | Steam client.                              |
 
-## Compatibility
+### Compatibility
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | dosfstools                      | FAT compatibility tool.                    |
