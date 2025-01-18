@@ -52,12 +52,14 @@
   - dotnet-sdk
   - doxygen
   - gradle
+  - jdk17-opendjk
   - libbsd
   - lld
   - mariadb
   - mingw-w64
   - npm
   - openbsd-netcat
+  - rustup
   - sqlx-cli
   - valgrind
   - virtualbox

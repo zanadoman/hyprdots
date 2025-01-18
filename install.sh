@@ -17,6 +17,9 @@ sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
 sudo systemctl start mariadb.service
 sudo mariadb-secure-installation
 
+# Rust
+rustup default stable
+
 # Folders
 mkdir -p "$HOME/Desktop/"
 mkdir -p "$HOME/Downloads/"
