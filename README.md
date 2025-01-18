@@ -123,40 +123,37 @@
 
 # Manual setup
 
-### hyprland
+#### hyprland
 - Monitors
 - Keyboard layouts
 
-### google-chrome
+#### google-chrome
 - Login
 
-### filesystem
+#### filesystem
 - /etc/fstab
 
-### networkmanager
+#### networkmanager
 - 802-3-ethernet.wake-on-lan: magic
 
-### openssh
+#### openssh
 - systemctl enable sshd.service
 - ~/.ssh/config
 
-### git
+#### git
 - Generate new token (classic)
 
-### android-studio
+#### android-studio
 - Install SDK
 
-### discord
-- Login
+#### discord
 - Appearance: CHAT FONT SCALING: 20px
 - Notifications: Enable Desktop Notifications: off
 - Show Member List
 
-### steam
-- Login
+#### steam
 - Compatibility: Enable Steam Play for supported titles: on
 - Download games
 
-### spotify-launcher
-- Login
+#### spotify-launcher
 - Startup and window behaviour: Close button should minimize Spotify window: on
