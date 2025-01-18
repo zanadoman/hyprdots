@@ -1,29 +1,25 @@
-# Username
 [username]
-format = "[╭─$user](cyan)"
+format = '[╭─$user](cyan)'
 show_always = true
 
-# Hostname
 [hostname]
-format = "[@](white)[$hostname](blue): "
 ssh_only = false
+format = '[@](white)[$hostname](blue)[: ](white)'
 
-# Directory
 [directory]
-style = "cyan"
+style = 'cyan'
 
-# Duration
+[git_status]
+deleted = 'x'
+
 [cmd_duration]
-format = "[$duration](white)"
+format = '[$duration](white)'
 
-# Time
 [time]
 format = "[󰣇 ](cyan)[$time](white)\n"
-time_format = "%r"
+time_format = '%r'
 disabled = false
 
-# Prompt
 [character]
-success_symbol = "[╰─](cyan)"
-error_symbol = "[╰─](cyan)[󰰱](red)"
-
+success_symbol = '[╰─](cyan)'
+error_symbol = '[╰─](cyan)[󰰱](red)'
