@@ -57,7 +57,6 @@
 |:-------------------------------:|:-------------------------------------------|
 | ranger                          | Vim-inspired filemanager.                  |
 | highlight                       | Syntax highlighting for ranger.            |
-| python-pillow                   | Image preview for ranger.                  |
 
 ### Archiving
 | Package                         | Description                                |
