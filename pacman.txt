@@ -10,7 +10,7 @@ ttf-input-nerd
 waybar
 wl-clipboard
 xdg-desktop-portal-hyprland
-kitty
+alacritty
 fastfetch
 fish
 starship

@@ -27,7 +27,7 @@
 ### Terminal
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| kitty                           | Terminal emulator.                         |
+| alacritty                       | Terminal emulator.                         |
 | fastfetch                       | System information.                        |
 | fish                            | Smart shell.                               |
 | starship                        | Improved prompt.                           |
