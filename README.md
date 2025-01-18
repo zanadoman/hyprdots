@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (967)
+# Packages (968)
 **Dependencies: git, yay**
 - Hyprland
   - fuzzel
@@ -9,6 +9,8 @@
   - hyprpaper
   - hyprsunset
   - slurp
+  - ttf-hack-nerd
+  - ttf-input-nerd
   - waybar
   - wl-clipboard
   - xdg-desktop-portal-hyprland

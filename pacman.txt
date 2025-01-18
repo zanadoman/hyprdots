@@ -4,6 +4,8 @@ hyprland
 hyprpaper
 hyprsunset
 slurp
+ttf-hack-nerd
+ttf-input-nerd
 waybar
 wl-clipboard
 xdg-desktop-portal-hyprland
