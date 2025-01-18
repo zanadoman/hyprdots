@@ -52,7 +52,7 @@
   - dotnet-sdk
   - doxygen
   - gradle
-  - jdk17-opendjk
+  - jdk17-openjdk
   - libbsd
   - lld
   - mariadb
