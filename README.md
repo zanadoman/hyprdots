@@ -56,7 +56,7 @@
   - libbsd
   - lld
   - mariadb
-  - mingw-w64
+  - mingw-w64-gcc
   - npm
   - openbsd-netcat
   - rustup
