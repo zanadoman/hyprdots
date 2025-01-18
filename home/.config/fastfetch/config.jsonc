@@ -1,5 +1,10 @@
 {
-    "logo": "~/.config/fastfetch/logo.txt",
+    "logo": {
+        "source": "~/.config/fastfetch/logo.txt",
+        "padding": {
+            "right": 0
+        }
+    },
     "display": {
         "separator": " "
     },
