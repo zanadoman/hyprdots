@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (968)
+# Packages (969)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -119,34 +119,44 @@
 | dosfstools                      | FAT compatibility tool.                    |
 | ntfs-3g                         | NTFS compatibility tool.                   |
 | wine                            | Windows compatibility layer.               |
+| wine-mono                       | .NET Framework support for wine.           |
 
 # Manual setup
-- Hyprland
-  - Displays
-- google-chrome
-  - Login
-- filesystem
-  - /etc/fstab
-- networkmanager
-  - 802-3-ethernet.wake-on-lan: magic
-- openssh
-  - ~/.ssh/config
-  - systemctl enable sshd.service
-- git
-  - Generate new token (classic)
-- android-studio
-  - First start
-- discord
-  - Login
-  - Appearance: CHAT FONT SCALING: 20px
-  - Notifications: Enable Desktop Notifications: off
-  - Show Member List
-- steam
-  - Login
-  - Compatibility: Enable Steam Play for supported titles: on
-  - Download games
-- spotify-launcher
-  - Login
-  - Startup and window behaviour: Close button should minimize Spotify window: on
-- wine
-  - First start
+
+### hyprland
+- Monitors
+- Keyboard layouts
+
+### google-chrome
+- Login
+
+### filesystem
+- /etc/fstab
+
+### networkmanager
+- 802-3-ethernet.wake-on-lan: magic
+
+### openssh
+- systemctl enable sshd.service
+- ~/.ssh/config
+
+### git
+- Generate new token (classic)
+
+### android-studio
+- Install SDK
+
+### discord
+- Login
+- Appearance: CHAT FONT SCALING: 20px
+- Notifications: Enable Desktop Notifications: off
+- Show Member List
+
+### steam
+- Login
+- Compatibility: Enable Steam Play for supported titles: on
+- Download games
+
+### spotify-launcher
+- Login
+- Startup and window behaviour: Close button should minimize Spotify window: on
