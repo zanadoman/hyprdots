@@ -1,3 +1,4 @@
+brightnessctl
 fuzzel
 grim
 hyprland
@@ -12,12 +13,11 @@ xdg-desktop-portal-hyprland
 kitty
 fastfetch
 fish
-fzf
 starship
 zoxide
 bluetui
-brightnessctl
 btop
+fzf
 less
 pulsemixer
 ripgrep

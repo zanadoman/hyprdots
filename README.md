@@ -11,6 +11,7 @@
 ### Hyprland
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| brightnessctl                   | Brightness manager.                        |
 | fuzzel                          | Application launcher.                      |
 | grim                            | Screenshot tool.                           |
 | hyprland                        | Tiling compositor.                         |
@@ -29,7 +30,6 @@
 | kitty                           | Terminal emulator.                         |
 | fastfetch                       | System information.                        |
 | fish                            | Smart shell.                               |
-| fzf                             | Fuzzy finder.                              |
 | starship                        | Improved prompt.                           |
 | zoxide                          | Smart cd.                                  |
 
@@ -37,8 +37,8 @@
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | bluetui                         | Bluetooth manager.                         |
-| brightnessctl                   | Brightness manager.                        |
 | btop                            | Resource monitor.                          |
+| fzf                             | Fuzzy finder.                              |
 | less                            | Pager for Git.                             |
 | pulsemixer                      | Audio manager.                             |
 | ripgrep                         | Recursive search tool.                     |
