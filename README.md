@@ -23,7 +23,6 @@
   - zoxide
 - CLI tools
   - bluetui
-  - bluez
   - brightnessctl
   - btop
   - less
@@ -55,7 +54,6 @@
   - doxygen
   - gradle
   - jdk17-openjdk
-  - libbsd
   - lld
   - mariadb
   - mingw-w64-gcc

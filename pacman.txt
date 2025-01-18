@@ -16,7 +16,6 @@ fzf
 starship
 zoxide
 bluetui
-bluez
 brightnessctl
 btop
 less
@@ -42,7 +41,6 @@ dotnet-sdk
 doxygen
 gradle
 jdk17-openjdk
-libbsd
 lld
 mariadb
 mingw-w64-gcc
