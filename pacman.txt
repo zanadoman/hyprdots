@@ -33,7 +33,6 @@ atool
 unrar
 zip
 aarch64-linux-gnu-gcc
-cargo-watch
 cmake
 composer
 dotnet-sdk
@@ -49,6 +48,7 @@ rustup
 sqlx-cli
 valgrind
 virtualbox
+watchexec
 gimp
 texlive-binextra
 texlive-fontsrecommended

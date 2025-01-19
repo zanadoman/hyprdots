@@ -72,7 +72,6 @@
 | aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C/C++.          |
 | android-ndk (AUR)               | Android compiler for C/C++.                |
 | android-studio (AUR)            | Android IDE.                               |
-| cargo-watch                     | Rust live reload tool.                     |
 | cmake                           | C/C++ build tool.                          |
 | composer                        | PHP package manager.                       |
 | dotnet-sdk                      | C# development kit.                        |
@@ -88,6 +87,7 @@
 | sqlx-cli                        | SQLx migration tool.                       |
 | valgrind                        | Debugging tool for C/C++.                  |
 | virtualbox                      | Virtualization tool                        |
+| watchexec                       | Live reload tool.                          |
 
 ### Media
 | Package                         | Description                                |
