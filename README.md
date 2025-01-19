@@ -147,8 +147,9 @@
 - Show Member List
 
 #### steam
+- Storage: Add Drive
 - Compatibility: Enable Steam Play for supported titles: on
-- Download games
+- Controller: PlayStation Controller Support: Enabled
 
 #### spotify-launcher
 - Startup and window behaviour: Close button should minimize Spotify window: on
