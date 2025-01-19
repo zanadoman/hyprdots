@@ -78,7 +78,7 @@
 | doxygen                         | Documentation generator.                   |
 | gradle                          | Java build tool.                           |
 | jdk17-openjdk                   | Java development kit.                      |
-| lld                             | LLVM linker.                               |
+| lld                             | LLVM linker for C/C++.                     |
 | mariadb                         | MySQL compatible database system.          |
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
 | npm                             | JavaScript package manager.                |
@@ -117,8 +117,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | dosfstools                      | FAT compatibility tool.                    |
 | ntfs-3g                         | NTFS compatibility tool.                   |
-| wine                            | Windows compatibility layer.               |
-| wine-mono                       | .NET Framework support for wine.           |
+| wine-mono                       | Windows compatibility layer.               |
 
 # Manual setup
 

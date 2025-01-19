@@ -64,5 +64,4 @@ spotify-launcher
 steam
 dosfstools
 ntfs-3g
-wine
 wine-mono
