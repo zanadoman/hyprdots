@@ -26,10 +26,10 @@ sshfs
 tree
 neovim
 tree-sitter-cli
-ranger
 highlight
-atool
+ranger
 7zip
+atool
 unrar
 zip
 aarch64-linux-gnu-gcc
@@ -50,13 +50,13 @@ valgrind
 virtualbox
 watchexec
 gimp
+pandoc-cli
 texlive-binextra
 texlive-fontsrecommended
 texlive-langenglish
 texlive-langeuropean
 texlive-latexextra
 texlive-plaingeneric
-pandoc-cli
 wf-recorder
 discord
 noto-fonts-emoji

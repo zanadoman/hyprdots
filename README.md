@@ -55,14 +55,14 @@
 ### File manager
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| ranger                          | Vim-inspired filemanager.                  |
 | highlight                       | Syntax highlighting for ranger.            |
+| ranger                          | Vim-inspired filemanager.                  |
 
 ### Archiving
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| atool                           | Archive manager.                           |
 | 7zip                            | 7-Zip support for atool.                   |
+| atool                           | Archive manager.                           |
 | unrar                           | RAR support for atool.                     |
 | zip                             | Zip support for atool.                     |
 
@@ -94,13 +94,13 @@
 |:-------------------------------:|:-------------------------------------------|
 | gimp                            | Image manipulation program.                |
 | google-chrome (AUR)             | Web browser.                               |
+| pandoc-cli                      | Universal document converter.              |
 | texlive-binextra                | LaTeX - optional dependencies.             |
 | texlive-fontsrecommended        | LaTeX - essential fonts.                   |
 | texlive-langenglish             | LaTeX - language support.                  |
 | texlive-langeuropean            | LaTeX - language support.                  |
 | texlive-latexextra              | LaTeX - useful packages.                   |
 | texlive-plaingeneric            | LaTeX - Doxygen dependency.                |
-| pandoc-cli                      | Universal document converter.              |
 | wf-recorder                     | Screen recording tool.                     |
 
 ### Entertainment
