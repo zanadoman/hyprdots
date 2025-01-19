@@ -92,8 +92,8 @@
 ### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| firefox                         | Web browser.                               |
 | gimp                            | Image manipulation program.                |
-| google-chrome (AUR)             | Web browser.                               |
 | pandoc-cli                      | Universal document converter.              |
 | texlive-binextra                | LaTeX - optional dependencies.             |
 | texlive-fontsrecommended        | LaTeX - essential fonts.                   |
@@ -124,9 +124,6 @@
 #### hyprland
 - Monitors
 - Keyboard layouts
-
-#### google-chrome
-- Login
 
 #### filesystem
 - /etc/fstab

@@ -49,6 +49,7 @@ sqlx-cli
 valgrind
 virtualbox
 watchexec
+firefox
 gimp
 pandoc-cli
 texlive-binextra
