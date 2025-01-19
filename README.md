@@ -92,7 +92,7 @@
 ### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| firefox                         | Web browser.                               |
+| chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
 | pandoc-cli                      | Universal document converter.              |
 | texlive-binextra                | LaTeX - optional dependencies.             |

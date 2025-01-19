@@ -405,7 +405,7 @@ function SetupNvimCmp()
 end
 
 function SetupVimtex()
-    vim.g.vimtex_view_general_viewer = 'firefox'
+    vim.g.vimtex_view_general_viewer = 'chromium'
 end
 
 function SetupWhichKeyNvim()
