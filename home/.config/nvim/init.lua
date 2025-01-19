@@ -294,7 +294,7 @@ function SetupMasonLspconfigNvim()
     local servers = {
         clangd = { cmd = { 'clangd', '--header-insertion=never' } },
         csharp_ls = {},
-        cssls = { filetypes = { 'html', 'javascript', 'php', 'rust' } },
+        cssls = {},
         emmet_language_server = { filetypes = { '*' } },
         html = {
             filetypes = { 'html', 'javascript', 'php', 'rust' },
