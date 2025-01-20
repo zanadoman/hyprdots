@@ -8,7 +8,7 @@ if status is-interactive
     export ANDROID_NDK_HOME=/opt/android-ndk/
     export ANDROID_HOME="$HOME/Android/Sdk/"
     alias clear='clear && fastfetch'
-    alias startx='startx && clear'
+    alias hyprland='hyprland && clear'
     zoxide init --cmd cd fish | source
     starship init fish | source
     clear

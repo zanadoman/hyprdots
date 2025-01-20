@@ -7,7 +7,7 @@ export VISUAL=nvim
 export ANDROID_NDK_HOME=/opt/android-ndk/
 export ANDROID_HOME="$HOME/Android/Sdk/"
 alias clear='clear && fastfetch'
-alias startx='startx && clear'
+alias hyprland='hyprland && clear'
 eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
 clear
