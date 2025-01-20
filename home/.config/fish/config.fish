@@ -1,14 +1,17 @@
 if status is-interactive
-    set fish_greeting
-    export PATH="$HOME/.local/bin/:/usr/lib/emscripten/:$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-    export LIBRARY_PATH="/usr/local/lib:$LIBRARY_PATH"
-    export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
-    export EDITOR=nvim
-    export VISUAL=nvim
-    export ANDROID_NDK_HOME=/opt/android-ndk/
-    export ANDROID_HOME="$HOME/Android/Sdk/"
+    set -u fish_greeting
+    set -x PATH "$HOME/.local/bin/:/usr/lib/emscripten/:$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+    set -x LIBRARY_PATH "/usr/local/lib:$LIBRARY_PATH"
+    set -x LD_LIBRARY_PATH "/usr/local/lib:$LD_LIBRARY_PATH"
+    set -x PAGER less
+    set -x EDITOR nvim
+    set -x VISUAL nvim
+    set -x BROWSER chromium
+    set -x ANDROID_NDK_HOME /opt/android-ndk/
+    set -x ANDROID_HOME "$HOME/Android/Sdk/"
     alias clear='clear && fastfetch'
     alias hyprland='hyprland && clear'
+    alias wine='env -u DISPLAY wine'
     zoxide init --cmd cd fish | source
     starship init fish | source
     clear
