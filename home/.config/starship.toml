@@ -1,10 +1,9 @@
-[username]
-format = '[╭─$user](cyan)'
-show_always = true
+[character]
+success_symbol = '[╰─](cyan)'
+error_symbol = '[╰─](cyan)[󰰱](red)'
 
-[hostname]
-ssh_only = false
-format = '[@](white)[$hostname](blue)[: ](white)'
+[cmd_duration]
+format = '[$duration](white)'
 
 [directory]
 style = 'cyan'
@@ -12,14 +11,15 @@ style = 'cyan'
 [git_status]
 deleted = 'x'
 
-[cmd_duration]
-format = '[$duration](white)'
+[hostname]
+ssh_only = false
+format = '[@](white)[$hostname](blue)[: ](white)'
 
 [time]
 format = "[󰣇 ](cyan)[$time](white)\n"
 time_format = '%r'
 disabled = false
 
-[character]
-success_symbol = '[╰─](cyan)'
-error_symbol = '[╰─](cyan)[󰰱](red)'
+[username]
+format = '[╭─$user](cyan)'
+show_always = true
