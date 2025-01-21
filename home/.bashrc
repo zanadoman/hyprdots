@@ -25,6 +25,18 @@ ff() {
     find $root -mindepth 1 -type f | fzf
 }
 
+frg() {
+    if [ $# -eq 0 ]; then
+        root=./
+    else
+        root=$@
+    fi
+    selected=$(cat $(find $root -mindepth 1 -type f) | fzf)
+    if [ -n "$selected" ]; then
+        rg -.lF "$selected"
+    fi
+}
+
 fd() {
     if [ $# -eq 0 ]; then
         root=./
@@ -47,17 +59,5 @@ fcd() {
         else
             cd "$(dirname "$selected")"
         fi
-    fi
-}
-
-frg() {
-    if [ $# -eq 0 ]; then
-        root=./
-    else
-        root=$@
-    fi
-    selected=$(cat $(find $root -mindepth 1 -type f) | fzf)
-    if [ -n "$selected" ]; then
-        rg -.lF "$selected"
     fi
 }
