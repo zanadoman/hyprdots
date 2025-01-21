@@ -1,22 +1,21 @@
-if status is-interactive
-    set -U fish_greeting
-    set -x PATH "$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-    set -x LIBRARY_PATH "/usr/local/lib:$LIBRARY_PATH"
-    set -x LD_LIBRARY_PATH "/usr/local/lib:$LD_LIBRARY_PATH"
-    set -x ANDROID_NDK_HOME /opt/android-ndk/
-    set -x ANDROID_HOME "$HOME/Android/Sdk/"
-    set -x PAGER less
-    set -x EDITOR nvim
-    set -x VISUAL nvim
-    set -x TERMINAL alacritty
-    set -x BROWSER chromium
-    alias clear='clear && fastfetch'
-    alias hyprland='hyprland && clear'
-    alias wine='env -u DISPLAY wine'
-    zoxide init --cmd cd fish | source
-    starship init fish | source
-    clear
-end
+not status is-interactive && return
+set -U fish_greeting
+set -x PATH "$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+set -x LIBRARY_PATH "/usr/local/lib:$LIBRARY_PATH"
+set -x LD_LIBRARY_PATH "/usr/local/lib:$LD_LIBRARY_PATH"
+set -x ANDROID_NDK_HOME /opt/android-ndk/
+set -x ANDROID_HOME "$HOME/Android/Sdk/"
+set -x PAGER less
+set -x EDITOR nvim
+set -x VISUAL nvim
+set -x TERMINAL alacritty
+set -x BROWSER chromium
+alias clear='clear && fastfetch'
+alias hyprland='hyprland && clear'
+alias wine='env -u DISPLAY wine'
+zoxide init --cmd cd fish | source
+starship init fish | source
+clear
 
 function ff
     if test (count $argv) -eq 0
@@ -34,7 +33,7 @@ function frg
         set root $argv
     end
     set selected (cat (find $root -mindepth 1 -type f) | fzf)
-    if test -n $selected
+    if test -n "$selected"
         rg -.lF $selected
     end
 end
@@ -55,7 +54,7 @@ function fcd
         set root $argv
     end
     set selected (find $root -mindepth 1 | fzf)
-    if test -n $selected
+    if test -n "$selected"
         if test -d $selected
             cd $selected
         else
