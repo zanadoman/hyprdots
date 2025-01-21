@@ -3,13 +3,13 @@ if status is-interactive
     set -x PATH "$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
     set -x LIBRARY_PATH "/usr/local/lib:$LIBRARY_PATH"
     set -x LD_LIBRARY_PATH "/usr/local/lib:$LD_LIBRARY_PATH"
+    set -x ANDROID_NDK_HOME /opt/android-ndk/
+    set -x ANDROID_HOME "$HOME/Android/Sdk/"
     set -x PAGER less
     set -x EDITOR nvim
     set -x VISUAL nvim
     set -x TERMINAL alacritty
     set -x BROWSER chromium
-    set -x ANDROID_NDK_HOME /opt/android-ndk/
-    set -x ANDROID_HOME "$HOME/Android/Sdk/"
     alias clear='clear && fastfetch'
     alias hyprland='hyprland && clear'
     alias wine='env -u DISPLAY wine'
