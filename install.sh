@@ -4,8 +4,8 @@
 sudo cp -r ./etc/. /etc/
 
 # Packages
-cat ./pacman.txt | sudo pacman -S -
-cat ./aur.txt | yay -S -
+cat ./pacman.txt | sudo pacman -Syu -
+cat ./aur.txt | yay -Syu -
 pacman -Qdtq | sudo pacman -Rns -
 
 # User
@@ -22,9 +22,9 @@ rustup default stable
 
 # Folders
 mkdir -p "$HOME/Desktop/"
-mkdir -p "$HOME/Downloads/"
 mkdir -p "$HOME/Documents/"
-mkdir -p "$HOME/Projects/"
-mkdir -p "$HOME/Pictures/"
-mkdir -p "$HOME/Videos/"
+mkdir -p "$HOME/Downloads/"
 mkdir -p "$HOME/Music/"
+mkdir -p "$HOME/Pictures/"
+mkdir -p "$HOME/Projects/"
+mkdir -p "$HOME/Videos/"
