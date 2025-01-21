@@ -1,5 +1,5 @@
 if status is-interactive
-    set -u fish_greeting
+    set -U fish_greeting
     set -x PATH "$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
     set -x LIBRARY_PATH "/usr/local/lib:$LIBRARY_PATH"
     set -x LD_LIBRARY_PATH "/usr/local/lib:$LD_LIBRARY_PATH"
