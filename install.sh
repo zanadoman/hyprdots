@@ -21,10 +21,10 @@ sudo mariadb-secure-installation
 rustup default stable
 
 # Folders
-mkdir -p "$HOME/Desktop/"
-mkdir -p "$HOME/Documents/"
-mkdir -p "$HOME/Downloads/"
-mkdir -p "$HOME/Music/"
-mkdir -p "$HOME/Pictures/"
-mkdir -p "$HOME/Projects/"
-mkdir -p "$HOME/Videos/"
+mkdir "$HOME/Desktop/"
+mkdir "$HOME/Documents/"
+mkdir "$HOME/Downloads/"
+mkdir "$HOME/Music/"
+mkdir "$HOME/Pictures/"
+mkdir "$HOME/Projects/"
+mkdir "$HOME/Videos/"
