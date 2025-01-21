@@ -51,17 +51,14 @@ menuitem:hover {
     transition: all 0.5s;
 }
 
-#workspaces button.visible {
-    color: #c0caf5;
-}
-
-#workspaces button.active {
-    background-color: #c0caf5;
-    color: #1a1b26;
-}
-
 #workspaces button.urgent {
     color: #f7768e;
+}
+
+#workspaces button.active,
+#workspaces button.visible {
+    background-color: #c0caf5;
+    color: #1a1b26;
 }
 
 #window,
