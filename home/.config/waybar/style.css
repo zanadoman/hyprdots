@@ -5,13 +5,6 @@
     border-radius: 10px;
 }
 
-.modules-left,
-.modules-center,
-.modules-right {
-    min-height: 32px;
-    margin: 10px 10px 0 10px;
-}
-
 tooltip {
     opacity: 0.95;
     background-color: #1a1b26;
@@ -19,6 +12,30 @@ tooltip {
     font-size: 14px;
     padding: 0 8px 0 8px;
     border: 1px solid #0db9d7;
+}
+
+menu {
+    opacity: 0.95;
+    background-color: #1a1b26;
+    padding: 8px;
+    border: 1px solid #0db9d7;
+}
+
+menuitem {
+    color: #c0caf5;
+    font-size: 14px;
+    transition: all 0.25s;
+}
+
+menuitem:hover {
+    color: #565f89;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    min-height: 32px;
+    margin: 10px 10px 0 10px;
 }
 
 #window,
@@ -74,21 +91,4 @@ window#waybar.empty #window {
 
 #battery.critical {
     color: #f7768e;
-}
-
-#tray menu {
-    opacity: 0.95;
-    background-color: #1a1b26;
-    padding: 8px;
-    border: 1px solid #0db9d7;
-}
-
-#tray menuitem {
-    color: #c0caf5;
-    font-size: 14px;
-    transition: all 0.25s;
-}
-
-#tray menuitem:hover {
-    color: #565f89;
 }
