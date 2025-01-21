@@ -5,6 +5,7 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export PAGER=less
 export EDITOR=nvim
 export VISUAL=nvim
+export TERMINAL=alacritty
 export BROWSER=chromium
 export ANDROID_NDK_HOME=/opt/android-ndk/
 export ANDROID_HOME="$HOME/Android/Sdk/"

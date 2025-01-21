@@ -6,6 +6,7 @@ if status is-interactive
     set -x PAGER less
     set -x EDITOR nvim
     set -x VISUAL nvim
+    set -x TERMINAL alacritty
     set -x BROWSER chromium
     set -x ANDROID_NDK_HOME /opt/android-ndk/
     set -x ANDROID_HOME "$HOME/Android/Sdk/"
