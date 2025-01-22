@@ -10,6 +10,7 @@ vim.o.mouse = '';
 vim.o.number = true
 vim.o.pumheight = 10
 vim.o.relativenumber = true
+vim.o.scrolloff = 32
 vim.o.shiftwidth = 4
 vim.o.shortmess = 'I'
 vim.o.showmode = false
@@ -21,28 +22,12 @@ vim.o.tabstop = 4
 vim.o.updatetime = 1000
 vim.o.wrap = false
 
--- Neovim keymaps
-vim.keymap.set('v', '<c-up>', ':m \'<-2\ngv=gv')
-vim.keymap.set('v', '<c-down>', ':m \'>+1\ngv=gv')
-vim.keymap.set('t', '<esc>', '<c-\\><c-n>')
-
 -- File associations
 vim.filetype.add({
     pattern = {
         ['.*.html'] = { 'html', { priority = 10 } },
         ['.*.php'] = { 'php', { priority = 10 } }
     }
-})
-
--- File formatter
-vim.api.nvim_create_autocmd('BufReadPost', {
-    callback = function()
-        if vim.bo.modifiable then
-            vim.cmd('silent! %s/\r//g')
-            vim.bo.fileformat = 'unix'
-            vim.cmd('silent! retab')
-        end
-    end
 })
 
 -- Auto highlight
@@ -57,8 +42,7 @@ vim.api.nvim_create_autocmd('InsertEnter', {
 vim.keymap.set('n', '<leader>s', function()
     vim.o.spell = not vim.o.spell
 end, {
-    silent = true,
-    desc = '󰓆 Spelling'
+    silent = true
 })
 
 -- Diagnostics options
@@ -169,21 +153,6 @@ function SetupBarbarNvim()
     vim.api.nvim_set_hl(0, 'BufferTabpageFill', { bg = '#16161e', fg = '#16161e' })
 end
 
-function SetupNoNeckPainNvim()
-    require('no-neck-pain').setup({
-        autocmds = { enableOnVimEnter = true, skipEnteringNoNeckPainBuffer = true },
-        buffers = { right = { enabled = false } }
-    })
-    vim.keymap.set('n', '<leader>c', ':NoNeckPain\n', {
-        silent = true,
-        desc = '󰘞 Center'
-    })
-end
-
-function SetupStayCenteredNvim()
-    require('stay-centered').setup()
-end
-
 function SetupIndentBlanklineNvim()
     require('ibl').setup({
         indent = { char = '.' },
@@ -191,102 +160,51 @@ function SetupIndentBlanklineNvim()
     })
 end
 
-function SetupNvimAutopairs()
-    require('nvim-autopairs').setup()
-end
-
-function SetupNvimSurround()
-    require('nvim-surround').setup()
-end
-
 function SetupTelescopeNvim()
     require('telescope').setup()
     require('telescope').load_extension('file_browser')
     vim.keymap.set('n', '<leader>f', require('telescope').extensions.file_browser.file_browser, {
-        silent = true,
-        desc = ' Files'
+        silent = true
     })
     vim.keymap.set('n', '<leader>g', require('telescope.builtin').live_grep, {
-        silent = true,
-        desc = '󱡴 Grep'
+        silent = true
     })
     vim.keymap.set('n', '<leader>h', require('telescope.builtin').oldfiles, {
-        silent = true,
-        desc = '󰋚 History'
+        silent = true
     })
     require('gitsigns').setup({
         on_attach = function()
             vim.keymap.set('n', '<leader>gs', require('gitsigns').stage_hunk, {
-                silent = true,
-                desc = ' Stage hunk'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gr', require('gitsigns').reset_hunk, {
-                silent = true,
-                desc = ' Reset hunk'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gS', require('gitsigns').stage_buffer, {
-                silent = true,
-                desc = ' Stage buffer'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gu', require('gitsigns').undo_stage_hunk, {
-                silent = true,
-                desc = ' Unstage hunk'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gR', require('gitsigns').reset_buffer, {
-                silent = true,
-                desc = ' Reset buffer'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gp', require('gitsigns').preview_hunk_inline, {
-                silent = true,
-                desc = ' Preview hunk'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits, {
-                silent = true,
-                desc = ' Commits'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches, {
-                silent = true,
-                desc = ' Branches'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, {
-                silent = true,
-                desc = ' Files'
+                silent = true
             })
             vim.keymap.set('n', '<leader>gd', require('telescope.builtin').git_status, {
-                silent = true,
-                desc = ' Diffs'
+                silent = true
             })
         end
-    })
-end
-
-function SetupNvimTreesitter()
-    require('nvim-treesitter.configs').setup({
-        ensure_installed = {
-            'asm',
-            'bash',
-            'c',
-            'c_sharp',
-            'cmake',
-            'cpp',
-            'css',
-            'doxygen',
-            'fish',
-            'html',
-            'java',
-            'javascript',
-            'latex',
-            'lua',
-            'make',
-            'markdown',
-            'php',
-            'printf',
-            'python',
-            'rust',
-            'sql',
-            'typescript'
-        },
-        highlight = { enable = true }
     })
 end
 
@@ -317,38 +235,30 @@ function SetupMasonLspconfigNvim()
         end }
     })
     vim.keymap.set('n', '<leader>ls', ':LspStart\n', {
-        silent = true,
-        desc = ' Start'
+        silent = true
     })
     vim.keymap.set('n', '<leader>lh', ':LspStop\n', {
-        silent = true,
-        desc = ' Halt'
+        silent = true
     })
     vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, {
-        silent = true,
-        desc = ' Format'
+        silent = true
     })
     vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename, {
-        silent = true,
-        desc = ' Rename'
+        silent = true
     })
     vim.keymap.set('n', '<leader>lp', function()
         vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
     end, {
-        silent = true,
-        desc = ' Parameters'
+        silent = true
     })
     vim.keymap.set('n', '<leader>li', require('telescope.builtin').diagnostics, {
-        silent = true,
-        desc = ' Issues'
+        silent = true
     })
     vim.keymap.set('n', '<leader>ld', require('telescope.builtin').lsp_definitions, {
-        silent = true,
-        desc = ' Definitions'
+        silent = true
     })
     vim.keymap.set('n', '<leader>lr', require('telescope.builtin').lsp_references, {
-        silent = true,
-        desc = ' References'
+        silent = true
     })
     vim.api.nvim_create_autocmd('CursorHold', {
         callback = function()
@@ -384,9 +294,7 @@ function SetupNvimCmp()
             { { name = 'nvim_lsp' } },
             { { name = 'nvim_lsp_signature_help' } },
             { { name = 'buffer' } },
-            { { name = 'path' } },
-            { { name = 'calc' } },
-            { { name = 'vim-dadbod-completion' } }
+            { { name = 'path' } }
         )
     })
     require('cmp').setup.cmdline({ '/', '?' }, {
@@ -401,21 +309,6 @@ function SetupNvimCmp()
             { { name = 'cmdline' } },
             { { name = 'path' } }
         )
-    })
-end
-
-function SetupVimtex()
-    vim.g.vimtex_view_general_viewer = 'chromium'
-end
-
-function SetupWhichKeyNvim()
-    require('which-key').setup({
-        delay = 1000,
-        win = { border = 'rounded' },
-        icons = {
-            group = '',
-            mappings = false
-        }
     })
 end
 
@@ -448,29 +341,9 @@ require('lazy').setup(
             config = SetupBarbarNvim
         },
         {
-            'shortcuts/no-neck-pain.nvim',
-            event = 'BufEnter',
-            config = SetupNoNeckPainNvim
-        },
-        {
-            'arnamak/stay-centered.nvim',
-            event = 'VeryLazy',
-            config = SetupStayCenteredNvim
-        },
-        {
             'lukas-reineke/indent-blankline.nvim',
             event = 'VeryLazy',
             config = SetupIndentBlanklineNvim
-        },
-        {
-            'windwp/nvim-autopairs',
-            event = 'InsertEnter',
-            config = SetupNvimAutopairs
-        },
-        {
-            'kylechui/nvim-surround',
-            event = 'VeryLazy',
-            config = SetupNvimSurround
         },
         {
             'nvim-telescope/telescope.nvim',
@@ -481,32 +354,6 @@ require('lazy').setup(
             },
             event = 'VeryLazy',
             config = SetupTelescopeNvim
-        },
-        {
-            'nvim-treesitter/nvim-treesitter',
-            ft = {
-                'asm',
-                'sh',
-                'c',
-                'cs',
-                'cmake',
-                'cpp',
-                'css',
-                'fish',
-                'html',
-                'java',
-                'javascript',
-                'tex',
-                'lua',
-                'make',
-                'markdown',
-                'php',
-                'python',
-                'rust',
-                'sql',
-                'typescript'
-            },
-            config = SetupNvimTreesitter
         },
         {
             'williamboman/mason-lspconfig.nvim',
@@ -538,30 +385,11 @@ require('lazy').setup(
             dependencies = {
                 'hrsh7th/cmp-buffer',
                 'hrsh7th/cmp-cmdline',
-                'hrsh7th/cmp-path',
-                'hrsh7th/cmp-calc'
+                'hrsh7th/cmp-path'
             },
             event = { 'CmdlineEnter', 'InsertEnter' },
             config = SetupNvimCmp
         },
-        {
-            'lervag/vimtex',
-            ft = 'tex',
-            config = SetupVimtex
-        },
-        {
-            'kristijanhusak/vim-dadbod-ui',
-            dependencies = {
-                'tpope/vim-dadbod',
-                'kristijanhusak/vim-dadbod-completion'
-            },
-            cmd = 'DBUI'
-        },
-        {
-            'folke/which-key.nvim',
-            event = 'VeryLazy',
-            config = SetupWhichKeyNvim
-        }
     },
     {
         ui = { border = 'rounded' }
