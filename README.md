@@ -122,24 +122,28 @@
 # Manual setup
 
 #### hyprland
-- Monitors
-- Keyboard layouts
+- monitor
+- input:kb_layout
 
 #### filesystem
 - /etc/fstab
 
 #### networkmanager
-- 802-3-ethernet.wake-on-lan: magic
+- nmcli connection modify "Wired connection 1" 802-3-ethernet.wake-on-lan magic
 
 #### openssh
 - systemctl enable sshd.service
 - ~/.ssh/config
 
 #### git
+- git config --global user.name
+- git config --global user.email
 - Generate new token (classic)
 
 #### android-studio
-- Install SDK
+- Help improve Android Studio: Don't send
+- Choose the type of setup you want for Android Studio: Standard
+- Downloading Components
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
@@ -148,8 +152,8 @@
 
 #### steam
 - Storage: Add Drive
-- Compatibility: Enable Steam Play for supported titles: on
+- Compatibility: Enable Steam Play for all other titles: on
 - Controller: PlayStation Controller Support: Enabled
 
 #### spotify-launcher
-- Startup and window behaviour: Close button should minimize Spotify window: on
+- Startup and window behaviour: Close button should minimize the Spotify window: on
