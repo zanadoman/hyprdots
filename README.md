@@ -129,10 +129,11 @@
 - /etc/fstab
 
 #### networkmanager
-- nmcli connection modify "Wired connection 1" 802-3-ethernet.wake-on-lan magic
+- nmcli connection modify 'Wired connection 1' 802-3-ethernet.wake-on-lan magic
 
 #### openssh
 - systemctl enable sshd.service
+- systemctl start sshd.service
 - ~/.ssh/config
 
 #### git
