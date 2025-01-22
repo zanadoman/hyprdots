@@ -4,6 +4,7 @@
     <ExtraData>
       <ExtraDataItem name="GUI/Input/AutoCapture" value="false"/>
       <ExtraDataItem name="GUI/Settings/ExpertMode" value="true"/>
+      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture"/>
     </ExtraData>
   </Global>
 </VirtualBox>
