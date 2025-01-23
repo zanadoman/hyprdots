@@ -16,7 +16,7 @@ eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
 clear
 
-ff() {
+ff () {
     if [ $# -eq 0 ]; then
         root=./
     else
@@ -25,7 +25,7 @@ ff() {
     find $root -mindepth 1 -type f | fzf
 }
 
-frg() {
+frg () {
     if [ $# -eq 0 ]; then
         root=./
     else
@@ -37,7 +37,7 @@ frg() {
     fi
 }
 
-fd() {
+fd () {
     if [ $# -eq 0 ]; then
         root=./
     else
@@ -46,7 +46,7 @@ fd() {
     find $root -mindepth 1 -type d | fzf
 }
 
-fcd() {
+fcd () {
     if [ $# -eq 0 ]; then
         root=./
     else
