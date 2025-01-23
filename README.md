@@ -63,7 +63,7 @@
 | 7zip                            | 7-Zip support for atool.                   |
 | atool                           | Archive manager.                           |
 | unrar                           | RAR support for atool.                     |
-| zip                             | Zip support for atool.                     |
+| zip                             | ZIP support for atool.                     |
 
 ### Programming
 | Package                         | Description                                |
@@ -100,7 +100,7 @@
 | texlive-langeuropean            | LaTeX - language support.                  |
 | texlive-latexextra              | LaTeX - useful packages.                   |
 | texlive-plaingeneric            | LaTeX - Doxygen dependency.                |
-| wf-recorder                     | Screen recording tool.                     |
+| wf-recorder                     | Screen recorder.                           |
 
 ### Entertainment
 | Package                         | Description                                |
@@ -133,7 +133,7 @@
 #### openssh
 - systemctl enable sshd.service
 - systemctl start sshd.service
-- ~/.ssh/config
+- $HOME/.ssh/config
 
 #### git
 - git config --global user.name
