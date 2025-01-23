@@ -25,6 +25,7 @@ vim.o.wrap = false
 -- File associations
 vim.filetype.add({
     pattern = {
+        ['.*.axaml'] = { 'xml', { priority = 10 } },
         ['.*.html'] = { 'html', { priority = 10 } },
         ['.*.php'] = { 'php', { priority = 10 } }
     }
@@ -34,16 +35,14 @@ vim.filetype.add({
 vim.api.nvim_create_autocmd('InsertEnter', {
     callback = function()
         vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(
-            '<cmd>silent! nohlsearch\n', true, true, true), 'n', true)
+            '<cmd>nohlsearch\n', true, true, true), 'n', true)
     end
 })
 
 -- Spell checker
 vim.keymap.set('n', '<leader>s', function()
     vim.o.spell = not vim.o.spell
-end, {
-    silent = true
-})
+end)
 
 -- Diagnostics options
 vim.diagnostic.config({
@@ -88,19 +87,19 @@ function SetupBarbarNvim()
             modified = { button = '' }
         }
     })
-    vim.keymap.set('n', '<a-,>', ':BufferPrevious\n', { silent = true })
-    vim.keymap.set('n', '<a-.>', ':BufferNext\n', { silent = true })
-    vim.keymap.set('n', '<a-1>', ':BufferGoto 1\n', { silent = true })
-    vim.keymap.set('n', '<a-2>', ':BufferGoto 2\n', { silent = true })
-    vim.keymap.set('n', '<a-3>', ':BufferGoto 3\n', { silent = true })
-    vim.keymap.set('n', '<a-4>', ':BufferGoto 4\n', { silent = true })
-    vim.keymap.set('n', '<a-5>', ':BufferGoto 5\n', { silent = true })
-    vim.keymap.set('n', '<a-6>', ':BufferGoto 6\n', { silent = true })
-    vim.keymap.set('n', '<a-7>', ':BufferGoto 7\n', { silent = true })
-    vim.keymap.set('n', '<a-8>', ':BufferGoto 8\n', { silent = true })
-    vim.keymap.set('n', '<a-9>', ':BufferGoto 9\n', { silent = true })
-    vim.keymap.set('n', '<a-0>', require('telescope.builtin').buffers, { silent = true })
-    vim.keymap.set('n', '<a-c>', ':BufferWipeout!\n', { silent = true })
+    vim.keymap.set('n', '<a-,>', ':BufferPrevious\n')
+    vim.keymap.set('n', '<a-.>', ':BufferNext\n')
+    vim.keymap.set('n', '<a-1>', ':BufferGoto 1\n')
+    vim.keymap.set('n', '<a-2>', ':BufferGoto 2\n')
+    vim.keymap.set('n', '<a-3>', ':BufferGoto 3\n')
+    vim.keymap.set('n', '<a-4>', ':BufferGoto 4\n')
+    vim.keymap.set('n', '<a-5>', ':BufferGoto 5\n')
+    vim.keymap.set('n', '<a-6>', ':BufferGoto 6\n')
+    vim.keymap.set('n', '<a-7>', ':BufferGoto 7\n')
+    vim.keymap.set('n', '<a-8>', ':BufferGoto 8\n')
+    vim.keymap.set('n', '<a-9>', ':BufferGoto 9\n')
+    vim.keymap.set('n', '<a-0>', require('telescope.builtin').buffers)
+    vim.keymap.set('n', '<a-c>', ':BufferWipeout!\n')
     vim.api.nvim_set_hl(0, 'BufferAlternate', { bg = '#16161e', fg = '#565f89' })
     vim.api.nvim_set_hl(0, 'BufferAlternateADDED', { bg = '#16161e', fg = '#449dab' })
     vim.api.nvim_set_hl(0, 'BufferAlternateCHANGED', { bg = '#16161e', fg = '#6183bb' })
@@ -163,47 +162,21 @@ end
 function SetupTelescopeNvim()
     require('telescope').setup()
     require('telescope').load_extension('file_browser')
-    vim.keymap.set('n', '<leader>f', require('telescope').extensions.file_browser.file_browser, {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>g', require('telescope.builtin').live_grep, {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>h', require('telescope.builtin').oldfiles, {
-        silent = true
-    })
+    vim.keymap.set('n', '<leader>f', require('telescope').extensions.file_browser.file_browser)
+    vim.keymap.set('n', '<leader>g', require('telescope.builtin').live_grep)
+    vim.keymap.set('n', '<leader>h', require('telescope.builtin').oldfiles)
     require('gitsigns').setup({
         on_attach = function()
-            vim.keymap.set('n', '<leader>gs', require('gitsigns').stage_hunk, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gr', require('gitsigns').reset_hunk, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gS', require('gitsigns').stage_buffer, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gu', require('gitsigns').undo_stage_hunk, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gR', require('gitsigns').reset_buffer, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gp', require('gitsigns').preview_hunk_inline, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, {
-                silent = true
-            })
-            vim.keymap.set('n', '<leader>gd', require('telescope.builtin').git_status, {
-                silent = true
-            })
+            vim.keymap.set('n', '<leader>gs', require('gitsigns').stage_hunk)
+            vim.keymap.set('n', '<leader>gr', require('gitsigns').reset_hunk)
+            vim.keymap.set('n', '<leader>gS', require('gitsigns').stage_buffer)
+            vim.keymap.set('n', '<leader>gu', require('gitsigns').undo_stage_hunk)
+            vim.keymap.set('n', '<leader>gR', require('gitsigns').reset_buffer)
+            vim.keymap.set('n', '<leader>gp', require('gitsigns').preview_hunk_inline)
+            vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits)
+            vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches)
+            vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files)
+            vim.keymap.set('n', '<leader>gd', require('telescope.builtin').git_status)
         end
     })
 end
@@ -215,7 +188,7 @@ function SetupMasonLspconfigNvim()
         cssls = {},
         emmet_language_server = { filetypes = { '*' } },
         html = {
-            filetypes = { 'html', 'javascript', 'php', 'rust' },
+            filetypes = { 'html', 'javascript', 'php', 'rust', 'typescript' },
             init_options = { provideFormatter = false }
         },
         intelephense = {},
@@ -229,37 +202,23 @@ function SetupMasonLspconfigNvim()
     require('mason').setup({ ui = { border = 'rounded' } })
     require('mason-lspconfig').setup({
         ensure_installed = vim.tbl_keys(servers),
-        handlers = { function(server)
-            servers[server].capabilities = require('cmp_nvim_lsp').default_capabilities()
-            require('lspconfig')[server].setup(servers[server])
-        end }
+        handlers = {
+            function(server)
+                servers[server].capabilities = require('cmp_nvim_lsp').default_capabilities()
+                require('lspconfig')[server].setup(servers[server])
+            end
+        }
     })
-    vim.keymap.set('n', '<leader>ls', ':LspStart\n', {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>lh', ':LspStop\n', {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename, {
-        silent = true
-    })
+    vim.keymap.set('n', '<leader>ls', ':LspStart\n')
+    vim.keymap.set('n', '<leader>lh', ':LspStop\n')
+    vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+    vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename)
     vim.keymap.set('n', '<leader>lp', function()
         vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
-    end, {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>li', require('telescope.builtin').diagnostics, {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>ld', require('telescope.builtin').lsp_definitions, {
-        silent = true
-    })
-    vim.keymap.set('n', '<leader>lr', require('telescope.builtin').lsp_references, {
-        silent = true
-    })
+    end)
+    vim.keymap.set('n', '<leader>li', require('telescope.builtin').diagnostics)
+    vim.keymap.set('n', '<leader>ld', require('telescope.builtin').lsp_definitions)
+    vim.keymap.set('n', '<leader>lr', require('telescope.builtin').lsp_references)
     vim.api.nvim_create_autocmd('CursorHold', {
         callback = function()
             if not vim.diagnostic.open_float({ focusable = false }) then
