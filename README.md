@@ -133,7 +133,7 @@
 #### openssh
 - systemctl enable sshd.service
 - systemctl start sshd.service
-- $HOME/.ssh/config
+- "$HOME/.ssh/config"
 
 #### git
 - git config --global user.name
