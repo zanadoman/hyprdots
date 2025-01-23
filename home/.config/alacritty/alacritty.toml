@@ -6,16 +6,7 @@ y = 10
 family = "Hack Nerd Font"
 style = "Bold"
 
-[font.bold]
-family = "Hack Nerd Font"
-style = "Bold"
-
 [font.italic]
-family = "Hack Nerd Font"
-style = "Bold Italic"
-
-[font.bold_italic]
-family = "Hack Nerd Font"
 style = "Bold Italic"
 
 [font]
@@ -62,4 +53,4 @@ cyan = "#7dcfff"
 white = "#c0caf5"
 
 [keyboard]
-bindings = [{ key = "S", mods = "Control", action = "SpawnNewInstance" }]
+bindings = [{ key = "S", mods = "Control", action = "SpawnNewInstance" },]

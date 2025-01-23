@@ -17,11 +17,11 @@
 | hyprland                        | Tiling compositor.                         |
 | hyprpaper                       | Wallpaper tool.                            |
 | hyprsunset                      | Bluelight filter.                          |
-| slurp                           | Area selection tool.                       |
+| slurp                           | Area selector.                             |
 | ttf-hack-nerd                   | Source code font.                          |
 | ttf-input-nerd                  | Font provider.                             |
 | waybar                          | Status bar.                                |
-| wl-clipboard                    | Clipboard tool.                            |
+| wl-clipboard                    | Clipboard manager.                         |
 | xdg-desktop-portal-hyprland     | Screen sharing tool.                       |
 
 ### Terminal
