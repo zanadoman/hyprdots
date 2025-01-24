@@ -20,6 +20,9 @@ sudo mariadb-secure-installation
 # Rust
 rustup default stable
 
+# C#
+dotnet new install Avalonia.Templates
+
 # Folders
 mkdir "$HOME/Desktop/"
 mkdir "$HOME/Documents/"
