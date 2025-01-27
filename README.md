@@ -122,26 +122,6 @@
 
 # Manual setup
 
-#### hyprland
-- monitor
-- input:kb_layout
-
-#### filesystem
-- /etc/fstab
-
-#### networkmanager
-- nmcli connection modify 'Wired connection 1' 802-3-ethernet.wake-on-lan magic
-
-#### openssh
-- systemctl enable sshd.service
-- systemctl start sshd.service
-- "$HOME/.ssh/config"
-
-#### git
-- git config --global user.name
-- git config --global user.email
-- Generate new token (classic)
-
 #### android-studio
 - Help improve Android Studio: Don't send
 - Choose the type of setup you want for Android Studio: Standard
@@ -152,10 +132,30 @@
 - Notifications: Enable Desktop Notifications: off
 - Show Member List
 
+#### filesystem
+- /etc/fstab
+
+#### git
+- git config --global user.name
+- git config --global user.email
+- Generate new token (classic)
+
+#### hyprland
+- monitor
+- input:kb_layout
+
+#### networkmanager
+- nmcli connection modify 'Wired connection 1' 802-3-ethernet.wake-on-lan magic
+
+#### openssh
+- systemctl enable sshd.service
+- systemctl start sshd.service
+- "$HOME/.ssh/config"
+
+#### spotify-launcher
+- Startup and window behaviour: Close button should minimize the Spotify window: on
+
 #### steam
 - Storage: Add Drive
 - Compatibility: Enable Steam Play for all other titles: on
 - Controller: PlayStation Controller Support: Enabled
-
-#### spotify-launcher
-- Startup and window behaviour: Close button should minimize the Spotify window: on
