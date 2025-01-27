@@ -19,6 +19,8 @@ bluetui
 btop
 fzf
 less
+man-db
+man-pages
 pulsemixer
 ripgrep
 rocm-smi-lib

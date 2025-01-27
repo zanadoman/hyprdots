@@ -40,6 +40,8 @@
 | btop                            | Resource monitor.                          |
 | fzf                             | Fuzzy finder.                              |
 | less                            | Pager for Git.                             |
+| man-db                          | Manual pages implementation.               |
+| man-pages                       | Linux/POSIX manual pages.                  |
 | pulsemixer                      | Audio manager.                             |
 | ripgrep                         | Recursive search tool.                     |
 | rocm-smi-lib                    | AMD GPU support for BTOP.                  |
