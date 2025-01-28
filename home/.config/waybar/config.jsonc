@@ -39,7 +39,7 @@
 
     "memory": {
         "interval": 1,
-        "format": " {used:0.1f} GB",
+        "format": " {used:0.1f} GB",
         "tooltip": false
     },
 
@@ -53,19 +53,20 @@
     "network": {
         "interval": 1,
         "format-ethernet": "󰈀 {ipaddr}",
-        "format-wifi": "{icon} {essid} {signalStrength}%",
+        "format-wifi": "{icon} {signalStrength}% {essid}",
         "format-disconnected": "󰪎 127.0.0.1",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "max-length": 18,
         "tooltip": false
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
-        "format-muted": "  {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": " ",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": ["󰕿", "󰖀", "󰕾"]
         },
         "scroll-step": 0,
         "tooltip": false
@@ -79,9 +80,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-        "tooltip": false,
-        "format-chargig": "󰂄 {capacity}%",
-        "format-plugged": "󰚥 {capacity}%"
+        "tooltip": false
     },
 
     "tray": {
