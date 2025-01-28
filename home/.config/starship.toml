@@ -8,9 +8,6 @@ format = '[$duration](white)'
 [directory]
 style = 'cyan'
 
-[git_status]
-deleted = 'x'
-
 [hostname]
 ssh_only = false
 format = '[@](white)[$hostname](blue)[: ](white)'

@@ -17,9 +17,10 @@
 | hyprland                        | Tiling compositor.                         |
 | hyprpaper                       | Wallpaper tool.                            |
 | hyprsunset                      | Bluelight filter.                          |
+| noto-fonts                      | Font provider.                             |
+| noto-fonts-emoji                | Colored emoji font.                        |
 | slurp                           | Area selector.                             |
 | ttf-hack-nerd                   | Source code font.                          |
-| ttf-input-nerd                  | Font provider.                             |
 | waybar                          | Status bar.                                |
 | wl-clipboard                    | Clipboard manager.                         |
 | xdg-desktop-portal-hyprland     | Screen sharing tool.                       |
@@ -109,7 +110,6 @@
 |:-------------------------------:|:-------------------------------------------|
 | discord                         | Discord client.                            |
 | minecraft-launcher (AUR)        | Minecraft launcher.                        |
-| noto-fonts-emoji                | Colored emoji font.                        |
 | spotify-launcher                | Music streaming service.                   |
 | steam                           | Steam client.                              |
 

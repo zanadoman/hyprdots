@@ -4,9 +4,10 @@ grim
 hyprland
 hyprpaper
 hyprsunset
+noto-fonts
+noto-fonts-emoji
 slurp
 ttf-hack-nerd
-ttf-input-nerd
 waybar
 wl-clipboard
 xdg-desktop-portal-hyprland
@@ -61,7 +62,6 @@ texlive-latexextra
 texlive-plaingeneric
 wf-recorder
 discord
-noto-fonts-emoji
 spotify-launcher
 steam
 dosfstools
