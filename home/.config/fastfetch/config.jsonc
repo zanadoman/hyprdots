@@ -16,7 +16,7 @@
         },
         {
             "type": "kernel",
-            "key": "  ├ ",
+            "key": "  ├ ",
             "keyColor": "blue"
         },
         {
@@ -71,7 +71,7 @@
         },
         {
             "type": "cpu",
-            "key": "  ├󰻠 ",
+            "key": "  ├ ",
             "keyColor": "blue"
         },
         {
@@ -81,12 +81,12 @@
         },
         {
             "type": "memory",
-            "key": "  ├ ",
+            "key": "  ├ ",
             "keyColor": "blue"
         },
         {
             "type": "disk",
-            "key": "  ├󱛟 ",
+            "key": "  ├󰋊 ",
             "keyColor": "blue"
         },
         {
