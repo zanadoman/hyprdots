@@ -28,6 +28,7 @@ rocm-smi-lib
 sshfs
 tree
 neovim
+tree-sitter-cli
 highlight
 ranger
 7zip
