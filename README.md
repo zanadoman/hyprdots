@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (968)
+# Packages (972)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -80,7 +80,9 @@
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
 | gradle                          | Java build tool.                           |
-| jdk17-openjdk                   | Java development kit.                      |
+| jdk-openjdk                     | Java latest development kit.               |
+| jdk17-openjdk                   | Java 17 development kit.                   |
+| jdk8-openjdk                    | Java 8 development kit.                    |
 | lld                             | LLVM linker for C/C++.                     |
 | mariadb                         | MySQL compatible database system.          |
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |

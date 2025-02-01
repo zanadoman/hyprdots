@@ -41,7 +41,9 @@ composer
 dotnet-sdk
 doxygen
 gradle
+jdk-openjdk
 jdk17-openjdk
+jdk8-openjdk
 lld
 mariadb
 mingw-w64-gcc
