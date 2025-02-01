@@ -88,6 +88,7 @@
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
 | npm                             | JavaScript package manager.                |
 | openbsd-netcat                  | Networking tool.                           |
+| rpi-imager                      | Raspberry Pi imager.                       |
 | rustup                          | Rust toolchain installer.                  |
 | sqlx-cli                        | SQLx migration tool.                       |
 | valgrind                        | Debugging tool for C/C++.                  |

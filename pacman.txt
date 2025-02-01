@@ -49,6 +49,7 @@ mariadb
 mingw-w64-gcc
 npm
 openbsd-netcat
+rpi-imager
 rustup
 sqlx-cli
 valgrind
