@@ -23,6 +23,9 @@ rustup default stable
 # C#
 dotnet new install Avalonia.Templates
 
+# Java
+sudo archlinux-java set java-8-openjdk
+
 # Folders
 mkdir "$HOME/Desktop/"
 mkdir "$HOME/Documents/"
