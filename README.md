@@ -151,6 +151,9 @@
 #### networkmanager
 - nmcli connection modify 'Wired connection 1' 802-3-ethernet.wake-on-lan magic
 
+#### onlyoffice-bin
+- Interface scaling *: 100%
+
 #### openssh
 - systemctl enable sshd.service
 - systemctl start sshd.service
