@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (972)
+# Packages (979)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -99,6 +99,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
+| onlyoffice-bin (AUR)            | Office suite.                              |
 | pandoc-cli                      | Universal document converter.              |
 | texlive-binextra                | LaTeX - optional dependencies.             |
 | texlive-fontsrecommended        | LaTeX - essential fonts.                   |

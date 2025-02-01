@@ -1,3 +1,4 @@
 android-ndk
 android-studio
+onlyoffice-bin
 minecraft-launcher
