@@ -1,7 +1,7 @@
 [[ $- != *i* ]] && return
 export PATH="$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
-export LIBRARY_PATH="/usr/local/lib:$LIBRARY_PATH"
-export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+export LIBRARY_PATH="/usr/local/lib/:$LIBRARY_PATH"
+export LD_LIBRARY_PATH="/usr/local/lib/:$LD_LIBRARY_PATH"
 export ANDROID_NDK_HOME=/opt/android-ndk/
 export ANDROID_HOME="$HOME/Android/Sdk/"
 export PAGER=less
