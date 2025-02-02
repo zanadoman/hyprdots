@@ -45,7 +45,7 @@
 
     "disk": {
         "interval": 1,
-        "format": "󰋊 {specific_free:0.1f} GB",
+        "format": "󰋊 {specific_free:0.0f} GB",
         "tooltip": false,
         "unit": "GB"
     },
