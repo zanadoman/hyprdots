@@ -40,7 +40,6 @@
 | bluetui                         | Bluetooth manager.                         |
 | btop                            | Resource monitor.                          |
 | fzf                             | Fuzzy finder.                              |
-| less                            | Pager for Git.                             |
 | man-db                          | Manual pages implementation.               |
 | man-pages                       | Linux/POSIX manual pages.                  |
 | pulsemixer                      | Audio manager.                             |
