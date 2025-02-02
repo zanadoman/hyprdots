@@ -31,6 +31,7 @@ neovim
 tree-sitter-cli
 highlight
 ranger
+ueberzugpp
 7zip
 atool
 unrar
