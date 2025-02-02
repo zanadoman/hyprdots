@@ -92,7 +92,7 @@
 | rustup                          | Rust toolchain installer.                  |
 | sqlx-cli                        | SQLx migration tool.                       |
 | valgrind                        | Debugging tool for C/C++.                  |
-| virtualbox                      | Virtualization tool                        |
+| virtualbox                      | Virtualization tool.                       |
 | watchexec                       | Live reload tool.                          |
 
 ### Media
