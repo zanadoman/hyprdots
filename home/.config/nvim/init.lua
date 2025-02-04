@@ -84,7 +84,8 @@ local function setup_nvim_treesitter()
             "python",
             "rust",
             "sql",
-            "typescript"
+            "typescript",
+            "xml"
         },
         highlight = { enable = true }
     }
@@ -167,6 +168,14 @@ local function setup_mason_lspconfig_nvim()
         html = { filetypes = { "html", "javascript", "php", "rust", "typescript" } },
         intelephense = {},
         jdtls = {},
+        lemminx = {
+            settings = {
+                xml = {
+                    catalogs = { "/home/doman/.config/lemminx/catalog.xml" },
+                    validation = { noGrammar = "ignore" }
+                }
+            }
+        },
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
         omnisharp = {},
         pyright = {},
