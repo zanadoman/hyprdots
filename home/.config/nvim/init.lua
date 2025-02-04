@@ -172,6 +172,7 @@ local function setup_mason_lspconfig_nvim()
             settings = {
                 xml = {
                     catalogs = { "/home/doman/.config/lemminx/catalog.xml" },
+                    completion = { autoCloseTags = false },
                     validation = { noGrammar = "ignore" }
                 }
             }
