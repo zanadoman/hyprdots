@@ -13,6 +13,7 @@ vim.o.scrolloff = 32
 vim.o.shiftwidth = 4
 vim.o.shortmess = "I"
 vim.o.showmode = false
+vim.o.showtabline = 2
 vim.o.signcolumn = "yes"
 vim.o.smartcase = true
 vim.o.splitright = true
