@@ -31,7 +31,6 @@ vim.filetype.add {
 
 vim.keymap.set("n", "<A-,>", ":bprevious<CR>")
 vim.keymap.set("n", "<A-.>", ":bnext<CR>")
-vim.keymap.set("n", "<A-->", ":brewind<CR>")
 vim.keymap.set("n", "<A-q>", ":bdelete<CR>")
 vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
 
