@@ -1,21 +1,21 @@
 vim.g.mapleader = " "
-vim.o.clipboard = "unnamedplus"
-vim.o.colorcolumn = "80"
-vim.o.cursorline = true
-vim.o.expandtab = true
-vim.o.mouse = "";
-vim.o.number = true
-vim.o.pumheight = 10
-vim.o.relativenumber = true
-vim.o.scrolloff = 2 ^ 32 / 2 - 1
-vim.o.shiftwidth = 4
-vim.o.shortmess = "I"
-vim.o.showmode = false
-vim.o.signcolumn = "yes"
-vim.o.splitbelow = true
-vim.o.splitright = true
-vim.o.tabstop = 4
-vim.o.wrap = false
+vim.opt.clipboard = "unnamedplus"
+vim.opt.colorcolumn = "80"
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.mouse = "";
+vim.opt.number = true
+vim.opt.pumheight = 10
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 2 ^ 32 / 2 - 1
+vim.opt.shiftwidth = 4
+vim.opt.shortmess:append("I")
+vim.opt.showmode = false
+vim.opt.signcolumn = "yes"
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.tabstop = 4
+vim.opt.wrap = false
 
 vim.filetype.add {
     pattern = {
