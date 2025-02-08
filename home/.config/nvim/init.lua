@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.o.autochdir = true
 vim.o.clipboard = "unnamedplus"
 vim.o.colorcolumn = "80"
 vim.o.cursorline = true
@@ -29,9 +28,6 @@ vim.filetype.add {
     }
 }
 
-vim.keymap.set("n", "<A-,>", ":bprevious<CR>")
-vim.keymap.set("n", "<A-.>", ":bnext<CR>")
-vim.keymap.set("n", "<A-q>", ":bdelete<CR>")
 vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
 
 vim.diagnostic.config { float = { border = "rounded" }, update_in_insert = true }
@@ -52,10 +48,7 @@ local function setup_tokyonight_nvim()
 end
 
 local function setup_lualine_nvim()
-    require "lualine".setup {
-        options = { globalstatus = true },
-        sections = { lualine_c = { "buffers" }, lualine_x = { "filetype" } }
-    }
+    require "lualine".setup { options = { globalstatus = true } }
 end
 
 local function setup_indent_blankline_nvim()
@@ -110,7 +103,7 @@ local function setup_telescope_nvim()
             vim.keymap.set("n", "<Leader>gr", gitsigns.reset_hunk)
             vim.keymap.set("n", "<Leader>gS", gitsigns.stage_buffer)
             vim.keymap.set("n", "<Leader>gR", gitsigns.reset_buffer)
-            vim.keymap.set("n", "<Leader>gi", gitsigns.preview_hunk_inline)
+            vim.keymap.set("n", "<Leader>gp", gitsigns.preview_hunk_inline)
             vim.keymap.set("n", "<Leader>gb", gitsigns.blame_line)
             vim.keymap.set("n", "<Leader>gu", gitsigns.undo_stage_hunk)
         end
@@ -132,7 +125,6 @@ local function setup_nvim_cmp()
         mapping = {
             ["<C-u>"] = cmp.mapping.scroll_docs(-1),
             ["<C-d>"] = cmp.mapping.scroll_docs(1),
-            ["<C-q>"] = cmp.mapping.abort(),
             ["<C-f>"] = cmp.mapping.confirm { select = true },
             ["<C-Up>"] = cmp.mapping.select_prev_item(),
             ["<C-Down>"] = cmp.mapping.select_next_item(),
