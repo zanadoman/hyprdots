@@ -8,11 +8,10 @@ vim.o.mouse = "";
 vim.o.number = true
 vim.o.pumheight = 10
 vim.o.relativenumber = true
-vim.o.scrolloff = 32
+vim.o.scrolloff = 2 ^ 32 / 2 - 1
 vim.o.shiftwidth = 4
 vim.o.shortmess = "I"
 vim.o.showmode = false
-vim.o.showtabline = 2
 vim.o.signcolumn = "yes"
 vim.o.smartcase = true
 vim.o.splitright = true
@@ -28,13 +27,11 @@ vim.filetype.add {
     }
 }
 
-vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
-vim.diagnostic.config { float = { border = "rounded" }, update_in_insert = true }
+vim.diagnostic.config { float = { border = "rounded" } }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-    border = "rounded",
-    focusable = false,
-    silent = true
+    border = "rounded"
 })
 
 local function setup_tokyonight_nvim()
@@ -89,23 +86,26 @@ local function setup_telescope_nvim()
     telescope.setup()
     telescope.load_extension "file_browser"
     local telescope_builtin = require "telescope.builtin"
-    vim.keymap.set("n", "<Leader>F", telescope_builtin.git_files)
-    vim.keymap.set("n", "<Leader>g", telescope_builtin.live_grep)
+    vim.keymap.set("n", "<Leader>f", telescope_builtin.find_files)
+    vim.keymap.set("n", "<Leader>G", telescope_builtin.live_grep)
     vim.keymap.set("n", "<Leader><Leader>", telescope_builtin.buffers)
-    vim.keymap.set("n", "<Leader>h", telescope_builtin.oldfiles)
-    vim.keymap.set("n", "<Leader>d", telescope_builtin.diagnostics)
-    vim.keymap.set("n", "<Leader>D", telescope_builtin.git_status)
-    vim.keymap.set("n", "<Leader>f", telescope.extensions.file_browser.file_browser)
+    vim.keymap.set("n", "<Leader>S", telescope_builtin.spell_suggest)
+    vim.keymap.set("n", "<Leader>g", telescope_builtin.current_buffer_fuzzy_find)
+    vim.keymap.set("n", "<Leader>D", telescope_builtin.diagnostics)
+    vim.keymap.set("n", "<Leader>F", telescope.extensions.file_browser.file_browser)
+    vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
+    vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
     local gitsigns = require "gitsigns"
     gitsigns.setup {
         on_attach = function()
-            vim.keymap.set("n", "<Leader>gs", gitsigns.stage_hunk)
-            vim.keymap.set("n", "<Leader>gr", gitsigns.reset_hunk)
-            vim.keymap.set("n", "<Leader>gS", gitsigns.stage_buffer)
-            vim.keymap.set("n", "<Leader>gR", gitsigns.reset_buffer)
-            vim.keymap.set("n", "<Leader>gp", gitsigns.preview_hunk_inline)
-            vim.keymap.set("n", "<Leader>gb", gitsigns.blame_line)
-            vim.keymap.set("n", "<Leader>gu", gitsigns.undo_stage_hunk)
+            vim.keymap.set("n", "<Leader>hs", gitsigns.stage_hunk)
+            vim.keymap.set("n", "<Leader>hr", gitsigns.reset_hunk)
+            vim.keymap.set("n", "<Leader>hS", gitsigns.stage_buffer)
+            vim.keymap.set("n", "<Leader>hR", gitsigns.reset_buffer)
+            vim.keymap.set("n", "<Leader>hd", gitsigns.preview_hunk_inline)
+            vim.keymap.set("n", "<Leader>hb", gitsigns.blame_line)
+            vim.keymap.set("n", "<Leader>hu", gitsigns.undo_stage_hunk)
+            vim.keymap.set("n", "<Leader>hD", telescope_builtin.git_status)
         end
     }
 end
@@ -190,15 +190,9 @@ local function setup_mason_lspconfig_nvim()
     vim.keymap.set("n", "<Leader>lh", ":LspStop<CR>")
     vim.keymap.set("n", "<Leader>ld", vim.lsp.buf.definition)
     vim.keymap.set("n", "<Leader>lf", vim.lsp.buf.format)
+    vim.keymap.set("n", "<Leader>li", vim.lsp.buf.hover)
     vim.keymap.set("n", "<Leader>ln", vim.lsp.buf.rename)
     vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.references)
-    vim.api.nvim_create_autocmd("CursorHold", {
-        callback = function()
-            if not vim.diagnostic.open_float { focusable = false } then
-                vim.cmd "silent! lua vim.lsp.buf.hover()"
-            end
-        end
-    })
 end
 
 local lazy_nvim_path = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
