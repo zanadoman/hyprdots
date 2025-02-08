@@ -3,7 +3,6 @@ vim.o.clipboard = "unnamedplus"
 vim.o.colorcolumn = "80"
 vim.o.cursorline = true
 vim.o.expandtab = true
-vim.o.ignorecase = true
 vim.o.mouse = "";
 vim.o.number = true
 vim.o.pumheight = 10
@@ -13,10 +12,9 @@ vim.o.shiftwidth = 4
 vim.o.shortmess = "I"
 vim.o.showmode = false
 vim.o.signcolumn = "yes"
-vim.o.smartcase = true
+vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.tabstop = 4
-vim.o.updatetime = 1000
 vim.o.wrap = false
 
 vim.filetype.add {
@@ -93,8 +91,8 @@ local function setup_telescope_nvim()
     vim.keymap.set("n", "<Leader>g", telescope_builtin.current_buffer_fuzzy_find)
     vim.keymap.set("n", "<Leader>D", telescope_builtin.diagnostics)
     vim.keymap.set("n", "<Leader>F", telescope.extensions.file_browser.file_browser)
-    vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
     vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
+    vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
     local gitsigns = require "gitsigns"
     gitsigns.setup {
         on_attach = function()
