@@ -9,7 +9,6 @@ vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 2 ^ 32 / 2 - 1
 vim.opt.shiftwidth = 4
-vim.opt.shortmess:append("I")
 vim.opt.showmode = false
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
