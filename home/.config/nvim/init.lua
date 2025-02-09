@@ -89,8 +89,8 @@ end
 local function setup_telescope_nvim()
     local telescope = require "telescope"
     telescope.setup()
-    telescope.load_extension "file_browser"
     local telescope_builtin = require "telescope.builtin"
+    local telescope_utils = require "telescope.utils"
     vim.keymap.set("n", "<Leader><Leader>", function()
         telescope_builtin.buffers { ignore_current_buffer = true, sort_mru = true }
     end)
@@ -98,9 +98,13 @@ local function setup_telescope_nvim()
     vim.keymap.set("n", "<Leader>S", telescope_builtin.spell_suggest)
     vim.keymap.set("n", "<Leader>d", telescope_builtin.diagnostics)
     vim.keymap.set("n", "<Leader>D", telescope_builtin.git_status)
-    vim.keymap.set("n", "<Leader>f", telescope_builtin.find_files)
-    vim.keymap.set("n", "<Leader>F", telescope.extensions.file_browser.file_browser)
-    vim.keymap.set("n", "<Leader>g", telescope_builtin.current_buffer_fuzzy_find)
+    vim.keymap.set("n", "<Leader>f", function()
+        telescope_builtin.find_files { cwd = telescope_utils.buffer_dir() }
+    end)
+    vim.keymap.set("n", "<Leader>F", telescope_builtin.find_files)
+    vim.keymap.set("n", "<Leader>g", function()
+        telescope_builtin.live_grep { cwd = telescope_utils.buffer_dir() }
+    end)
     vim.keymap.set("n", "<Leader>G", telescope_builtin.live_grep)
     local gitsigns = require "gitsigns"
     gitsigns.setup {
@@ -245,7 +249,6 @@ require "lazy".setup(
             "nvim-telescope/telescope.nvim",
             dependencies = {
                 "nvim-lua/plenary.nvim",
-                "nvim-telescope/telescope-file-browser.nvim",
                 "lewis6991/gitsigns.nvim"
             },
             event = "VeryLazy",
