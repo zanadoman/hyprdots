@@ -54,6 +54,7 @@ rustup
 sqlx-cli
 valgrind
 virtualbox
+wasm-pack
 watchexec
 chromium
 gimp

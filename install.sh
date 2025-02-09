@@ -19,6 +19,7 @@ sudo mariadb-secure-installation
 
 # Rust
 rustup default stable
+rustup target add wasm32-unknown-unknown
 
 # C#
 dotnet new install Avalonia.Templates

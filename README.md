@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (998)
+# Packages (1000)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -93,6 +93,7 @@
 | sqlx-cli                        | SQLx migration tool.                       |
 | valgrind                        | Debugging tool for C/C++.                  |
 | virtualbox                      | Virtualization tool.                       |
+| wasm-pack                       | Rust WebAssembly build tool.               |
 | watchexec                       | Live reload tool.                          |
 
 ### Media
