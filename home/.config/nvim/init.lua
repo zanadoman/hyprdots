@@ -14,6 +14,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.tabstop = 4
+vim.opt.updatetime = 1000
 vim.opt.wrap = false
 
 vim.filetype.add {
@@ -26,9 +27,11 @@ vim.filetype.add {
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
-vim.diagnostic.config { float = { border = "rounded" } }
+vim.diagnostic.config { float = { border = "rounded" }, update_in_insert = true }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-    border = "rounded"
+    border = "rounded",
+    focusable = false,
+    silent = true
 })
 
 local function setup_tokyonight_nvim()
@@ -88,9 +91,9 @@ local function setup_telescope_nvim()
     vim.keymap.set("n", "<Leader><Leader>", telescope_builtin.buffers)
     vim.keymap.set("n", "<Leader>S", telescope_builtin.spell_suggest)
     vim.keymap.set("n", "<Leader>g", telescope_builtin.current_buffer_fuzzy_find)
-    vim.keymap.set("n", "<Leader>D", telescope_builtin.diagnostics)
+    vim.keymap.set("n", "<Leader>d", telescope_builtin.diagnostics)
+    vim.keymap.set("n", "<Leader>D", telescope_builtin.git_status)
     vim.keymap.set("n", "<Leader>F", telescope.extensions.file_browser.file_browser)
-    vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
     vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
     local gitsigns = require "gitsigns"
     gitsigns.setup {
@@ -102,7 +105,6 @@ local function setup_telescope_nvim()
             vim.keymap.set("n", "<Leader>hd", gitsigns.preview_hunk_inline)
             vim.keymap.set("n", "<Leader>hb", gitsigns.blame_line)
             vim.keymap.set("n", "<Leader>hu", gitsigns.undo_stage_hunk)
-            vim.keymap.set("n", "<Leader>hD", telescope_builtin.git_status)
         end
     }
 end
@@ -187,9 +189,15 @@ local function setup_mason_lspconfig_nvim()
     vim.keymap.set("n", "<Leader>lh", ":LspStop<CR>")
     vim.keymap.set("n", "<Leader>ld", vim.lsp.buf.definition)
     vim.keymap.set("n", "<Leader>lf", vim.lsp.buf.format)
-    vim.keymap.set("n", "<Leader>li", vim.lsp.buf.hover)
     vim.keymap.set("n", "<Leader>ln", vim.lsp.buf.rename)
     vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.references)
+    vim.api.nvim_create_autocmd("CursorHold", {
+        callback = function()
+            if not vim.diagnostic.open_float { focusable = false } then
+                vim.cmd "silent! lua vim.lsp.buf.hover()"
+            end
+        end
+    })
 end
 
 local lazy_nvim_path = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
