@@ -101,13 +101,24 @@ local function setup_telescope_nvim()
     vim.keymap.set("n", "<Leader>d", telescope_builtin.diagnostics)
     vim.keymap.set("n", "<Leader>D", telescope_builtin.git_status)
     vim.keymap.set("n", "<Leader>f", function()
-        telescope_builtin.find_files { cwd = telescope_utils.buffer_dir() }
+        telescope_builtin.find_files {
+            cwd = telescope_utils.buffer_dir(),
+            hidden = true,
+            no_ignore = true
+        }
     end)
-    vim.keymap.set("n", "<Leader>F", telescope_builtin.find_files)
+    vim.keymap.set("n", "<Leader>F", function()
+        telescope_builtin.find_files { hidden = true, no_ignore = true }
+    end)
     vim.keymap.set("n", "<Leader>g", function()
-        telescope_builtin.live_grep { cwd = telescope_utils.buffer_dir() }
+        telescope_builtin.live_grep {
+            cwd = telescope_utils.buffer_dir(),
+            additional_args = { "-.", "--no-ignore" }
+        }
     end)
-    vim.keymap.set("n", "<Leader>G", telescope_builtin.live_grep)
+    vim.keymap.set("n", "<Leader>G", function()
+        telescope_builtin.live_grep { additional_args = { "-.", "--no-ignore" } }
+    end)
     local gitsigns = require "gitsigns"
     gitsigns.setup {
         on_attach = function()
