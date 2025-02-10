@@ -3,7 +3,6 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.expandtab = true
-vim.opt.hlsearch = false
 vim.opt.mouse = "";
 vim.opt.number = true
 vim.opt.pumheight = 10
@@ -27,6 +26,13 @@ vim.filetype.add {
 }
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+vim.api.nvim_create_autocmd({ "InsertEnter" }, {
+    callback = function() vim.opt.hlsearch = false end
+})
+vim.api.nvim_create_autocmd({ "InsertLeave" }, {
+    callback = function() vim.opt.hlsearch = true end
+})
 
 vim.diagnostic.config { float = { border = "rounded" } }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
@@ -209,7 +215,7 @@ local function setup_mason_lspconfig_nvim()
     vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.rename)
     vim.keymap.set("n", "<Leader>ld", vim.lsp.buf.definition)
     vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.references)
-    vim.api.nvim_create_autocmd("CursorHold", {
+    vim.api.nvim_create_autocmd({ "CursorHold" }, {
         callback = function()
             if not vim.diagnostic.open_float { focusable = false } then
                 vim.cmd "silent! lua vim.lsp.buf.hover()"
