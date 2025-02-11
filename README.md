@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1000)
+# Packages (1004)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -80,6 +80,7 @@
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
 | gradle                          | Java build tool.                           |
+| gtest                           | C++ unit testing framework.                |
 | jdk-openjdk                     | Java latest development kit.               |
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
