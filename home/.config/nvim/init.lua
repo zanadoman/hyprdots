@@ -9,7 +9,9 @@ vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 2 ^ 32 / 2 - 1
 vim.opt.shiftwidth = 4
+vim.opt.shortmess:append("I")
 vim.opt.showmode = false
+vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -34,7 +36,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave" }, {
     callback = function() vim.opt.hlsearch = true end
 })
 
-vim.diagnostic.config { float = { border = "rounded" } }
+vim.diagnostic.config { float = { border = "rounded" }, update_in_insert = true }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
     border = "rounded",
     focusable = false,
@@ -57,7 +59,8 @@ local function setup_lualine_nvim()
             component_separators = { left = "|", right = "|" },
             section_separators = { left = "", right = "" },
             globalstatus = true
-        }
+        },
+        sections = { lualine_c = { "buffers" }, lualine_x = { "filetype" } }
     }
 end
 
@@ -212,7 +215,7 @@ local function setup_mason_lspconfig_nvim()
     vim.keymap.set("n", "<Leader>ls", ":LspStart<CR>")
     vim.keymap.set("n", "<Leader>lh", ":LspStop<CR>")
     vim.keymap.set("n", "<Leader>lf", vim.lsp.buf.format)
-    vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.rename)
+    vim.keymap.set("n", "<Leader>ln", vim.lsp.buf.rename)
     vim.keymap.set("n", "<Leader>ld", vim.lsp.buf.definition)
     vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.references)
     vim.api.nvim_create_autocmd({ "CursorHold" }, {
