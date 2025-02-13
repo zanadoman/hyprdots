@@ -29,13 +29,6 @@ vim.filetype.add {
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
-vim.api.nvim_create_autocmd({ "InsertEnter" }, {
-    callback = function() vim.opt.hlsearch = false end
-})
-vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-    callback = function() vim.opt.hlsearch = true end
-})
-
 vim.diagnostic.config { float = { border = "rounded" }, update_in_insert = true }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
     border = "rounded",
