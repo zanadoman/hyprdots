@@ -97,8 +97,8 @@
 | gimp                            | Image manipulation program.                |
 | onlyoffice-bin (AUR)            | Office suite.                              |
 | pandoc-cli                      | Universal document converter.              |
-| texlive-binextra                | LaTeX - optional dependencies.             |
 | texlive-fontsrecommended        | LaTeX - essential fonts.                   |
+| texlive-fontutils               | LaTeX - Doxygen dependency.                |
 | texlive-langenglish             | LaTeX - language support.                  |
 | texlive-langeuropean            | LaTeX - language support.                  |
 | texlive-latexextra              | LaTeX - useful packages.                   |
