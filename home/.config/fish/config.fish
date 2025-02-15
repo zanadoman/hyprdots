@@ -8,7 +8,7 @@ set -x ANDROID_HOME "$HOME/Android/Sdk/"
 set -x PAGER less
 set -x EDITOR nvim
 set -x VISUAL nvim
-set -x TERMINAL alacritty
+set -x TERMINAL foot
 set -x BROWSER chromium
 alias clear='clear && fastfetch'
 alias hyprland='hyprland && clear'

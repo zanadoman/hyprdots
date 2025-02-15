@@ -11,9 +11,9 @@ ttf-hack-nerd
 waybar
 wl-clipboard
 xdg-desktop-portal-hyprland
-alacritty
 fastfetch
 fish
+foot
 starship
 zoxide
 bluetui

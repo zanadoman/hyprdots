@@ -28,9 +28,9 @@
 ### Terminal
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| alacritty                       | Terminal emulator.                         |
 | fastfetch                       | System information.                        |
 | fish                            | Smart shell.                               |
+| foot                            | Terminal emulator.                         |
 | starship                        | Improved prompt.                           |
 | zoxide                          | Smart cd.                                  |
 
