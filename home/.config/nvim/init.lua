@@ -29,7 +29,7 @@ vim.filetype.add {
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
-vim.diagnostic.config { float = { border = "rounded" }, update_in_insert = true }
+vim.diagnostic.config { float = { border = "rounded" } }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
     border = "rounded",
     focusable = false,
