@@ -101,7 +101,7 @@
 | texlive-fontutils               | LaTeX - Doxygen dependency.                |
 | texlive-langenglish             | LaTeX - language support.                  |
 | texlive-langeuropean            | LaTeX - language support.                  |
-| texlive-latexextra              | LaTeX - useful packages.                   |
+| texlive-latexextra              | LaTeX - core packages.                     |
 | texlive-plaingeneric            | LaTeX - Doxygen dependency.                |
 | wf-recorder                     | Screen recorder.                           |
 
