@@ -2,7 +2,7 @@
     "logo": {
         "source": "$HOME/.config/fastfetch/logo.txt",
         "padding": {
-            "right": 2
+            "right": 1
         }
     },
     "display": {
