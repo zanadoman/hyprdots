@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (985)
+# Packages (983)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -151,8 +151,7 @@
 - Interface scaling *: 100%
 
 #### openssh
-- systemctl enable sshd.service
-- systemctl start sshd.service
+- systemctl enable --now sshd.service
 - "$HOME/.ssh/config"
 
 #### spotify-launcher
