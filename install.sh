@@ -22,6 +22,7 @@ rustup default stable
 rustup target add wasm32-unknown-unknown
 
 # C#
+sudo dotnet workload update
 dotnet new install Avalonia.Templates
 
 # Folders
