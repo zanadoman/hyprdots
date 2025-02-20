@@ -1,6 +1,6 @@
 not status is-interactive && return
 set -U fish_greeting
-set -x PATH "$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+set -x PATH "$HOME/.local/bin/:$PATH:/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/"
 set -x LIBRARY_PATH "/usr/local/lib/:$LIBRARY_PATH"
 set -x LD_LIBRARY_PATH "/usr/local/lib/:$LD_LIBRARY_PATH"
 set -x ANDROID_NDK_HOME /opt/android-ndk/
