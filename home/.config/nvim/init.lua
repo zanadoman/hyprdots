@@ -94,8 +94,8 @@ local function setup_telescope_nvim()
     local telescope = require "telescope"
     telescope.setup {
         pickers = {
-            find_files = { hidden = true, no_ignore = true },
-            live_grep = { additional_args = { "-.", "--no-ignore" } }
+            find_files = { hidden = true },
+            live_grep = { additional_args = { "-." } }
         }
     }
     local telescope_builtin = require "telescope.builtin"
