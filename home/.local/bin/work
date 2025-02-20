@@ -8,4 +8,4 @@ killall "$watch"
 killall watchexec
 hyprctl dispatch -- exec [workspace special silent] $TERMINAL -D "$pwd" -e $watch
 hyprctl dispatch -- exec [workspace special silent] $TERMINAL -D "$pwd" -e $start
-hyprctl dispatch exec $BROWSER http://localhost:8080/index.html
+hyprctl dispatch -- exec $BROWSER --new-window http://localhost:8080/index.html
