@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (985)
+# Packages (987)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -53,6 +53,12 @@
 |:-------------------------------:|:-------------------------------------------|
 | neovim                          | Vim-based text editor.                     |
 | tree-sitter-cli                 | Improved syntax highlighting for NeoVim.   |
+
+### File manager
+| Package                         | Description                                |
+|:-------------------------------:|:-------------------------------------------|
+| highlight                       | Syntax highlighting for ranger.            |
+| ranger                          | Vim-inspired filemanager.                  |
 
 ### Archiving
 | Package                         | Description                                |
