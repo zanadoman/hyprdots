@@ -1,4 +1,5 @@
 android-ndk
 android-studio
+anydesk-bin
 onlyoffice-bin
 minecraft-launcher

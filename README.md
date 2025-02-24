@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (983)
+# Packages (985)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -93,6 +93,7 @@
 ### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| anydesk-bin (AUR)               | Remote desktop application.                |
 | chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
 | onlyoffice-bin (AUR)            | Office suite.                              |
