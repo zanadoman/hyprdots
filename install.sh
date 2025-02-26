@@ -25,6 +25,14 @@ rustup target add wasm32-unknown-unknown
 sudo dotnet workload update
 dotnet new install Avalonia.Templates
 
+# Android
+sudo archlinux-java set java-8-openjdk
+yes | sudo env PATH="$PATH" sdkmanager --licenses
+sudo env PATH="$PATH" sdkmanager platform-tools emulator 'system-images;android-34;google_apis_playstore;x86_64'
+avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel_xl
+echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34.avd/config.ini"
+sudo archlinux-java set java-17-openjdk
+
 # Folders
 mkdir "$HOME/Desktop/"
 mkdir "$HOME/Documents/"

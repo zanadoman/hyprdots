@@ -73,7 +73,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C/C++.          |
 | android-ndk (AUR)               | Android compiler for C/C++.                |
-| android-studio (AUR)            | Android IDE.                               |
+| android-sdk (AUR)               | Android development kit.                   |
 | cmake                           | C/C++ build tool.                          |
 | composer                        | PHP package manager.                       |
 | dotnet-sdk                      | C# development kit.                        |
@@ -128,11 +128,6 @@
 | wine-mono                       | Windows compatibility layer.               |
 
 # Manual setup
-
-#### android-studio
-- Help improve Android Studio: Don't send
-- Choose the type of setup you want for Android Studio: Standard
-- Downloading Components
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
