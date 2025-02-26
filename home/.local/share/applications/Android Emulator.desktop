@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Android Emulator
+Exec=emulator -avd android34
+Icon=distributor-logo-android

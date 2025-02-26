@@ -41,7 +41,6 @@ dotnet-sdk
 doxygen
 gradle
 gtest
-jdk-openjdk
 jdk17-openjdk
 jdk8-openjdk
 lld
