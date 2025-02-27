@@ -31,7 +31,7 @@ yes | sudo env PATH="$PATH" sdkmanager --licenses
 sudo env PATH="$PATH" sdkmanager platform-tools emulator 'system-images;android-34;google_apis_playstore;x86_64'
 avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
 echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34.avd/config.ini"
-sudo archlinux-java set java-17-openjdk
+sudo archlinux-java set java-23-openjdk
 
 # Folders
 mkdir "$HOME/Desktop/"
