@@ -75,6 +75,7 @@ local function setup_nvim_treesitter()
             "html",
             "java",
             "javascript",
+            "kotlin",
             "latex",
             "lua",
             "markdown",
@@ -179,6 +180,7 @@ local function setup_mason_lspconfig_nvim()
         html = { filetypes = { "html", "javascript", "php", "rust", "typescript" } },
         intelephense = {},
         jdtls = {},
+        kotlin_language_server = {},
         lemminx = {
             settings = {
                 xml = {
