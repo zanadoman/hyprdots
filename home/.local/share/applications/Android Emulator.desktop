@@ -1,4 +1,4 @@
 [Desktop Entry]
 Name=Android Emulator
-Exec=emulator -avd android34
+Exec=emulator -avd android34 -accel on -cores 6 -gpu host -use-host-vulkan -memory 8192
 Icon=distributor-logo-android
