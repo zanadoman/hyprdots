@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (987)
+# Packages (986)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -46,7 +46,6 @@
 | ripgrep                         | Recursive search tool.                     |
 | rocm-smi-lib                    | AMD GPU support for BTOP.                  |
 | sshfs                           | Network filesystem client.                 |
-| tree                            | Directory structure tool.                  |
 
 ### Editor
 | Package                         | Description                                |
