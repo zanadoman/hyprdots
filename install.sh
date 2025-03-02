@@ -31,7 +31,11 @@ sudo mariadb-secure-installation
 
 # Rust
 rustup default stable
+rustup default nightly
+rustup target add aarch64-linux-android
 rustup target add wasm32-unknown-unknown
+rustup target add x86_64-linux-android
+rustup target add x86_64-pc-windows-gnu
 
 # Folders
 mkdir "$HOME/Desktop/"
