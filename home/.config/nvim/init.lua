@@ -209,7 +209,13 @@ local function setup_mason_lspconfig_nvim()
     }
     vim.keymap.set("n", "<Leader>ls", ":LspStart<CR>")
     vim.keymap.set("n", "<Leader>lh", ":LspStop<CR>")
-    vim.keymap.set("n", "<Leader>lf", vim.lsp.buf.format)
+    vim.keymap.set("n", "<Leader>lf", function()
+        if vim.bo.filetype == "rust" then
+            vim.cmd("silent !cargo fmt")
+        else
+            vim.lsp.buf.format()
+        end
+    end)
     vim.keymap.set("n", "<Leader>ln", vim.lsp.buf.rename)
     vim.keymap.set("n", "<Leader>ld", vim.lsp.buf.definition)
     vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.references)
