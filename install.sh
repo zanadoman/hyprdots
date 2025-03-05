@@ -15,12 +15,12 @@ chsh -s /bin/fish
 # Android
 yes | sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager --licenses
 sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager platform-tools 'platforms;android-34' 'build-tools;30.0.3' 'build-tools;34.0.0' emulator 'system-images;android-34;google_apis_playstore;x86_64'
-env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
+env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
 echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34.avd/config.ini"
 
 # C#
-sudo dotnet workload update
 dotnet new install Avalonia.Templates
+sudo dotnet workload update
 
 # MariaDB
 sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
