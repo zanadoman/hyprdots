@@ -137,8 +137,8 @@
 - /etc/fstab
 
 #### git
-- git config --global user.name
 - git config --global user.email
+- git config --global user.name
 - Generate new token (classic)
 
 #### hyprland
