@@ -40,8 +40,8 @@ dotnet-sdk
 doxygen
 gradle
 gtest
-jdk-openjdk
 jdk17-openjdk
+jdk21-openjdk
 jdk8-openjdk
 lld
 mariadb

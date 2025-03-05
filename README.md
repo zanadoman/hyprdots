@@ -79,8 +79,8 @@
 | doxygen                         | Documentation generator.                   |
 | gradle                          | Java build tool.                           |
 | gtest                           | C++ unit testing framework.                |
-| jdk-openjdk                     | Java latest development kit.               |
 | jdk17-openjdk                   | Java 17 development kit.                   |
+| jdk21-openjdk                   | Java 21 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
 | lld                             | LLVM linker for C/C++.                     |
 | mariadb                         | MySQL compatible database system.          |
