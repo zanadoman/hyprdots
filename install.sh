@@ -13,12 +13,10 @@ cp -r ./home/. "$HOME/"
 chsh -s /bin/fish
 
 # Android
-sudo archlinux-java set java-8-openjdk
-yes | sudo env PATH="$PATH" sdkmanager --licenses
-sudo env PATH="$PATH" sdkmanager platform-tools 'platforms;android-34' 'build-tools;30.0.3' 'build-tools;34.0.0' emulator 'system-images;android-34;google_apis_playstore;x86_64'
-avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
+yes | sudo env PATH="$PATH" JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager --licenses
+sudo env PATH="$PATH" JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager platform-tools 'platforms;android-34' 'build-tools;30.0.3' 'build-tools;34.0.0' emulator 'system-images;android-34;google_apis_playstore;x86_64'
+env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
 echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34.avd/config.ini"
-sudo archlinux-java set java-17-openjdk
 
 # C#
 sudo dotnet workload update
