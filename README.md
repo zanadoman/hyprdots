@@ -130,8 +130,10 @@
 
 # Manual setup
 
-#### bash/fish
-- export VIRTUAL_CAMERA_ID=X/set -x VIRTUAL_CAMERA_ID X
+#### \$HOME/.local/bin/android_emulator \$HOME.local/bin/android_emulator_camera
+- -camera-back webcamX
+- video_nr=X
+- --file=/dev/videoX
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
