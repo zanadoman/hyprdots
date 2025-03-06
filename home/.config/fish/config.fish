@@ -10,6 +10,7 @@ set -x VISUAL nvim
 set -x TERMINAL foot
 set -x BROWSER chromium
 set -x OPENER rifle
+set -x VIRTUAL_CAMERA_ID 0
 alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'

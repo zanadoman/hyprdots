@@ -9,6 +9,7 @@ export VISUAL=nvim
 export TERMINAL=foot
 export BROWSER=chromium
 export OPENER=rifle
+export VIRTUAL_CAMERA_ID=0
 alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'

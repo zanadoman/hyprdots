@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (985)
+# Packages (989)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -82,6 +82,7 @@
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk21-openjdk                   | Java 21 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
+| linux-headers                   | Linux kernel headers.                      |
 | lld                             | LLVM linker for C/C++.                     |
 | mariadb                         | MySQL compatible database system.          |
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
@@ -90,6 +91,7 @@
 | rpi-imager                      | Raspberry Pi imager.                       |
 | rustup                          | Rust toolchain installer.                  |
 | sqlx-cli                        | SQLx migration tool.                       |
+| v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C/C++.                  |
 | virtualbox                      | Virtualization tool.                       |
 | wasm-pack                       | Rust WebAssembly build tool.               |
@@ -127,6 +129,9 @@
 | wine-mono                       | Windows compatibility layer.               |
 
 # Manual setup
+
+#### bash/fish
+- export VIRTUAL_CAMERA_ID=X/set -x VIRTUAL_CAMERA_ID X
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
