@@ -134,8 +134,7 @@
 - -camera-back webcamX
 
 #### $HOME/.local/bin/android_emulator_camera
-- video_nr=X
-- --file=/dev/videoX
+- video_dev_id=X
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
