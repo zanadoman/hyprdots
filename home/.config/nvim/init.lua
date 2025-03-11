@@ -37,7 +37,7 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 })
 
 local function setup_tokyonight_nvim()
-    require "tokyonight".setup { style = "night", transparent = true }
+    require "tokyonight".setup { style = "night" }
     vim.cmd.colorscheme "tokyonight"
     local win_separator = vim.api.nvim_get_hl(0, { name = "WinSeparator" })
     vim.api.nvim_set_hl(0, "WinSeparator", {
