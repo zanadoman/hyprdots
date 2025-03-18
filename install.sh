@@ -20,7 +20,6 @@ echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34.avd/config.ini"
 
 # C#
 dotnet new install Avalonia.Templates
-sudo dotnet workload update
 
 # MariaDB
 sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
