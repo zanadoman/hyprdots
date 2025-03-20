@@ -193,7 +193,13 @@ local function setup_mason_lspconfig_nvim()
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
         omnisharp = {},
         pyright = {},
-        rust_analyzer = {},
+        rust_analyzer = {
+            settings = {
+                ["rust-analyzer"] = {
+                    diagnostics = { disabled = { "inactive-code" } }
+                }
+            }
+        },
         ts_ls = {}
     }
     local cmp_nvim_lsp = require "cmp_nvim_lsp"
