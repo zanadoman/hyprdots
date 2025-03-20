@@ -196,7 +196,8 @@ local function setup_mason_lspconfig_nvim()
         rust_analyzer = {
             settings = {
                 ["rust-analyzer"] = {
-                    diagnostics = { disabled = { "inactive-code" } }
+                    diagnostics = { disabled = { "inactive-code" } },
+                    check = { command = "clippy" }
                 }
             }
         },
