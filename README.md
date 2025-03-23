@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (995)
+# Packages (1011)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -58,6 +58,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | highlight                       | Syntax highlighting for ranger.            |
 | ranger                          | Vim-inspired filemanager.                  |
+| ueberzugpp                      | Image preview for ranger.                  |
 
 ### Archiving
 | Package                         | Description                                |
