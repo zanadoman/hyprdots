@@ -50,12 +50,12 @@ mariadb
 mingw-w64-gcc
 npm
 openbsd-netcat
+qemu-desktop
 rpi-imager
 rustup
 sqlx-cli
 v4l2loopback-dkms
 valgrind
-virtualbox
 wasm-pack
 watchexec
 chromium

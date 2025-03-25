@@ -89,12 +89,12 @@
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
 | npm                             | JavaScript package manager.                |
 | openbsd-netcat                  | Networking tool.                           |
+| qemu-desktop                    | Virtualization tool.                       |
 | rpi-imager                      | Raspberry Pi imager.                       |
 | rustup                          | Rust toolchain installer.                  |
 | sqlx-cli                        | SQLx migration tool.                       |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C/C++.                  |
-| virtualbox                      | Virtualization tool.                       |
 | wasm-pack                       | Rust WebAssembly build tool.               |
 | watchexec                       | Live reload tool.                          |
 
