@@ -16,7 +16,9 @@ chsh -s /bin/fish
 yes | sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager --licenses
 sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager platform-tools 'platforms;android-34' 'build-tools;30.0.3' 'build-tools;34.0.0' emulator 'system-images;android-34;google_apis_playstore;x86_64'
 env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd --name android34 --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
+env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd --name android34_tablet --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel_c
 echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34.avd/config.ini"
+echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android34_tablet.avd/config.ini"
 
 # C#
 dotnet new install Avalonia.Templates
