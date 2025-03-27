@@ -133,6 +133,7 @@
 # Manual setup
 
 #### $HOME/.local/bin/android_emulator
+#### $HOME/.local/bin/android_tablet_emulator
 - -camera-back webcamX
 
 #### $HOME/.local/bin/android_emulator_camera
