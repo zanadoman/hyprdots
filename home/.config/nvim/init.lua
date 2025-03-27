@@ -79,6 +79,7 @@ local function setup_nvim_treesitter()
             "latex",
             "lua",
             "markdown",
+            "pascal",
             "php",
             "printf",
             "python",

@@ -39,6 +39,7 @@ cmake
 composer
 dotnet-sdk
 doxygen
+fpc
 gradle
 gtest
 jdk17-openjdk

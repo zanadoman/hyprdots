@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1066)
+# Packages (1067)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -78,6 +78,7 @@
 | composer                        | PHP package manager.                       |
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
+| fpc                             | Pascal compiler.                           |
 | gradle                          | Java build tool.                           |
 | gtest                           | C++ unit testing framework.                |
 | jdk17-openjdk                   | Java 17 development kit.                   |
