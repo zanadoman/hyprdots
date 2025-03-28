@@ -132,10 +132,10 @@
 
 # Manual setup
 
-#### $HOME/.local/bin/android_emulator
+#### \$HOME/.local/bin/android_emulator, \$HOME/.local/bin/android_tablet_emulator
 - -camera-back webcamX
 
-#### $HOME/.local/bin/android_emulator_camera
+#### \$HOME/.local/bin/android_emulator_camera
 - video_dev_id=X
 
 #### discord
@@ -163,10 +163,10 @@
 
 #### openssh
 - systemctl enable --now sshd.service
-- "$HOME/.ssh/config"
+- "\$HOME/.ssh/config"
 
 #### qemu-desktop
-- "$HOME/Qemu/*.img"
+- "\$HOME/Qemu/*.img"
 
 #### spotify-launcher
 - Startup and window behaviour: Close button should minimize the Spotify window: on
