@@ -17,6 +17,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.tabstop = 4
 vim.opt.updatetime = 1000
+vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
 vim.filetype.add {
@@ -28,13 +29,7 @@ vim.filetype.add {
 }
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-
-vim.diagnostic.config { float = { border = "rounded" } }
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-    border = "rounded",
-    focusable = false,
-    silent = true
-})
+vim.diagnostic.config { virtual_text = true }
 
 local function setup_tokyonight_nvim()
     require "tokyonight".setup { style = "night" }
