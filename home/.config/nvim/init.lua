@@ -226,7 +226,7 @@ local function setup_mason_lspconfig_nvim()
         callback = function()
             if not vim.diagnostic.open_float { focusable = false } then
                 vim.cmd(
-                    "silent! lua" ..
+                    "silent! lua " ..
                     "vim.lsp.buf.hover { focusable = false, silent = true }"
                 )
             end
