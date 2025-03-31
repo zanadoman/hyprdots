@@ -1,3 +1,0 @@
-#!/bin/bash
-
-emulator -avd android34 -accel on -cores 6 -gpu host -use-host-vulkan -memory 8192 -skin 1080x2340 -camera-front emulated -camera-back webcam0

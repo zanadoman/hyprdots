@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Android Camera
+Exec=hyprctl dispatch -- exec [workspace special] $TERMINAL -e android_camera
+Icon=distributor-logo-android

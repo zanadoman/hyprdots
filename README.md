@@ -132,10 +132,10 @@
 
 # Manual setup
 
-#### \$HOME/.local/bin/android_emulator, \$HOME/.local/bin/android_tablet_emulator
+#### \$HOME/.local/bin/android_phone, \$HOME/.local/bin/android_tablet
 - -camera-back webcamX
 
-#### \$HOME/.local/bin/android_emulator_camera
+#### \$HOME/.local/bin/android_camera
 - video_dev_id=X
 
 #### discord
