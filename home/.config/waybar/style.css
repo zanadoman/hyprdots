@@ -17,13 +17,14 @@ tooltip {
 menu {
     opacity: 0.95;
     background-color: #1a1b26;
-    padding: 8px;
+    padding: 6px 8px 6px 8px;
     border: 1px solid #0db9d7;
 }
 
 menuitem {
     color: #c0caf5;
     font-size: 14px;
+    margin: 1px 0 1px 0;
     transition: all 0.25s;
 }
 
