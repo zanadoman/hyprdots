@@ -210,26 +210,19 @@ local function setup_mason_lspconfig_nvim()
             end
         }
     }
-    vim.keymap.set("n", "<Leader>ls", ":LspStart<CR>")
-    vim.keymap.set("n", "<Leader>lh", ":LspStop<CR>")
-    vim.keymap.set("n", "<Leader>lf", function()
+    vim.keymap.set("n", "grs", ":LspStart<CR>")
+    vim.keymap.set("n", "grh", ":LspStop<CR>")
+    vim.keymap.set("n", "grf", function()
         if vim.bo.filetype == "rust" then
             vim.cmd "silent !cargo fmt"
         else
             vim.lsp.buf.format()
         end
     end)
-    vim.keymap.set("n", "<Leader>ln", vim.lsp.buf.rename)
-    vim.keymap.set("n", "<Leader>ld", vim.lsp.buf.definition)
-    vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.references)
+    vim.keymap.set("n", "grd", vim.lsp.buf.definition)
     vim.api.nvim_create_autocmd({ "CursorHold" }, {
         callback = function()
-            if not vim.diagnostic.open_float { focusable = false } then
-                vim.cmd(
-                    "silent! lua " ..
-                    "vim.lsp.buf.hover { focusable = false, silent = true }"
-                )
-            end
+            vim.diagnostic.open_float { focusable = false }
         end
     })
 end
