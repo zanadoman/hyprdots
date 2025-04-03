@@ -180,7 +180,7 @@ local function setup_mason_lspconfig_nvim()
         lemminx = {
             settings = {
                 xml = {
-                    catalogs = { "/home/doman/.config/lemminx/catalog.xml" },
+                    catalogs = { vim.fn.stdpath "config" .. "/lemminx/catalog.xml" },
                     completion = { autoCloseTags = false },
                     validation = { noGrammar = "ignore" }
                 }
