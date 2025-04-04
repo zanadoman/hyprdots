@@ -83,6 +83,10 @@ window#waybar.empty #window {
     all: unset;
 }
 
+#battery.charging {
+    color: #9ece6a;
+}
+
 #battery.warning {
     color: #e0af68;
 }
