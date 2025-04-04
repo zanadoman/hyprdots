@@ -150,8 +150,7 @@ local function setup_nvim_cmp()
         sources = cmp.config.sources(
             { { name = "nvim_lsp" } },
             { { name = "buffer" } },
-            { { name = "path" } },
-            { { name = "nvim_lsp_signature_help" } }
+            { { name = "path" } }
         )
     }
     cmp.setup.cmdline({ "/", "?" }, {
@@ -276,7 +275,6 @@ require "lazy".setup(
                 "hrsh7th/cmp-nvim-lsp",
                 "hrsh7th/cmp-buffer",
                 "hrsh7th/cmp-path",
-                "hrsh7th/cmp-nvim-lsp-signature-help",
                 "hrsh7th/cmp-cmdline"
             },
             event = { "CmdlineEnter", "InsertEnter" },
