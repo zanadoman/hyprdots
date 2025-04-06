@@ -152,6 +152,9 @@
 - git config --global user.name
 - Generate new token (classic)
 
+#### github-cli
+- gh auth login
+
 #### hyprland
 - monitor
 - input:kb_layout
