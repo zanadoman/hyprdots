@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1067)
+# Packages (1069)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -79,6 +79,7 @@
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
 | fpc                             | Pascal compiler.                           |
+| github-cli                      | GitHub command-line interface.             |
 | gradle                          | Java build tool.                           |
 | gtest                           | C++ unit testing framework.                |
 | jdk17-openjdk                   | Java 17 development kit.                   |
