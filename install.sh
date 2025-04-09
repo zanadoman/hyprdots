@@ -37,12 +37,7 @@ rustup target add x86_64-linux-android
 rustup target add x86_64-pc-windows-gnu
 
 # Directories
-mkdir "$HOME/Desktop/"
-mkdir "$HOME/Documents/"
-mkdir "$HOME/Downloads/"
-mkdir "$HOME/Music/"
-mkdir "$HOME/Pictures/"
+xdg-user-dirs-update
 mkdir "$HOME/Projects/"
 mkdir "$HOME/Qemu/"
-mkdir "$HOME/Videos/"
 mkdir -p "$HOME/.local/bin/"
