@@ -23,6 +23,9 @@ echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android_tablet.avd/config.ini"
 # C#
 dotnet new install Avalonia.Templates
 
+# Flutter
+flutter config --no-analytics
+
 # MariaDB
 sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
 sudo systemctl start mariadb.service
