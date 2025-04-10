@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1073)
+# Packages (1077)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -78,6 +78,7 @@
 | composer                        | PHP package manager.                       |
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
+| flutter-bin (AUR)               | Flutter development kit.                   |
 | fpc                             | Pascal compiler.                           |
 | github-cli                      | GitHub command-line interface.             |
 | gradle                          | Java build tool.                           |

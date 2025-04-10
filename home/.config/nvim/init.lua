@@ -65,6 +65,7 @@ local function setup_nvim_treesitter()
             "cmake",
             "cpp",
             "css",
+            "dart",
             "doxygen",
             "fish",
             "html",
@@ -288,6 +289,12 @@ require "lazy".setup(
             },
             lazy = false,
             config = setup_mason_lspconfig_nvim
+        },
+        {
+            "nvim-flutter/flutter-tools.nvim",
+            dependencies = { "nvim-lua/plenary.nvim" },
+            ft = "dart",
+            config = true
         }
     },
     { ui = { border = "rounded" } }
