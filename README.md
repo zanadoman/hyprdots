@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1077)
+# Packages (1078)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -74,6 +74,7 @@
 | aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C/C++.          |
 | android-ndk (AUR)               | Android compiler for C/C++.                |
 | android-sdk (AUR)               | Android development kit.                   |
+| angular-cli (AUR)               | Angular command-line interface.            |
 | cmake                           | C/C++ build tool.                          |
 | composer                        | PHP package manager.                       |
 | dotnet-sdk                      | C# development kit.                        |

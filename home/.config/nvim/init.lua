@@ -59,6 +59,7 @@ end
 local function setup_nvim_treesitter()
     require "nvim-treesitter.configs".setup {
         ensure_installed = {
+            "angular",
             "bash",
             "c",
             "c_sharp",
@@ -170,6 +171,7 @@ end
 local function setup_mason_lspconfig_nvim()
     require "mason".setup { ui = { border = "rounded" } }
     local servers = {
+        angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
         cssls = {},
         emmet_language_server = { filetypes = { "*" } },
