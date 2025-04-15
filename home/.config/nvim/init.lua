@@ -3,6 +3,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.expandtab = true
+vim.opt.guicursor = "a:block"
 vim.opt.mouse = "";
 vim.opt.number = true
 vim.opt.pumheight = 10
