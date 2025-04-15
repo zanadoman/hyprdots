@@ -1,3 +1,3 @@
 #!/bin/bash
 
-qemu-system-x86_64 -hda "$HOME/Qemu/tiny10_korpus.img" -accel kvm -cpu host -smp 12 -m 4G -display sdl -audiodev pipewire,id=snd0 -device intel-hda -device hda-duplex,audiodev=snd0 -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::3050-:3050,hostfwd=tcp::8080-:8080,hostfwd=tcp::8090-:8090
+qemu-system-x86_64 -hda "$HOME/Qemu/tiny10_korpus.img" -accel kvm -cpu host -smp $(nproc) -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M -display sdl -audiodev pipewire,id=snd0 -device intel-hda -device hda-duplex,audiodev=snd0 -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::3050-:3050,hostfwd=tcp::8080-:8080,hostfwd=tcp::8090-:8090
