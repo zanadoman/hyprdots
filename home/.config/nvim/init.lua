@@ -9,14 +9,12 @@ vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 2 ^ 32 / 2 - 1
 vim.opt.shiftwidth = 4
-vim.opt.shortmess:append("I")
 vim.opt.showmode = false
 vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.tabstop = 4
-vim.opt.updatetime = 1000
 vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
@@ -29,7 +27,18 @@ vim.filetype.add {
 }
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+vim.keymap.set("n", "grd", vim.lsp.buf.definition)
+vim.keymap.set("n", "grf", function()
+    if vim.bo.filetype == "rust" then
+        vim.cmd "silent !cargo fmt"
+    else
+        vim.lsp.buf.format()
+    end
+end)
+
 vim.diagnostic.config { virtual_text = true }
+vim.keymap.set("n", "L", vim.diagnostic.open_float)
 
 local function setup_tokyonight_nvim()
     require "tokyonight".setup { style = "night" }
@@ -214,19 +223,6 @@ local function setup_mason_lspconfig_nvim()
     }
     vim.keymap.set("n", "grs", ":LspStart<CR>")
     vim.keymap.set("n", "grh", ":LspStop<CR>")
-    vim.keymap.set("n", "grf", function()
-        if vim.bo.filetype == "rust" then
-            vim.cmd "silent !cargo fmt"
-        else
-            vim.lsp.buf.format()
-        end
-    end)
-    vim.keymap.set("n", "grd", vim.lsp.buf.definition)
-    vim.api.nvim_create_autocmd({ "CursorHold" }, {
-        callback = function()
-            vim.diagnostic.open_float { focusable = false }
-        end
-    })
 end
 
 local lazy_nvim_path = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
