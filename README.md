@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1080)
+# Packages (1081)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -77,6 +77,7 @@
 | angular-cli (AUR)               | Angular command-line interface.            |
 | cmake                           | C/C++ build tool.                          |
 | composer                        | PHP package manager.                       |
+| dbeaver                         | Universal database manager.                |
 | docker                          | Application containerizer.                 |
 | docker-compose                  | Docker helper.                             |
 | dotnet-sdk                      | C# development kit.                        |

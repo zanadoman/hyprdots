@@ -1,0 +1,13 @@
+SQLEditor.ContentAssistant.insert.single.proposal=false
+SQLEditor.ContentAssistant.insert.space.after.proposal=false
+SQLEditor.autoSaveOnChange=true
+SQLEditor.autoSaveOnExecute=true
+SQLEditor.closeBrackets=false
+SQLEditor.closeDoubleQuotes=false
+SQLEditor.closeSingleQuotes=false
+eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.exit=always
+sample.database.canceled=true
+tipOfTheDayInitializer.notFirstRun=true
+ui.auto.update.check.time=1744825631062
+ui.show.tip.of.the.day.on.startup=false

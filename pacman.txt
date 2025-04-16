@@ -37,6 +37,7 @@ zip
 aarch64-linux-gnu-gcc
 cmake
 composer
+dbeaver
 docker
 docker-compose
 dotnet-sdk
