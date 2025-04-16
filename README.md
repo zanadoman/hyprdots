@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1076)
+# Packages (1080)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -77,6 +77,8 @@
 | angular-cli (AUR)               | Angular command-line interface.            |
 | cmake                           | C/C++ build tool.                          |
 | composer                        | PHP package manager.                       |
+| docker                          | Application containerizer.                 |
+| docker-compose                  | Docker helper.                             |
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
 | flutter-bin (AUR)               | Flutter development kit.                   |

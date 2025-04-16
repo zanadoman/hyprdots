@@ -25,6 +25,10 @@ echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android_tablet.avd/config.ini"
 # C#
 dotnet new install Avalonia.Templates
 
+# Docker
+sudo systemctl start docker.service
+sudo docker pull jacobalberty/firebird:v2.5.9-ss
+
 # Flutter
 flutter config --no-analytics
 

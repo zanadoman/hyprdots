@@ -37,6 +37,8 @@ zip
 aarch64-linux-gnu-gcc
 cmake
 composer
+docker
+docker-compose
 dotnet-sdk
 doxygen
 fpc
