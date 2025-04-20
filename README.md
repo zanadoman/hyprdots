@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-# Packages (1081)
+[# Packages (1081)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -75,7 +75,6 @@
 | android-ndk (AUR)               | Android compiler for C/C++.                |
 | android-sdk (AUR)               | Android development kit.                   |
 | angular-cli (AUR)               | Angular command-line interface.            |
-| cmake                           | C/C++ build tool.                          |
 | composer                        | PHP package manager.                       |
 | dbeaver                         | Universal database manager.                |
 | docker                          | Application containerizer.                 |
@@ -86,15 +85,12 @@
 | fpc                             | Pascal compiler.                           |
 | github-cli                      | GitHub command-line interface.             |
 | gradle                          | Java build tool.                           |
-| gtest                           | C++ unit testing framework.                |
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk21-openjdk                   | Java 21 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
 | linux-headers                   | Linux kernel headers.                      |
-| lld                             | LLVM linker for C/C++.                     |
 | mariadb                         | MySQL compatible database system.          |
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
-| npm                             | JavaScript package manager.                |
 | openbsd-netcat                  | Networking tool.                           |
 | qemu-desktop                    | Virtualization tool.                       |
 | rpi-imager                      | Raspberry Pi imager.                       |

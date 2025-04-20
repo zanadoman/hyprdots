@@ -35,7 +35,6 @@ atool
 unrar
 zip
 aarch64-linux-gnu-gcc
-cmake
 composer
 dbeaver
 docker
@@ -45,15 +44,12 @@ doxygen
 fpc
 github-cli
 gradle
-gtest
 jdk17-openjdk
 jdk21-openjdk
 jdk8-openjdk
 linux-headers
-lld
 mariadb
 mingw-w64-gcc
-npm
 openbsd-netcat
 qemu-desktop
 rpi-imager
