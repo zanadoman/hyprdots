@@ -5,7 +5,7 @@ sudo cp -r ./etc/. /etc/
 
 # Packages
 cat ./pacman.txt | sudo pacman -Syu -
-cat ./aur.txt | yay -Syu -
+yes | yay -Syu $(cat ./aur.txt)
 pacman -Qdtq | sudo pacman -Rns -
 
 # User
