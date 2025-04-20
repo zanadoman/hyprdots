@@ -28,6 +28,7 @@ archlinux-keyring
 argon2
 at-spi2-core
 atkmm
+atlauncher-bin
 atool
 attr
 audit
@@ -89,6 +90,7 @@ discord
 dkms
 docker
 docker-compose
+dos2unix
 dosfstools
 dotnet-host
 dotnet-runtime
@@ -784,7 +786,6 @@ mariadb-clients
 mariadb-libs
 md4c
 mesa
-minecraft-launcher
 mingw-w64-binutils
 mingw-w64-crt
 mingw-w64-gcc
@@ -822,6 +823,7 @@ ocl-icd
 onetbb
 oniguruma
 onlyoffice-bin
+openal
 openbsd-netcat
 opencore-amr
 opencv
@@ -1075,7 +1077,7 @@ zeromq
 zimg
 zip
 zix
-zlib
+zlib-ng-compat
 zoxide
 zstd
 zziplib
