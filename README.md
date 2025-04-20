@@ -1,6 +1,6 @@
 ![Preview](/preview.png)
 
-[# Packages (1081)](./pkgs.lock)
+# [Packages (1081)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
