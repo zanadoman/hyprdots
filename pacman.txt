@@ -72,6 +72,7 @@ wf-recorder
 discord
 spotify-launcher
 steam
+dos2unix
 dosfstools
 ntfs-3g
 wine-mono

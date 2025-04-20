@@ -121,14 +121,15 @@
 ### Entertainment
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| atlauncher-bin (AUR)            | Minecraft launcher.                        |
 | discord                         | Discord client.                            |
-| minecraft-launcher (AUR)        | Minecraft launcher.                        |
 | spotify-launcher                | Music streaming service.                   |
 | steam                           | Steam client.                              |
 
 ### Compatibility
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| dos2unix                        | DOS to UNIX and vice versa text converter. |
 | dosfstools                      | FAT compatibility tool.                    |
 | ntfs-3g                         | NTFS compatibility tool.                   |
 | wine-mono                       | Windows compatibility layer.               |

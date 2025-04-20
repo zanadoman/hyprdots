@@ -4,4 +4,4 @@ angular-cli
 flutter-bin
 anydesk-bin
 onlyoffice-bin
-minecraft-launcher
+atlauncher-bin
