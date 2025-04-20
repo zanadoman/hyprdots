@@ -6,7 +6,7 @@ sudo cp -r ./etc/. /etc/
 # Packages
 cat ./pacman.txt | sudo pacman -Syu -
 yes | yay -Syu $(cat ./aur.txt)
-pacman -Qdtq | sudo pacman -Rns -
+yes | sudo pacman -Rns $(pacman -Qdtq)
 
 # User
 cp -r ./home/. "$HOME/"
