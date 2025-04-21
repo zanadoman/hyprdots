@@ -8,14 +8,17 @@ cat ./pacman.txt | sudo pacman -Syu -
 yes | yay -Syu $(cat ./aur.txt)
 yes | sudo pacman -Rns $(pacman -Qdtq)
 
-# User
-cp -r ./home/. "$HOME/"
-chsh -s /bin/fish
-
 # MariaDB
 sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
 sudo systemctl start mariadb.service
 sudo mariadb-secure-installation
+
+# User
+xdg-user-dirs-update
+mkdir "$HOME/Projects/"
+mkdir "$HOME/Qemu/"
+mkdir -p "$HOME/.local/bin/"
+cp -r ./home/. "$HOME/"
 
 # Android
 yes | sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager --licenses
@@ -41,8 +44,5 @@ rustup target add wasm32-unknown-unknown
 rustup target add x86_64-linux-android
 rustup target add x86_64-pc-windows-gnu
 
-# Directories
-xdg-user-dirs-update
-mkdir "$HOME/Projects/"
-mkdir "$HOME/Qemu/"
-mkdir -p "$HOME/.local/bin/"
+# Shell
+chsh -s /bin/fish
