@@ -147,7 +147,7 @@
 - Notifications: Enable Desktop Notifications: off
 - Show Member List
 
-#### filesystem
+#### filesystems
 - /etc/fstab
 
 #### git
@@ -163,6 +163,7 @@
 - input:kb_layout
 
 #### networkmanager
+- nmcli connection modify 'Wired connection 1' ipv6.method disabled
 - nmcli connection modify 'Wired connection 1' 802-3-ethernet.wake-on-lan magic
 
 #### onlyoffice-bin
