@@ -22,7 +22,7 @@
     "height": 700
   },
   "language": "English",
-  "theme": "com.atlauncher.themes.Dark",
+  "theme": "com.atlauncher.themes.DraculaContrast",
   "dateFormat": "dd/MM/yyyy",
   "instanceTitleFormat": "%1$s (%2$s %3$s)",
   "defaultInstanceSorting": "BY_LAST_PLAYED",
@@ -66,7 +66,7 @@
   "proxyHost": "",
   "proxyPort": 8080,
   "proxyType": "HTTP",
-  "enableLogs": true,
+  "enableLogs": false,
   "enableAnalytics": false,
   "analyticsClientId": "307bb629-9b37-41f8-9f8b-005c4aea28c5",
   "enableAutomaticBackupAfterLaunch": false,
