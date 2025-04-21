@@ -12,6 +12,11 @@ yes | sudo pacman -Rns $(pacman -Qdtq)
 cp -r ./home/. "$HOME/"
 chsh -s /bin/fish
 
+# MariaDB
+sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
+sudo systemctl start mariadb.service
+sudo mariadb-secure-installation
+
 # Android
 yes | sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager --licenses
 sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager platform-tools 'platforms;android-34' 'platforms;android-35' 'build-tools;30.0.3' 'build-tools;34.0.0' 'ndk;26.3.11579264' 'cmake;3.22.1' emulator 'system-images;android-34;google_apis_playstore;x86_64'
@@ -27,11 +32,6 @@ dotnet new install Avalonia.Templates
 
 # Flutter
 flutter config --no-analytics
-
-# MariaDB
-sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
-sudo systemctl start mariadb.service
-sudo mariadb-secure-installation
 
 # Rust
 rustup default stable
