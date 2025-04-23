@@ -187,7 +187,15 @@ local function setup_mason_lspconfig_nvim()
         emmet_language_server = { filetypes = { "*" } },
         html = { filetypes = { "html", "javascript", "php", "rust", "typescript" } },
         intelephense = {},
-        jdtls = {},
+        jdtls = {
+            settings = {
+                java = {
+                    settings = {
+                        url = vim.fn.stdpath "config" .. "/org.eclipse.jdt.core.prefs"
+                    }
+                }
+            }
+        },
         kotlin_language_server = {},
         lemminx = {
             settings = {
