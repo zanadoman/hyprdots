@@ -27,7 +27,7 @@
 
     "clock": {
         "interval": 1,
-        "format": " {:%a, %m.%d. 󰥔 %H:%M %p}",
+        "format": " {:%a, %m.%d. 󰥔 %I:%M %p}",
         "tooltip": false
     },
 
