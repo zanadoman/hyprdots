@@ -15,6 +15,7 @@ fastfetch
 fish
 foot
 starship
+tmux
 zoxide
 bluetui
 btop

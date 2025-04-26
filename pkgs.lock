@@ -704,6 +704,7 @@ libunwind
 liburing
 libusb
 libusbmuxd
+libutempter
 libutf8proc
 libuv
 libva
@@ -987,6 +988,7 @@ texlive-latexrecommended
 texlive-pictures
 texlive-plaingeneric
 tinysparql
+tmux
 tomlplusplus
 tpm2-tss
 tree-sitter
