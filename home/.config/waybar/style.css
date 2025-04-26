@@ -11,14 +11,14 @@ tooltip {
     color: #c0caf5;
     font-size: 14px;
     padding: 0 8px 0 8px;
-    border: 1px solid #0db9d7;
+    border: 1px solid #27a1b9;
 }
 
 menu {
     opacity: 0.95;
     background-color: #1a1b26;
     padding: 6px 8px 6px 8px;
-    border: 1px solid #0db9d7;
+    border: 1px solid #27a1b9;
 }
 
 menuitem {
@@ -42,7 +42,7 @@ menuitem:hover {
 #workspaces {
     opacity: 0.95;
     background-color: #1a1b26;
-    border: 1px solid #0db9d7;
+    border: 1px solid #27a1b9;
 }
 
 #workspaces button {
@@ -76,7 +76,7 @@ menuitem:hover {
     color: #c0caf5;
     font-size: 16px;
     padding: 0 8px 0 8px;
-    border: 1px solid #0db9d7;
+    border: 1px solid #27a1b9;
 }
 
 window#waybar.empty #window {
