@@ -1,3 +1,15 @@
 #!/bin/bash
 
-qemu-system-x86_64 -bios /usr/share/ovmf/x64/OVMF.4m.fd -hda "$HOME/Qemu/tiny10_korpus.img" -accel kvm -cpu host -smp $(nproc) -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M -display sdl -audiodev pipewire,id=snd0 -device intel-hda -device hda-duplex,audiodev=snd0 -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::3050-:3050,hostfwd=tcp::8080-:8080,hostfwd=tcp::8090-:8090
+qemu-system-x86_64 \
+    -accel kvm \
+    -bios /usr/share/ovmf/x64/OVMF.4m.fd \
+    -hda "$HOME/Qemu/tiny10_korpus.img" \
+    -cpu host \
+    -smp $(nproc) \
+    -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M \
+    -display sdl,gl=on \
+    -device virtio-gpu-gl-pci \
+    -audiodev pipewire,id=snd0 \
+    -device intel-hda \
+    -device hda-duplex,audiodev=snd0 \
+    -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::3050-:3050,hostfwd=tcp::8080-:8080,hostfwd=tcp::8090-:8090
