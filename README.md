@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1100)](./pkgs.lock)
+# [Packages (1101)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -14,6 +14,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | blueman                         | Bluetooth applet.                          |
 | brightnessctl                   | Brightness manager.                        |
+| dunst                           | Notification daemon.                       |
 | fuzzel                          | Application launcher.                      |
 | grim                            | Screenshot tool.                           |
 | hypridle                        | Idle management daemon.                    |
