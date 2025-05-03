@@ -826,6 +826,7 @@ nspr
 nss
 ntfs-3g
 numactl
+nwg-displays
 ocl-icd
 onetbb
 oniguruma
@@ -884,7 +885,10 @@ python
 python-cairo
 python-dbus
 python-gobject
+python-i3ipc
 python-pyxdg
+python-six
+python-xlib
 qemu-audio-alsa
 qemu-audio-dbus
 qemu-audio-jack

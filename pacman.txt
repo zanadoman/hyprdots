@@ -8,6 +8,7 @@ hyprsunset
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
+nwg-displays
 slurp
 ttf-hack-nerd
 uwsm

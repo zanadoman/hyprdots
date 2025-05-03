@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1094)](./pkgs.lock)
+# [Packages (1098)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -22,6 +22,7 @@
 | network-manager-applet          | NetworkManager applet.                     |
 | noto-fonts                      | Font provider.                             |
 | noto-fonts-emoji                | Colored emoji font.                        |
+| nwg-displays                    | Display manager.                           |
 | slurp                           | Area selector.                             |
 | ttf-hack-nerd                   | Source code font.                          |
 | uwsm                            | Wayland session manager.                   |
