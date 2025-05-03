@@ -3,5 +3,5 @@
 video_dev_id=0
 sudo modprobe -r v4l2loopback
 sudo modprobe v4l2loopback video_nr=$video_dev_id card_label=VirtualCamera exclusive_caps=1
-wf-recorder -g '0,0 960x960' --muxer=v4l2 --codec=rawvideo --file=/dev/video$video_dev_id -x yuv420p
+wf-recorder -g "$(slurp)" --muxer=v4l2 --codec=rawvideo --file=/dev/video$video_dev_id -x yuv420p
 sudo modprobe -r v4l2loopback
