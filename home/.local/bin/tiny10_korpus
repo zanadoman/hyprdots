@@ -6,9 +6,9 @@ qemu-system-x86_64 \
     -hda "$HOME/Qemu/tiny10_korpus.img" \
     -cpu host \
     -smp $(nproc) \
-    -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M \
     -display sdl,gl=on \
     -device virtio-gpu-gl-pci \
+    -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M \
     -audiodev pipewire,id=snd0 \
     -device intel-hda \
     -device hda-duplex,audiodev=snd0 \

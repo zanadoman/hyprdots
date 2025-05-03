@@ -17,16 +17,36 @@ sudo mariadb-secure-installation
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
 mkdir "$HOME/Qemu/"
+mkdir "$HOME/Work/"
 mkdir -p "$HOME/.local/bin/"
 cp -r ./home/. "$HOME/"
 
 # Android
 yes | sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager --licenses
-sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager platform-tools 'platforms;android-34' 'platforms;android-35' 'build-tools;30.0.3' 'build-tools;34.0.0' 'ndk;26.3.11579264' 'cmake;3.22.1' emulator 'system-images;android-34;google_apis_playstore;x86_64'
-env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd --name android_phone --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel
+sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager \
+    platform-tools \
+    'platforms;android-34' \
+    'platforms;android-35' \
+    'build-tools;30.0.3' \
+    'build-tools;34.0.0' \
+    'ndk;26.3.11579264' \
+    'cmake;3.22.1' \
+    emulator \
+    'system-images;android-34;google_apis_playstore;x86_64'
+
+# Android Phone
+env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd \
+    --name android_phone \
+    --package 'system-images;android-34;google_apis_playstore;x86_64' \
+    --device pixel
 echo 'disk.dataPartition.size = 128G' >> "$HOME/.android/avd/android_phone.avd/config.ini"
 echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android_phone.avd/config.ini"
-env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd --name android_tablet --package 'system-images;android-34;google_apis_playstore;x86_64' --device pixel_c
+
+# Android Tablet
+env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd \
+    --name android_tablet \
+    --package 'system-images;android-34;google_apis_playstore;x86_64' \
+    --device pixel_c
 echo 'disk.dataPartition.size = 128G' >> "$HOME/.android/avd/android_tablet.avd/config.ini"
 echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android_tablet.avd/config.ini"
 
