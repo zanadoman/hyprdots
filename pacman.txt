@@ -2,7 +2,9 @@ blueman
 brightnessctl
 fuzzel
 grim
+hypridle
 hyprland
+hyprlock
 hyprpaper
 hyprsunset
 network-manager-applet

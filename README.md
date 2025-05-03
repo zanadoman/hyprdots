@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1098)](./pkgs.lock)
+# [Packages (1100)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -16,7 +16,9 @@
 | brightnessctl                   | Brightness manager.                        |
 | fuzzel                          | Application launcher.                      |
 | grim                            | Screenshot tool.                           |
+| hypridle                        | Idle management daemon.                    |
 | hyprland                        | Tiling compositor.                         |
+| hyprlock                        | Lock screen.                               |
 | hyprpaper                       | Wallpaper tool.                            |
 | hyprsunset                      | Bluelight filter.                          |
 | network-manager-applet          | NetworkManager applet.                     |
