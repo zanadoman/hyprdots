@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1101)](./pkgs.lock)
+# [Packages (1109)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -26,6 +26,7 @@
 | noto-fonts                      | Font provider.                             |
 | noto-fonts-emoji                | Colored emoji font.                        |
 | nwg-displays                    | Display manager.                           |
+| pavucontrol                     | Audio manager.                             |
 | slurp                           | Area selector.                             |
 | ttf-hack-nerd                   | Source code font.                          |
 | uwsm                            | Wayland session manager.                   |
@@ -50,7 +51,6 @@
 | fzf                             | Fuzzy finder.                              |
 | man-db                          | Manual pages implementation.               |
 | man-pages                       | Linux/POSIX manual pages.                  |
-| pulsemixer                      | Audio manager.                             |
 | ripgrep                         | Recursive search tool.                     |
 | rocm-smi-lib                    | AMD GPU support for BTOP.                  |
 | sshfs                           | Network filesystem client.                 |
@@ -151,7 +151,6 @@
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
-- Notifications: Enable Desktop Notifications: off
 - Show Member List
 
 #### filesystems
@@ -166,7 +165,7 @@
 - gh auth login
 
 #### hyprland
-- monitor
+- nwg-displays
 - input:kb_layout
 
 #### networkmanager

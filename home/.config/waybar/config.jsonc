@@ -12,7 +12,6 @@
         "cpu",
         "memory",
         "disk",
-        "network",
         "pulseaudio",
         "battery",
         "tray"
@@ -50,16 +49,6 @@
         "unit": "GiB"
     },
 
-    "network": {
-        "interval": 1,
-        "format-ethernet": "󰈀 {ipaddr}",
-        "format-wifi": "{icon} {signalStrength}% {essid}",
-        "format-disconnected": "󰪎 127.0.0.1",
-        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-        "max-length": 18,
-        "tooltip": false
-    },
-
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
         "format-muted": "󰝟 {format_source}",
@@ -68,7 +57,10 @@
         "format-icons": {
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "scroll-step": 0,
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "on-click-middle": "pavucontrol",
+        "on-click-right": "pavucontrol",
         "tooltip": false
     },
 

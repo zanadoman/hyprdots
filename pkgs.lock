@@ -56,6 +56,7 @@ ca-certificates-mozilla
 ca-certificates-utils
 cairo
 cairomm
+cairomm-1.16
 cantarell-fonts
 capstone
 cblas
@@ -153,6 +154,7 @@ glib-networking
 glib2
 glibc
 glibmm
+glibmm-2.68
 glslang
 glu
 gmp
@@ -184,6 +186,7 @@ gtk-layer-shell
 gtk-update-icon-cache
 gtk3
 gtk4
+gtkmm-4.0
 gtkmm3
 guile
 gupnp
@@ -571,6 +574,7 @@ libbsd
 libc++
 libc++abi
 libcacard
+libcanberra
 libcap
 libcap-ng
 libcbor
@@ -681,6 +685,7 @@ libsasl
 libseccomp
 libsecret
 libsigc++
+libsigc++-3.0
 libsigsegv
 libsixel
 libslirp
@@ -853,7 +858,9 @@ pambase
 pandoc-cli
 pango
 pangomm
+pangomm-2.48
 patch
+pavucontrol
 pciutils
 pcre
 pcre2
@@ -883,7 +890,6 @@ procps-ng
 protobuf
 psmisc
 pugixml
-pulsemixer
 python
 python-cairo
 python-dbus
@@ -970,6 +976,7 @@ snappy
 sndio
 sof-firmware
 sord
+sound-theme-freedesktop
 spdlog
 speex
 speexdsp
@@ -991,6 +998,7 @@ systemd
 systemd-libs
 systemd-sysvcompat
 tar
+tdb
 texinfo
 texlive-basic
 texlive-bin

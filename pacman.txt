@@ -12,6 +12,7 @@ network-manager-applet
 noto-fonts
 noto-fonts-emoji
 nwg-displays
+pavucontrol
 slurp
 ttf-hack-nerd
 uwsm
@@ -28,7 +29,6 @@ btop
 fzf
 man-db
 man-pages
-pulsemixer
 ripgrep
 rocm-smi-lib
 sshfs
