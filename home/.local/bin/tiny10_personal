@@ -2,6 +2,7 @@
 
 qemu-system-x86_64 \
     -accel kvm \
+    -bios /usr/share/ovmf/x64/OVMF.4m.fd \
     -hda "$HOME/Qemu/tiny10_personal.img" \
     -cpu host \
     -smp $(nproc) \
