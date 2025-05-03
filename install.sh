@@ -66,3 +66,6 @@ rustup target add x86_64-pc-windows-gnu
 
 # Shell
 chsh -s /bin/fish
+
+# Bluetooth
+sudo systemctl enable bluetooth.service

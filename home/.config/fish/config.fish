@@ -19,6 +19,10 @@ zoxide init --cmd cd fish | source
 starship init fish | source
 clear
 
+if uwsm check may-start
+  exec uwsm start hyprland.desktop
+end
+
 function ff
     if test (count $argv) -eq 0
         set root ./

@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1084)](./pkgs.lock)
+# [Packages (1094)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -12,16 +12,19 @@
 ### Hyprland
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| blueman                         | Bluetooth applet.                          |
 | brightnessctl                   | Brightness manager.                        |
 | fuzzel                          | Application launcher.                      |
 | grim                            | Screenshot tool.                           |
 | hyprland                        | Tiling compositor.                         |
 | hyprpaper                       | Wallpaper tool.                            |
 | hyprsunset                      | Bluelight filter.                          |
+| network-manager-applet          | NetworkManager applet.                     |
 | noto-fonts                      | Font provider.                             |
 | noto-fonts-emoji                | Colored emoji font.                        |
 | slurp                           | Area selector.                             |
 | ttf-hack-nerd                   | Source code font.                          |
+| uwsm                            | Wayland session manager.                   |
 | waybar                          | Status bar.                                |
 | wl-clipboard                    | Clipboard manager.                         |
 | xdg-desktop-portal-hyprland     | Screen sharing tool.                       |
@@ -39,7 +42,6 @@
 ### CLI tools
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| bluetui                         | Bluetooth manager.                         |
 | btop                            | Resource monitor.                          |
 | fzf                             | Fuzzy finder.                              |
 | man-db                          | Manual pages implementation.               |

@@ -18,6 +18,10 @@ eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
 clear
 
+if uwsm check may-start; then
+  exec uwsm start hyprland.desktop
+fi
+
 ff () {
     if [ $# -eq 0 ]; then
         root=./

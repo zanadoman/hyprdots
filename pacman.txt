@@ -1,13 +1,16 @@
+blueman
 brightnessctl
 fuzzel
 grim
 hyprland
 hyprpaper
 hyprsunset
+network-manager-applet
 noto-fonts
 noto-fonts-emoji
 slurp
 ttf-hack-nerd
+uwsm
 waybar
 wl-clipboard
 xdg-desktop-portal-hyprland
@@ -17,7 +20,6 @@ foot
 starship
 tmux
 zoxide
-bluetui
 btop
 fzf
 man-db

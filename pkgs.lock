@@ -43,7 +43,7 @@ bash
 binutils
 bison
 blas
-bluetui
+blueman
 bluez
 bluez-libs
 brightnessctl
@@ -136,6 +136,7 @@ gawk
 gc
 gcc
 gcc-libs
+gcr-4
 gd
 gdbm
 gdk-pixbuf2
@@ -550,6 +551,7 @@ lib32-zlib
 lib32-zstd
 libadwaita
 libaio
+libappindicator-gtk3
 libarchive
 libass
 libassuan
@@ -649,6 +651,8 @@ libngtcp2
 libnice
 libnl
 libnm
+libnma
+libnma-common
 libnotify
 libnsl
 libogg
@@ -807,8 +811,10 @@ ndctl
 neovim
 netstandard-targeting-pack
 nettle
+network-manager-applet
 networkmanager
 ninja
+nm-connection-editor
 node-gyp
 nodejs
 nodejs-nopt
@@ -875,7 +881,10 @@ psmisc
 pugixml
 pulsemixer
 python
+python-cairo
+python-dbus
 python-gobject
+python-pyxdg
 qemu-audio-alsa
 qemu-audio-dbus
 qemu-audio-jack
@@ -1015,6 +1024,7 @@ usbredir
 usbutils
 util-linux
 util-linux-libs
+uwsm
 v4l-utils
 v4l2loopback-dkms
 valgrind
