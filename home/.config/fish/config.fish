@@ -19,7 +19,7 @@ zoxide init --cmd cd fish | source
 starship init fish | source
 clear
 
-if uwsm check may-start
+if uwsm check may-start &>/dev/null
   exec uwsm start hyprland.desktop
 end
 

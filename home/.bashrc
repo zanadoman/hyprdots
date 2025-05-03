@@ -18,7 +18,7 @@ eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
 clear
 
-if uwsm check may-start; then
+if uwsm check may-start &>/dev/null; then
   exec uwsm start hyprland.desktop
 fi
 
