@@ -1,0 +1,30 @@
+#!/bin/bash
+
+lock='  Lock'
+suspend='󰤄  Suspend'
+logout='󰈆  Logout'
+poweroff='  Poweroff'
+reboot='  Reboot'
+
+case $(echo -e "$lock\n$suspend\n$logout\n$poweroff\n$reboot" | fuzzel -p '  ' -l 5 -w 20 -d) in
+
+    $lock)
+        loginctl lock-session
+        ;;
+
+    $suspend)
+        systemctl suspend
+        ;;
+
+    $logout)
+        loginctl terminate-user "$USER"
+        ;;
+
+    $poweroff)
+        systemctl poweroff
+        ;;
+
+    $reboot)
+        systemctl reboot
+        ;;
+esac
