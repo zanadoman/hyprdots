@@ -1,4 +1,4 @@
 [Desktop Entry]
-Name=Android Phone
-Exec=android_phone
+Name=Android Emulator
+Exec=android_emulator
 Icon=distributor-logo-android

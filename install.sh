@@ -34,22 +34,6 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
     emulator \
     'system-images;android-34;google_apis_playstore;x86_64'
 
-# Android Phone
-env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd \
-    --name android_phone \
-    --package 'system-images;android-34;google_apis_playstore;x86_64' \
-    --device pixel
-echo 'disk.dataPartition.size = 128G' >> "$HOME/.android/avd/android_phone.avd/config.ini"
-echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android_phone.avd/config.ini"
-
-# Android Tablet
-env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/avdmanager create avd \
-    --name android_tablet \
-    --package 'system-images;android-34;google_apis_playstore;x86_64' \
-    --device pixel_c
-echo 'disk.dataPartition.size = 128G' >> "$HOME/.android/avd/android_tablet.avd/config.ini"
-echo 'hw.keyboard = yes' >> "$HOME/.android/avd/android_tablet.avd/config.ini"
-
 # C#
 dotnet new install Avalonia.Templates
 
