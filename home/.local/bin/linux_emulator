@@ -1,15 +1,16 @@
 #!/bin/bash
 
+directory="$HOME/Qemu/Linux"
+
 qemu-system-x86_64 \
     -accel kvm \
     -bios /usr/share/ovmf/x64/OVMF.4m.fd \
-    -hda "$HOME/Qemu/tiny10_personal.img" \
+    -hda "$directory/$(ls "$directory/" | fuzzel -p '  ' -l 5 -w 20 -d)" \
     -cpu host \
     -smp $(nproc) \
-    -display sdl,gl=on \
-    -device virtio-gpu-gl-pci \
+    -display sdl \
     -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M \
     -audiodev pipewire,id=snd0 \
     -device intel-hda \
     -device hda-duplex,audiodev=snd0 \
-    -nic user,hostfwd=tcp::2222-:22
+    -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:8080

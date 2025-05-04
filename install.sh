@@ -16,7 +16,8 @@ sudo mariadb-secure-installation
 # User
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
-mkdir "$HOME/Qemu/"
+mkdir -p "$HOME/Qemu/Linux/"
+mkdir -p "$HOME/Qemu/Windows/"
 mkdir "$HOME/Work/"
 mkdir -p "$HOME/.local/bin/"
 cp -r ./home/. "$HOME/"

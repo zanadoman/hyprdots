@@ -1,9 +1,11 @@
 #!/bin/bash
 
+directory="$HOME/Qemu/Windows"
+
 qemu-system-x86_64 \
     -accel kvm \
     -bios /usr/share/ovmf/x64/OVMF.4m.fd \
-    -hda "$HOME/Qemu/tiny10_korpus.img" \
+    -hda "$directory/$(ls "$directory/" | fuzzel -p '  ' -l 5 -w 20 -d)" \
     -cpu host \
     -smp $(nproc) \
     -display sdl,gl=on \
