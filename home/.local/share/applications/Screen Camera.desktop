@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Screen Camera
+Exec=hyprctl dispatch -- exec [workspace special] $TERMINAL -e screen_camera
+Icon=record
