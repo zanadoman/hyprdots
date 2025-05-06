@@ -13,7 +13,7 @@ alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
 alias clear='clear && fastfetch'
-alias hyprland='hyprland && clear'
+alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
 eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
 clear
