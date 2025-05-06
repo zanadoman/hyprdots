@@ -2,11 +2,11 @@
 
 lock='  Lock'
 suspend='󰤄  Suspend'
-logout='󰈆  Logout'
+exit='󰈆  Exit'
 poweroff='  Poweroff'
 reboot='  Reboot'
 
-case $(echo -e "$lock\n$suspend\n$logout\n$poweroff\n$reboot" | fuzzel -p '  ' -l 5 -w 20 -d) in
+case $(echo -e "$lock\n$suspend\n$exit\n$poweroff\n$reboot" | fuzzel -p '  ' -l 5 -w 20 -d) in
 
     $lock)
         loginctl lock-session
@@ -16,8 +16,8 @@ case $(echo -e "$lock\n$suspend\n$logout\n$poweroff\n$reboot" | fuzzel -p '  
         systemctl suspend
         ;;
 
-    $logout)
-        loginctl terminate-user "$USER"
+    $exit)
+        hyprctl dispatch exit
         ;;
 
     $poweroff)

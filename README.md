@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1109)](./pkgs.lock)
+# [Packages (1106)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -29,7 +29,6 @@
 | pavucontrol                     | Audio manager.                             |
 | slurp                           | Area selector.                             |
 | ttf-hack-nerd                   | Source code font.                          |
-| uwsm                            | Wayland session manager.                   |
 | waybar                          | Status bar.                                |
 | wl-clipboard                    | Clipboard manager.                         |
 | xdg-desktop-portal-hyprland     | Screen sharing tool.                       |

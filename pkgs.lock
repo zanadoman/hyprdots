@@ -892,10 +892,8 @@ psmisc
 pugixml
 python
 python-cairo
-python-dbus
 python-gobject
 python-i3ipc
-python-pyxdg
 python-six
 python-xlib
 qemu-audio-alsa
@@ -1039,7 +1037,6 @@ usbredir
 usbutils
 util-linux
 util-linux-libs
-uwsm
 v4l-utils
 v4l2loopback-dkms
 valgrind

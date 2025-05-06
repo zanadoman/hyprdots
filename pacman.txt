@@ -15,7 +15,6 @@ nwg-displays
 pavucontrol
 slurp
 ttf-hack-nerd
-uwsm
 waybar
 wl-clipboard
 xdg-desktop-portal-hyprland

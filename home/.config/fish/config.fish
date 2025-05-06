@@ -14,11 +14,10 @@ alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
 alias clear='clear && fastfetch'
-alias hyprland='uwsm check may-start &>/dev/null && exec uwsm start hyprland.desktop'
+alias hyprland='hyprland && clear'
 zoxide init --cmd cd fish | source
 starship init fish | source
 clear
-hyprland
 
 function ff
     if test (count $argv) -eq 0
