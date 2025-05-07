@@ -68,10 +68,6 @@ tmux () {
     if [ 0 -lt $# ]; then
         command tmux "$@"
     else
-        if command tmux list-sessions &>/dev/null; then
-            command tmux attach-session
-        else
-            command tmux new-session -s "$(basename "$PWD")"
-        fi
+        command tmux attach-session &>/dev/null || command tmux new-session -s "$(basename "$PWD")"
     fi
 }

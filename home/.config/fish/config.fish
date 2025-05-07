@@ -69,10 +69,6 @@ function tmux
     if test 0 -lt (count $argv)
         command tmux $argv
     else
-        if command tmux list-sessions &>/dev/null
-            command tmux attach-session
-        else
-            command tmux new-session -s (basename $PWD)
-        end
+        command tmux attach-session &>/dev/null || command tmux new-session -s (basename $PWD)
     end
 end
