@@ -41,6 +41,9 @@ dotnet new install Avalonia.Templates
 # Flutter
 flutter config --no-analytics
 
+# Ranger
+git clone https://github.com/jchook/ranger-zoxide.git "$HOME/.config/ranger/plugins/zoxide/"
+
 # Rust
 rustup default stable
 rustup default nightly
