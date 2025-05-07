@@ -14,8 +14,8 @@ alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
 alias clear='clear && fastfetch'
 alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
-eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
+eval "$(zoxide init bash --cmd cd)"
 clear
 
 ff () {
@@ -60,6 +60,18 @@ fcd () {
             cd "$selected"
         else
             cd "$(dirname "$selected")"
+        fi
+    fi
+}
+
+tmux () {
+    if [ 0 -lt $# ]; then
+        command tmux "$@"
+    else
+        if command tmux list-sessions &>/dev/null; then
+            command tmux attach-session
+        else
+            command tmux new-session -s "$(basename "$PWD")"
         fi
     fi
 }
