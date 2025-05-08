@@ -1,5 +1,4 @@
 [global]
-    monitor = 1
     offset = (10, 10)
     notification_limit = 3
     frame_width = 1
