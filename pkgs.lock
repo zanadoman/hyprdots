@@ -919,6 +919,7 @@ qemu-hw-display-virtio-gpu-pci
 qemu-hw-display-virtio-gpu-pci-gl
 qemu-hw-display-virtio-vga
 qemu-hw-display-virtio-vga-gl
+qemu-hw-uefi-vars
 qemu-hw-usb-host
 qemu-hw-usb-redirect
 qemu-hw-usb-smartcard
