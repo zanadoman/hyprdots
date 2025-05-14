@@ -27,6 +27,7 @@ vim.filetype.add {
     }
 }
 
+vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "grd", vim.lsp.buf.definition)
