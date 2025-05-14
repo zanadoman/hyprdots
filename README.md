@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1107)](./pkgs.lock)
+# [Packages (1108)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -103,6 +103,7 @@
 | rpi-imager                      | Raspberry Pi imager.                       |
 | rustup                          | Rust toolchain installer.                  |
 | sqlx-cli                        | SQLx migration tool.                       |
+| trunk                           | WebAssembly server.                        |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C/C++.                  |
 | wasm-pack                       | Rust WebAssembly build tool.               |
