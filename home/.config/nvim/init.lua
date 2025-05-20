@@ -8,7 +8,6 @@ vim.opt.mouse = "";
 vim.opt.number = true
 vim.opt.pumheight = 10
 vim.opt.relativenumber = true
-vim.opt.scrolloff = 2 ^ 32 / 2 - 1
 vim.opt.shiftwidth = 4
 vim.opt.showmode = false
 vim.opt.showtabline = 2
