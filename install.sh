@@ -14,6 +14,7 @@ sudo systemctl start mariadb.service
 sudo mariadb-secure-installation
 
 # User
+sudo usermod -aG flutter "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
 mkdir -p "$HOME/Qemu/Linux/"
