@@ -49,7 +49,7 @@ dotnet-sdk
 doxygen
 fpc
 github-cli
-godot-mono
+godot
 gradle
 jdk17-openjdk
 jdk21-openjdk

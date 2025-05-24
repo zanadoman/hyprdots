@@ -91,7 +91,7 @@
 | flutter-bin (AUR)               | Flutter development kit.                   |
 | fpc                             | Pascal compiler.                           |
 | github-cli                      | GitHub command-line interface.             |
-| godot-mono                      | Godot game engine.                         |
+| godot                           | Godot game engine.                         |
 | gradle                          | Java build tool.                           |
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk21-openjdk                   | Java 21 development kit.                   |
