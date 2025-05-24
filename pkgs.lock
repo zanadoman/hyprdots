@@ -107,6 +107,7 @@ e2fsprogs
 edk2-ovmf
 efibootmgr
 efivar
+embree
 exiv2
 expat
 fakeroot
@@ -162,6 +163,7 @@ gnulib-l10n
 gnupg
 gnutls
 gobject-introspection-runtime
+godot-mono
 gperftools
 gpgme
 gpm
@@ -193,6 +195,7 @@ gupnp
 gupnp-igd
 gzip
 harfbuzz
+harfbuzz-icu
 haskell-aeson
 haskell-aeson-pretty
 haskell-ansi-terminal
@@ -694,8 +697,10 @@ libsndfile
 libsodium
 libsoup3
 libsoxr
+libspeechd
 libspiro
 libspng
+libsquish
 libssh
 libssh2
 libstemmer
@@ -731,6 +736,7 @@ libwacom
 libwebp
 libwireplumber
 libwmf
+libwslay
 libx11
 libxau
 libxaw
@@ -804,6 +810,7 @@ mingw-w64-crt
 mingw-w64-gcc
 mingw-w64-headers
 mingw-w64-winpthreads
+miniupnpc
 minizip
 mkinitcpio
 mkinitcpio-busybox
@@ -847,6 +854,7 @@ openexr
 openjpeg2
 openssh
 openssl
+openxr
 opus
 orc
 p11-kit
