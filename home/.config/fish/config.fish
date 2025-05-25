@@ -5,7 +5,7 @@ set -x LD_LIBRARY_PATH "/usr/local/lib/:$LD_LIBRARY_PATH"
 set -x PKG_CONFIG_SYSROOT_DIR /usr/x86_64-w64-mingw32
 set -x ANDROID_SDK_ROOT /opt/android-sdk
 set -x ANDROID_NDK_HOME /opt/android-ndk
-set -x PATH "$HOME/.local/bin/:$PATH:$ANDROID_SDK_ROOT/tools/bin/:$ANDROID_SDK_ROOT/platform-tools/:$ANDROID_SDK_ROOT/emulator/:$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+set -x PATH "$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/bin/:$ANDROID_SDK_ROOT/platform-tools/:$ANDROID_SDK_ROOT/emulator/:$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/"
 set -x PAGER less
 set -x VISUAL nvim
 set -x TERMINAL foot
