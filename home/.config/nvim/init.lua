@@ -79,6 +79,7 @@ local function setup_nvim_treesitter()
             "dart",
             "doxygen",
             "fish",
+            "gdscript",
             "html",
             "java",
             "javascript",
