@@ -86,6 +86,11 @@
             "keyColor": "blue"
         },
         {
+            "type": "swap",
+            "key": "  ├ ",
+            "keyColor": "blue"
+        },
+        {
             "type": "disk",
             "key": "  ├󰋊 ",
             "keyColor": "blue"
