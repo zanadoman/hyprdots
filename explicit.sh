@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cat pacman.txt aur.txt | while read package line; do
-    echo -e 'n\n' | sudo pacman -Rns $package
+cat pacman.txt aur.txt | while read package; do
+    echo -e n\n | sudo pacman -Rns $package
 done 2>&1 | grep -Po ':: removing \K[^ ]+'
