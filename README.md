@@ -151,10 +151,10 @@
 - video_nr=X
 
 #### discord
-- Appearance: CHAT FONT SCALING: 20px
+- Appearance: Chat Font Scaling: 20px
 - Show Member List
 
-#### filesystems
+#### filesystem
 - /etc/fstab
 
 #### git
@@ -181,7 +181,7 @@
 - "\$HOME/.ssh/config"
 
 #### qemu-desktop
-- "\$HOME/Qemu/*.img"
+- "\$HOME/Qemu/**/*.img"
 
 #### spotify-launcher
 - Startup and window behaviour: Close button should minimize the Spotify window: on
