@@ -1,9 +1,9 @@
 #!/bin/bash
 
 emulator \
+    -accel on \
     -avd $(emulator -list-avds | fuzzel -p '  ' -l 5 -w 20 -d) \
     -partition-size 128000 \
-    -accel on \
     -cores $(lscpu | grep -Po 'Core\(s\) per socket:\s+\K\d+') \
     -gpu host \
     -use-host-vulkan \

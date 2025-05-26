@@ -148,7 +148,7 @@
 - -camera-back webcamX
 
 #### \$HOME/.local/bin/screen_camera
-- video_dev_id=X
+- video_nr=X
 
 #### discord
 - Appearance: CHAT FONT SCALING: 20px
