@@ -5,7 +5,7 @@ sudo cp -r ./etc/. /etc/
 
 # Packages
 cat ./pacman.txt | sudo pacman -Syu -
-yes | yay -Syu $(cat ./aur.txt)
+cat ./aur.txt | yay -Syu -
 yes | sudo pacman -Rns $(pacman -Qdtq)
 
 # MariaDB
@@ -17,10 +17,10 @@ sudo mariadb-secure-installation
 sudo usermod -aG flutter "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
-mkdir -p "$HOME/Qemu/Linux/"
-mkdir -p "$HOME/Qemu/Windows/"
 mkdir "$HOME/Work/"
 mkdir -p "$HOME/.local/bin/"
+mkdir -p "$HOME/Qemu/Linux/"
+mkdir -p "$HOME/Qemu/Windows/"
 cp -r ./home/. "$HOME/"
 
 # Android
