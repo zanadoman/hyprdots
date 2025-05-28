@@ -191,3 +191,4 @@
 - Storage: Add Drive
 - Compatibility: Enable Steam Play for all other titles: on
 - Controller: PlayStation Controller Support: Enabled
+- INSTALL Aseprite
