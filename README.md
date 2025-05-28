@@ -96,7 +96,6 @@
 | godot                           | Godot game engine.                         |
 | gradle                          | Java build tool.                           |
 | jdk17-openjdk                   | Java 17 development kit.                   |
-| jdk21-openjdk                   | Java 21 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
 | linux-headers                   | Linux kernel headers.                      |
 | mariadb                         | MySQL compatible database system.          |
