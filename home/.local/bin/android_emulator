@@ -9,4 +9,4 @@ emulator \
     -use-host-vulkan \
     -memory $(free -m | grep -Po 'Mem:\s+\K\d+') \
     -camera-front emulated \
-    -camera-back webcam0
+    -camera-back webcam2

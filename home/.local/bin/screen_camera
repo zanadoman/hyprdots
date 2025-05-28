@@ -1,6 +1,6 @@
 #!/bin/bash
 
-video_nr=0
+video_nr=4
 
 sudo modprobe -r v4l2loopback
 sudo modprobe v4l2loopback video_nr=$video_nr card_label=VirtualCamera exclusive_caps=1
