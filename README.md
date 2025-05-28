@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1117)](./pkgs.lock)
+# [Packages (1131)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -12,6 +12,7 @@
 ### Hyprland
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| asusctl (AUR)                   | ASUS control daemon.                       |
 | blueman                         | Bluetooth applet.                          |
 | brightnessctl                   | Brightness manager.                        |
 | dunst                           | Notification daemon.                       |
@@ -25,6 +26,7 @@
 | network-manager-applet          | NetworkManager applet.                     |
 | noto-fonts                      | Font provider.                             |
 | noto-fonts-emoji                | Colored emoji font.                        |
+| nvidia                          | Proprietary NVIDIA driver for Linux.       |
 | nwg-displays                    | Display manager.                           |
 | pavucontrol                     | Audio manager.                             |
 | slurp                           | Area selector.                             |

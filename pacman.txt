@@ -11,6 +11,7 @@ hyprsunset
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
+nvidia
 nwg-displays
 pavucontrol
 slurp

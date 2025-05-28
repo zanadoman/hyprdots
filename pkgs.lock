@@ -16,6 +16,7 @@ alsa-lib
 alsa-plugins
 alsa-topology-conf
 alsa-ucm-conf
+amd-ucode
 android-ndk
 android-sdk
 angular-cli
@@ -26,6 +27,7 @@ appstream-glib
 aquamarine
 archlinux-keyring
 argon2
+asusctl
 at-spi2-core
 atkmm
 atlauncher-bin
@@ -57,7 +59,6 @@ ca-certificates-utils
 cairo
 cairomm
 cairomm-1.16
-cantarell-fonts
 capstone
 cblas
 cdparanoia
@@ -107,6 +108,10 @@ e2fsprogs
 edk2-ovmf
 efibootmgr
 efivar
+egl-gbm
+egl-wayland
+egl-x11
+eglexternalplatform
 embree
 exiv2
 expat
@@ -145,6 +150,7 @@ gdbm
 gdk-pixbuf2
 gegl
 gettext
+gfxstream
 ghc-libs
 ghostscript
 giflib
@@ -156,6 +162,7 @@ glib2
 glibc
 glibmm
 glibmm-2.68
+glm
 glslang
 glu
 gmp
@@ -367,6 +374,7 @@ haskell-strict
 haskell-syb
 haskell-tagged
 haskell-tagsoup
+haskell-tasty
 haskell-temporary
 haskell-texmath
 haskell-text-conversions
@@ -441,7 +449,6 @@ icu
 ijs
 imath
 iniparser
-intel-ucode
 iproute2
 iptables
 iputils
@@ -542,6 +549,7 @@ lib32-mesa
 lib32-ncurses
 lib32-nspr
 lib32-nss
+lib32-nvidia-utils
 lib32-openssl
 lib32-p11-kit
 lib32-pam
@@ -552,13 +560,12 @@ lib32-sqlite
 lib32-systemd
 lib32-util-linux
 lib32-vulkan-icd-loader
-lib32-vulkan-radeon
 lib32-wayland
-lib32-xcb-util-keysyms
 lib32-xz
 lib32-zlib
 lib32-zstd
 libadwaita
+libaemu
 libaio
 libappindicator-gtk3
 libarchive
@@ -841,6 +848,8 @@ nspr
 nss
 ntfs-3g
 numactl
+nvidia
+nvidia-utils
 nwg-displays
 ocl-icd
 onetbb
@@ -925,8 +934,11 @@ qemu-hw-display-virtio-gpu
 qemu-hw-display-virtio-gpu-gl
 qemu-hw-display-virtio-gpu-pci
 qemu-hw-display-virtio-gpu-pci-gl
+qemu-hw-display-virtio-gpu-pci-rutabaga
+qemu-hw-display-virtio-gpu-rutabaga
 qemu-hw-display-virtio-vga
 qemu-hw-display-virtio-vga-gl
+qemu-hw-display-virtio-vga-rutabaga
 qemu-hw-uefi-vars
 qemu-hw-usb-host
 qemu-hw-usb-redirect
@@ -962,6 +974,7 @@ rtkit
 rubberband
 runc
 rustup
+rutabaga-ffi
 sbc
 sdbus-cpp
 sdl2-compat
@@ -1060,7 +1073,6 @@ vmaf
 vte-common
 vte3
 vulkan-icd-loader
-vulkan-radeon
 wasm-pack
 watchexec
 waybar
@@ -1104,6 +1116,7 @@ xvidcore
 xxhash
 xz
 yay
+yay-debug
 yyjson
 zenity
 zeromq
@@ -1113,5 +1126,6 @@ zix
 zlib
 zlib-ng
 zoxide
+zram-generator
 zstd
 zziplib
