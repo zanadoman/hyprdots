@@ -8,6 +8,7 @@ hyprland
 hyprlock
 hyprpaper
 hyprsunset
+lib32-nvidia-utils
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
@@ -53,6 +54,7 @@ github-cli
 godot
 gradle
 jdk17-openjdk
+jdk21-openjdk
 jdk8-openjdk
 linux-headers
 mariadb
