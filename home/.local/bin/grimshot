@@ -1,0 +1,3 @@
+#!/bin/bash
+
+killall slurp; slurp -b 00000000 -c 27a1b9 | grim -g - - | wl-copy
