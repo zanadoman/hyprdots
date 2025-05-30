@@ -14,7 +14,7 @@ sudo systemctl start mariadb.service
 sudo mariadb-secure-installation
 
 # User
-sudo usermod -aG flutter "$USER"
+sudo usermod -aG docker,flutter "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
 mkdir "$HOME/Work/"
