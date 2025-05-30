@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1131)](./pkgs.lock)
+# [Packages (1132)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -31,6 +31,7 @@
 | nwg-displays                    | Display manager.                           |
 | pavucontrol                     | Audio manager.                             |
 | slurp                           | Area selector.                             |
+| supergfxctl (AUR)               | ASUS GPU manager.                          |
 | ttf-hack-nerd                   | Source code font.                          |
 | waybar                          | Status bar.                                |
 | wl-clipboard                    | Clipboard manager.                         |

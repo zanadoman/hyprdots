@@ -1,4 +1,5 @@
 asusctl
+supergfxctl
 android-ndk
 android-sdk
 angular-cli
