@@ -37,7 +37,6 @@
 | fish                            | Smart shell.                               |
 | foot                            | Terminal emulator.                         |
 | starship                        | Improved prompt.                           |
-| tmux                            | Terminal multiplexer.                      |
 | zoxide                          | Smart cd.                                  |
 
 ### CLI tools
