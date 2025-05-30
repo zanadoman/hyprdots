@@ -19,6 +19,7 @@
 | hyprlock                        | Lock screen.                               |
 | hyprpaper                       | Wallpaper tool.                            |
 | hyprsunset                      | Bluelight filter.                          |
+| lib32-vulkan-radeon             | AMD Radeon Vulkan provider (32-bit).       |
 | network-manager-applet          | NetworkManager applet.                     |
 | noto-fonts                      | Font provider.                             |
 | noto-fonts-emoji                | Colored emoji font.                        |
@@ -111,7 +112,6 @@
 # Manual setup
 
 #### discord
-- Appearance: Chat Font Scaling: 20px
 - Show Member List
 
 #### hyprland

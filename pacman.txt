@@ -8,6 +8,7 @@ hyprland
 hyprlock
 hyprpaper
 hyprsunset
+lib32-vulkan-radeon
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
