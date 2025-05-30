@@ -68,7 +68,7 @@
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | highlight                       | Syntax highlighting for ranger.            |
-| ranger                          | Vim-inspired filemanager.                  |
+| ranger                          | Vim-inspired file manager.                 |
 | ueberzugpp                      | Image preview for ranger.                  |
 
 ### Archiving
