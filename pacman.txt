@@ -31,6 +31,10 @@ ripgrep
 rocm-smi-lib
 sshfs
 neovim
+code
+thunar
+thunar-archive-plugin
+xarchiver
 godot
 jdk17-openjdk
 jdk21-openjdk

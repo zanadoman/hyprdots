@@ -54,6 +54,18 @@
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | neovim                          | Vim-based text editor.                     |
+| code                            | Visual Studio Code - OSS.                  |
+
+### File manager
+| Package                         | Description                                |
+|:-------------------------------:|:-------------------------------------------|
+| thunar                          | Xfce file manager.                         |
+| thunar-archive-plugin           | Thunar archive plugin.                     |
+
+### Archiving
+| Package                         | Description                                |
+|:-------------------------------:|:-------------------------------------------|
+| xarchiver                       | Archive manager.                           |
 
 ### Programming
 | Package                         | Description                                |
