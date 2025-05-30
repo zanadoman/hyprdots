@@ -35,7 +35,9 @@ neovim
 code
 thunar
 thunar-archive-plugin
+unrar
 xarchiver
+zip
 godot
 jdk17-openjdk
 jdk21-openjdk

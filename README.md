@@ -66,7 +66,9 @@
 ### Archiving
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| unrar                           | RAR support for xarchiver.                 |
 | xarchiver                       | Archive manager.                           |
+| zip                             | ZIP support for xarchiver.                 |
 
 ### Programming
 | Package                         | Description                                |
