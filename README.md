@@ -55,7 +55,6 @@
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | neovim                          | Vim-based text editor.                     |
-| tree-sitter-cli                 | Improved syntax highlighting for NeoVim.   |
 
 ### Programming
 | Package                         | Description                                |
