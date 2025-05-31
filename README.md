@@ -1,4 +1,4 @@
-# [Packages (1132)](./pkgs.lock)
+# [Packages (938)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
