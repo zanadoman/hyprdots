@@ -1,3 +1,4 @@
+a52dec
 aalib
 abseil-cpp
 acl
@@ -143,6 +144,7 @@ gssdp
 gst-plugin-pipewire
 gst-plugins-bad-libs
 gst-plugins-base-libs
+gst-plugins-ugly
 gstreamer
 gtest
 gtk-layer-shell
@@ -423,6 +425,7 @@ kbd
 keyutils
 kmod
 krb5
+l-smash
 lame
 lapack
 lcms2
@@ -529,6 +532,7 @@ libbsd
 libcanberra
 libcap
 libcap-ng
+libcdio
 libcloudproviders
 libcolord
 libcups
@@ -542,6 +546,7 @@ libdecor
 libdeflate
 libdisplay-info
 libdrm
+libdvdread
 libebur128
 libedit
 libei
@@ -584,6 +589,7 @@ libmng
 libmnl
 libmpc
 libmpdclient
+libmpeg2
 libmypaint
 libmysofa
 libndp
@@ -745,6 +751,7 @@ ntfs-3g
 numactl
 nwg-displays
 onetbb
+onlyoffice-bin
 openal
 openexr
 openjpeg2
@@ -870,9 +877,11 @@ tree-sitter-query
 tree-sitter-vim
 tree-sitter-vimdoc
 tslib
+ttf-carlito
 ttf-dejavu
 ttf-hack-nerd
 ttf-liberation
+tumbler
 tzdata
 unibilium
 unrar
@@ -881,6 +890,7 @@ upower
 usbutils
 util-linux
 util-linux-libs
+viewnior
 vulkan-icd-loader
 vulkan-radeon
 watchexec
@@ -895,6 +905,7 @@ wireplumber
 wl-clipboard
 woff2
 wpa_supplicant
+x264
 x265
 xarchiver
 xcb-proto

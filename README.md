@@ -1,4 +1,4 @@
-# [Packages (938)](./pkgs.lock)
+# [Packages (949)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -62,6 +62,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | thunar                          | Xfce file manager.                         |
 | thunar-archive-plugin           | Thunar archive plugin.                     |
+| tumbler                         | Image preview for Thunar.                  |
 
 ### Archiving
 | Package                         | Description                                |
@@ -94,6 +95,7 @@
 | texlive-langeuropean            | LaTeX - language support.                  |
 | texlive-latexextra              | LaTeX - core packages.                     |
 | texlive-plaingeneric            | LaTeX - Doxygen dependency.                |
+| viewnior                        | Image viewer.                              |
 
 ### Entertainment
 | Package                         | Description                                |

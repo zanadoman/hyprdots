@@ -35,6 +35,7 @@ neovim
 code
 thunar
 thunar-archive-plugin
+tumbler
 unrar
 xarchiver
 zip
@@ -53,6 +54,7 @@ texlive-langenglish
 texlive-langeuropean
 texlive-latexextra
 texlive-plaingeneric
+viewnior
 discord
 spotify-launcher
 steam
