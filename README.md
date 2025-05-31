@@ -77,13 +77,13 @@
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk21-openjdk                   | Java 21 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
+| rstudio-desktop (AUR)           | Integrated development environment for R.  |
 | rustup                          | Rust toolchain installer.                  |
 | watchexec                       | Live reload tool.                          |
 
 ### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| anydesk-bin (AUR)               | Remote desktop application.                |
 | chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
 | onlyoffice-bin (AUR)            | Office suite.                              |
