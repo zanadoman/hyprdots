@@ -10,6 +10,7 @@
 
     "modules-right": [
         "cpu",
+        "temperature",
         "memory",
         "disk",
         "pulseaudio",
@@ -33,6 +34,14 @@
     "cpu": {
         "interval": 1,
         "format": " {usage}%",
+        "tooltip": false
+    },
+
+    "temperature": {
+        "thermal-zone": 0,
+        "warning-threshold": 60,
+        "critical-threshold": 80,
+        "interval": 1,
         "tooltip": false
     },
 
