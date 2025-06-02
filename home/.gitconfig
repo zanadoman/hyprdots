@@ -1,6 +1,6 @@
 [credential]
-    helper = store
+	helper = store
 [http]
-    postBuffer = 524288000
+	postBuffer = 524288000
 [pull]
-    rebase = false
+	rebase = false
