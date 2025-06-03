@@ -8,8 +8,7 @@ qemu-system-x86_64 \
     -hda "$directory/$(ls "$directory/" | fuzzel -p '  ' -l 5 -w 20 -d)" \
     -cpu host \
     -smp $(nproc) \
-    -display sdl,gl=on \
-    -device virtio-gpu-gl-pci \
+    -display sdl \
     -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M \
     -audiodev pipewire,id=snd0 \
     -device intel-hda \
