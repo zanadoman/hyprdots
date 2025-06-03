@@ -15,6 +15,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.tabstop = 4
+vim.opt.undofile = true
 vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
