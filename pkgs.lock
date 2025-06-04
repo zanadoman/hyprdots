@@ -835,6 +835,7 @@ netstandard-targeting-pack
 nettle
 network-manager-applet
 networkmanager
+networkmanager-openvpn
 ninja
 nm-connection-editor
 node-gyp
@@ -863,6 +864,7 @@ openexr
 openjpeg2
 openssh
 openssl
+openvpn
 openxr
 opus
 orc
@@ -894,6 +896,7 @@ pipewire-audio
 pipewire-jack
 pipewire-pulse
 pixman
+pkcs11-helper
 pkgconf
 playerctl
 polkit

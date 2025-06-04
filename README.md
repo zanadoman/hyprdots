@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1132)](./pkgs.lock)
+# [Packages (1135)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -103,6 +103,7 @@
 | linux-headers                   | Linux kernel headers.                      |
 | mariadb                         | MySQL compatible database system.          |
 | mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
+| networkmanager-openvpn          | NetworkManager OpenVPN plugin.             |
 | openbsd-netcat                  | Networking tool.                           |
 | qemu-desktop                    | Virtualization tool.                       |
 | rpi-imager                      | Raspberry Pi imager.                       |

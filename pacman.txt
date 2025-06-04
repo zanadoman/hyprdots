@@ -59,6 +59,7 @@ jdk8-openjdk
 linux-headers
 mariadb
 mingw-w64-gcc
+networkmanager-openvpn
 openbsd-netcat
 qemu-desktop
 rpi-imager
