@@ -6,10 +6,9 @@ qemu-system-x86_64 \
     -accel kvm \
     -hda "$directory/$(ls "$directory/" | fuzzel -p '  ' -l 5 -w 20 -d)" \
     -cpu host \
-    -smp $(nproc) \
-    -display sdl,gl=on \
-    -device virtio-gpu-gl-pci \
-    -m $(expr $(free -m | grep -Po 'Mem:\s+\K\d+') / 5)M \
+    -smp 2 \
+    -display sdl \
+    -m 4G \
     -audiodev pipewire,id=snd0 \
     -device intel-hda \
     -device hda-duplex,audiodev=snd0 \

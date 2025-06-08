@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1135)](./pkgs.lock)
+# [Packages (1136)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -172,7 +172,6 @@
 
 #### hyprland
 - nwg-displays
-- input:kb_layout
 
 #### networkmanager
 - nmcli connection modify 'Wired connection 1' ipv6.method disabled

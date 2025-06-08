@@ -173,6 +173,7 @@ gobject-introspection-runtime
 godot
 gperftools
 gpgme
+gpgmepp
 gpm
 gradle
 graphene

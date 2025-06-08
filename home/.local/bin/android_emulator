@@ -4,9 +4,9 @@ emulator \
     -accel on \
     -avd $(emulator -list-avds | fuzzel -p '  ' -l 5 -w 20 -d) \
     -partition-size 128000 \
-    -cores $(lscpu | grep -Po 'Core\(s\) per socket:\s+\K\d+') \
+    -cores 4 \
     -gpu host \
     -use-host-vulkan \
-    -memory $(free -m | grep -Po 'Mem:\s+\K\d+') \
+    -memory 4096 \
     -camera-front emulated \
     -camera-back webcam2
