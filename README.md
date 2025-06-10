@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1136)](./pkgs.lock)
+# [Packages (1137)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -144,6 +144,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | dos2unix                        | DOS to UNIX and vice versa text converter. |
 | dosfstools                      | FAT compatibility tool.                    |
+| exfatprogs                      | exFAT compatibility tool.                  |
 | ntfs-3g                         | NTFS compatibility tool.                   |
 | wine-mono                       | Windows compatibility layer.               |
 

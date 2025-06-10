@@ -85,5 +85,6 @@ spotify-launcher
 steam
 dos2unix
 dosfstools
+exfatprogs
 ntfs-3g
 wine-mono
