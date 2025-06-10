@@ -1,4 +1,5 @@
 [global]
+    follow = mouse
     offset = (5, 5)
     notification_limit = 3
     frame_width = 1
