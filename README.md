@@ -157,6 +157,9 @@
 #### \$HOME/.local/bin/screen_camera
 - video_nr=X
 
+#### blender
+- Edit: Preferences...: Get Extensions: Install from Disk...: BlenderKit
+
 #### discord
 - Appearance: Chat Font Scaling: 20px
 - Show Member List
