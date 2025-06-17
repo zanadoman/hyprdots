@@ -1,0 +1,4 @@
+[gd_resource type="EditorSettings" load_steps=2 format=3]
+
+[resource]
+filesystem/import/blender/blender_path = "/usr/bin/blender"
