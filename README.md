@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1189)](./pkgs.lock)
+# [Packages (1190)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -56,6 +56,7 @@
 | man-pages                       | Linux/POSIX manual pages.                  |
 | ripgrep                         | Recursive search tool.                     |
 | rocm-smi-lib                    | AMD GPU support for BTOP.                  |
+| smartmontools                   | Disk monitoring tool.                      |
 | sshfs                           | Network filesystem client.                 |
 
 ### Editor

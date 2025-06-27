@@ -32,6 +32,7 @@ man-db
 man-pages
 ripgrep
 rocm-smi-lib
+smartmontools
 sshfs
 neovim
 tree-sitter-cli
