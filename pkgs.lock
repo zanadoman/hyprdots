@@ -183,6 +183,7 @@ gperftools
 gpgme
 gpgmepp
 gpm
+gpsd
 gradle
 graphene
 graphite
@@ -799,6 +800,7 @@ linux-firmware
 linux-firmware-amdgpu
 linux-firmware-atheros
 linux-firmware-broadcom
+linux-firmware-cirrus
 linux-firmware-intel
 linux-firmware-mediatek
 linux-firmware-nvidia
@@ -935,6 +937,7 @@ poppler-glib
 popt
 portaudio
 potrace
+pps-tools
 procps-ng
 protobuf
 psmisc
