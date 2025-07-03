@@ -9,6 +9,8 @@ qemu-system-x86_64 \
     -smp 4 \
     -display sdl \
     -m 4G \
+    -device qemu-xhci,id=xhci \
+    -device usb-tablet,bus=xhci.0 \
     -audiodev pipewire,id=snd0 \
     -device intel-hda \
     -device hda-duplex,audiodev=snd0 \
