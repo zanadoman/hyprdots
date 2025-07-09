@@ -209,7 +209,7 @@ local function setup_mason_lspconfig_nvim()
             }
         },
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
-        omnisharp = {},
+        csharp_ls = {},
         pyright = {},
         rust_analyzer = {
             settings = {
