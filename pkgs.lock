@@ -682,6 +682,7 @@ libnma
 libnma-common
 libnotify
 libnsl
+libnss_nis
 libogg
 libopenmpt
 libp11-kit
@@ -1019,6 +1020,7 @@ qt6-translations
 qt6-wayland
 ranger
 rav1e
+rdma-core
 re2
 readline
 rhash
