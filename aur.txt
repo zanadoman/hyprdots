@@ -4,6 +4,5 @@ android-ndk
 android-sdk
 angular-cli
 flutter-bin
-anydesk-bin
 onlyoffice-bin
 atlauncher-bin

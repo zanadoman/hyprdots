@@ -21,7 +21,6 @@ amd-ucode
 android-ndk
 android-sdk
 angular-cli
-anydesk-bin
 aom
 appstream
 appstream-glib
@@ -156,6 +155,7 @@ gdbm
 gdk-pixbuf2
 gegl
 gettext
+gflags
 gfxstream
 ghc-libs
 ghostscript
@@ -179,6 +179,7 @@ gnupg
 gnutls
 gobject-introspection-runtime
 godot
+google-glog
 gperftools
 gpgme
 gpgmepp
@@ -682,7 +683,6 @@ libnma
 libnma-common
 libnotify
 libnsl
-libnss_nis
 libogg
 libopenmpt
 libp11-kit
@@ -1028,6 +1028,7 @@ ripgrep
 rocm-core
 rocm-device-libs
 rocm-smi-lib
+rocprofiler-register
 rpi-imager
 rtkit
 rubberband
