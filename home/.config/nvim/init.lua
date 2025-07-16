@@ -221,17 +221,12 @@ local function setup_mason_lspconfig_nvim()
         },
         ts_ls = {}
     }
-    local cmp_nvim_lsp = require "cmp_nvim_lsp"
-    local lspconfig = require "lspconfig"
-    require "mason-lspconfig".setup {
-        ensure_installed = vim.tbl_keys(servers),
-        handlers = {
-            function(server)
-                servers[server].capabilities = cmp_nvim_lsp.default_capabilities()
-                lspconfig[server].setup(servers[server])
-            end
-        }
-    }
+    local cmp_nvim_lsp_capabilities = require "cmp_nvim_lsp".default_capabilities()
+    for server, config in pairs(servers) do
+        config.capabilities = cmp_nvim_lsp_capabilities
+        vim.lsp.config[server] = config
+    end
+    require "mason-lspconfig".setup { ensure_installed = vim.tbl_keys(servers) }
     vim.keymap.set("n", "grs", ":LspStart<CR>")
     vim.keymap.set("n", "grh", ":LspStop<CR>")
 end
