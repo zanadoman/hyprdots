@@ -1040,6 +1040,7 @@ sdbus-cpp
 sdl2-compat
 sdl2_image
 sdl3
+sdl3_image
 seabios
 seatd
 sed

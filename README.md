@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1196)](./pkgs.lock)
+# [Packages (1197)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -96,6 +96,7 @@
 | flutter-bin (AUR)               | Flutter development kit.                   |
 | fpc                             | Pascal compiler.                           |
 | github-cli                      | GitHub command-line interface.             |
+| glslang                         | Khronos shader validator.                  |
 | godot                           | Godot game engine.                         |
 | gradle                          | Java build tool.                           |
 | jdk17-openjdk                   | Java 17 development kit.                   |
@@ -109,6 +110,7 @@
 | qemu-desktop                    | Virtualization tool.                       |
 | rpi-imager                      | Raspberry Pi imager.                       |
 | rustup                          | Rust toolchain installer.                  |
+| sdl3_image (AUR)                | SDL3 image library.                        |
 | sqlx-cli                        | SQLx migration tool.                       |
 | trunk                           | WebAssembly server.                        |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |

@@ -52,6 +52,7 @@ dotnet-sdk
 doxygen
 fpc
 github-cli
+glslang
 godot
 gradle
 jdk17-openjdk
