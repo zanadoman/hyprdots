@@ -67,6 +67,7 @@ qemu-desktop
 rpi-imager
 rustup
 sqlx-cli
+tinyxxd
 trunk
 v4l2loopback-dkms
 valgrind

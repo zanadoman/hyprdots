@@ -830,6 +830,7 @@ mailcap
 make
 man-db
 man-pages
+manifold
 mariadb
 mariadb-clients
 mariadb-libs
@@ -853,6 +854,7 @@ mpg123
 msgpack-c
 mtdev
 mypaint-brushes1
+nanobind
 ncurses
 ndctl
 neovim
@@ -1096,6 +1098,7 @@ texlive-latexrecommended
 texlive-pictures
 texlive-plaingeneric
 tinysparql
+tinyxxd
 tmux
 tomlplusplus
 tpm2-tss

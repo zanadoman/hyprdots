@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1197)](./pkgs.lock)
+# [Packages (1200)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -112,6 +112,7 @@
 | rustup                          | Rust toolchain installer.                  |
 | sdl3_image (AUR)                | SDL3 image library.                        |
 | sqlx-cli                        | SQLx migration tool.                       |
+| tinyxxd                         | Hex dump utility.                          |
 | trunk                           | WebAssembly server.                        |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C/C++.                  |
