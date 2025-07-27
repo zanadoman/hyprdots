@@ -27,6 +27,11 @@ vim.filetype.add {
     }
 }
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "c",
+    callback = function() vim.bo.commentstring = "/* %s */" end
+})
+
 vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
@@ -186,8 +191,8 @@ local function setup_mason_lspconfig_nvim()
         angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
         cssls = {},
-        emmet_language_server = { filetypes = { "*" } },
-        html = { filetypes = { "html", "javascript", "php", "rust", "typescript" } },
+        emmet_language_server = { filetypes = { "html", "javascript", "php", "typescript" } },
+        html = { filetypes = { "html", "javascript", "php", "typescript" } },
         intelephense = {},
         jdtls = {
             settings = {
