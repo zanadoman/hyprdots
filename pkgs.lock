@@ -213,7 +213,6 @@ gupnp
 gupnp-igd
 gzip
 harfbuzz
-harfbuzz-icu
 haskell-aeson
 haskell-aeson-pretty
 haskell-ansi-terminal
