@@ -86,6 +86,7 @@ local function setup_nvim_treesitter()
             "doxygen",
             "fish",
             "gdscript",
+            "glsl",
             "html",
             "java",
             "javascript",
