@@ -217,7 +217,6 @@ haskell-aeson
 haskell-aeson-pretty
 haskell-ansi-terminal
 haskell-ansi-terminal-types
-haskell-ansi-wl-pprint
 haskell-appar
 haskell-asn1-encoding
 haskell-asn1-parse
@@ -350,7 +349,6 @@ haskell-pem
 haskell-pretty-show
 haskell-prettyprinter
 haskell-prettyprinter-ansi-terminal
-haskell-prettyprinter-compat-ansi-wl-pprint
 haskell-primitive
 haskell-psqueues
 haskell-quickcheck
@@ -684,6 +682,7 @@ libnma
 libnma-common
 libnotify
 libnsl
+libnvme
 libogg
 libopenmpt
 libp11-kit
