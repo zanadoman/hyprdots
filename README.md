@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1201)](./pkgs.lock)
+# [Packages (1195)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -94,10 +94,7 @@
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
 | flutter-bin (AUR)               | Flutter development kit.                   |
-| fpc                             | Pascal compiler.                           |
 | github-cli                      | GitHub command-line interface.             |
-| glslang                         | Khronos shader validator.                  |
-| godot                           | Godot game engine.                         |
 | gradle                          | Java build tool.                           |
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk21-openjdk                   | Java 21 development kit.                   |
@@ -146,7 +143,6 @@
 ### Compatibility
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| dos2unix                        | DOS to UNIX and vice versa text converter. |
 | dosfstools                      | FAT compatibility tool.                    |
 | exfatprogs                      | exFAT compatibility tool.                  |
 | ntfs-3g                         | NTFS compatibility tool.                   |

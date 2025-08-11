@@ -50,10 +50,7 @@ docker
 docker-compose
 dotnet-sdk
 doxygen
-fpc
 github-cli
-glslang
-godot
 gradle
 jdk17-openjdk
 jdk21-openjdk
@@ -87,7 +84,6 @@ wf-recorder
 discord
 spotify-launcher
 steam
-dos2unix
 dosfstools
 exfatprogs
 ntfs-3g
