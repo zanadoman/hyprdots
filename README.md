@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1195)](./pkgs.lock)
+# [Packages (1204)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -52,6 +52,7 @@
 |:-------------------------------:|:-------------------------------------------|
 | btop                            | Resource monitor.                          |
 | fzf                             | Fuzzy finder.                              |
+| imagemagick                     | Image manipulation program.                |
 | man-db                          | Manual pages implementation.               |
 | man-pages                       | Linux/POSIX manual pages.                  |
 | ripgrep                         | Recursive search tool.                     |
@@ -105,6 +106,7 @@
 | networkmanager-openvpn          | NetworkManager OpenVPN plugin.             |
 | openbsd-netcat                  | Networking tool.                           |
 | qemu-desktop                    | Virtualization tool.                       |
+| renderdoc                       | OpenGL and Vulkan debugging tool.          |
 | rpi-imager                      | Raspberry Pi imager.                       |
 | rustup                          | Rust toolchain installer.                  |
 | sdl3_image (AUR)                | SDL3 image library.                        |
@@ -113,6 +115,7 @@
 | trunk                           | WebAssembly server.                        |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C/C++.                  |
+| vulkan-validation-layers        | Vulkan validation layers.                  |
 | wasm-pack                       | Rust WebAssembly build tool.               |
 | watchexec                       | Live reload tool.                          |
 

@@ -28,6 +28,7 @@ tmux
 zoxide
 btop
 fzf
+imagemagick
 man-db
 man-pages
 ripgrep
@@ -61,6 +62,7 @@ mingw-w64-gcc
 networkmanager-openvpn
 openbsd-netcat
 qemu-desktop
+renderdoc
 rpi-imager
 rustup
 sqlx-cli
@@ -68,6 +70,7 @@ tinyxxd
 trunk
 v4l2loopback-dkms
 valgrind
+vulkan-validation-layers
 wasm-pack
 watchexec
 blender

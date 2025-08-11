@@ -456,6 +456,7 @@ hyprwayland-scanner
 iana-etc
 icu
 ijs
+imagemagick
 imath
 iniparser
 intel-oneapi-common
@@ -651,6 +652,7 @@ liblc3
 libldac
 libldap
 libliftoff
+liblqr
 libluv
 libmd
 libmicrohttpd
@@ -696,6 +698,7 @@ libpng
 libproxy
 libpsl
 libpulse
+libraqm
 libraw
 libraw1394
 librsvg
@@ -1010,6 +1013,10 @@ qemu-ui-sdl
 qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-vhost-user-gpu
+qt5-base
+qt5-svg
+qt5-translations
+qt5-x11extras
 qt6-base
 qt6-declarative
 qt6-svg
@@ -1020,6 +1027,7 @@ rav1e
 rdma-core
 re2
 readline
+renderdoc
 rhash
 ripgrep
 rocm-core
@@ -1136,6 +1144,7 @@ vmaf
 vte-common
 vte3
 vulkan-icd-loader
+vulkan-validation-layers
 wasm-pack
 watchexec
 waybar
