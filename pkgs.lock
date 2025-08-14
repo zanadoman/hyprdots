@@ -132,7 +132,6 @@ findutils
 fish
 flac
 flex
-flutter-bin
 fmt
 fontconfig
 foot
@@ -1121,7 +1120,6 @@ ttf-liberation
 tzdata
 ueberzugpp
 unibilium
-unionfs-fuse
 unrar
 unzip
 upower

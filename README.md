@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1203)](./pkgs.lock)
+# [Packages (1201)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -84,25 +84,26 @@
 ### Programming
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C/C++.          |
-| android-ndk (AUR)               | Android compiler for C/C++.                |
+| aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C, C++.         |
+| android-ndk (AUR)               | Android compiler for C, C++.               |
 | android-sdk (AUR)               | Android development kit.                   |
 | angular-cli (AUR)               | Angular command-line interface.            |
+| cmake                           | C, C++ build tool.                         |
 | composer                        | PHP package manager.                       |
 | dbeaver                         | Universal database manager.                |
 | docker                          | Application containerizer.                 |
 | docker-compose                  | Docker helper.                             |
 | dotnet-sdk                      | C# development kit.                        |
 | doxygen                         | Documentation generator.                   |
-| flutter-bin (AUR)               | Flutter development kit.                   |
 | github-cli                      | GitHub command-line interface.             |
 | gradle                          | Java build tool.                           |
 | jdk17-openjdk                   | Java 17 development kit.                   |
 | jdk21-openjdk                   | Java 21 development kit.                   |
 | jdk8-openjdk                    | Java 8 development kit.                    |
 | linux-headers                   | Linux kernel headers.                      |
+| lld                             | LLVM linker.                               |
 | mariadb                         | MySQL compatible database system.          |
-| mingw-w64-gcc                   | x86_64 Windows compiler for C/C++.         |
+| mingw-w64-gcc                   | x86_64 Windows compiler for C, C++.        |
 | networkmanager-openvpn          | NetworkManager OpenVPN plugin.             |
 | openbsd-netcat                  | Networking tool.                           |
 | qemu-desktop                    | Virtualization tool.                       |
@@ -114,7 +115,7 @@
 | tinyxxd                         | Hex dump utility.                          |
 | trunk                           | WebAssembly server.                        |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
-| valgrind                        | Debugging tool for C/C++.                  |
+| valgrind                        | Debugging tool for C, C++.                 |
 | vulkan-validation-layers        | Vulkan validation layers.                  |
 | wasm-pack                       | Rust WebAssembly build tool.               |
 | watchexec                       | Live reload tool.                          |

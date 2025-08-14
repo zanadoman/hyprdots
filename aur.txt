@@ -3,7 +3,6 @@ supergfxctl
 android-ndk
 android-sdk
 angular-cli
-flutter-bin
 sdl3_image
 onlyoffice-bin
 atlauncher-bin

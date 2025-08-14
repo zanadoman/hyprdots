@@ -14,7 +14,7 @@ sudo systemctl start mariadb.service
 sudo mariadb-secure-installation
 
 # User
-sudo usermod -aG docker,flutter "$USER"
+sudo usermod -aG docker "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
 mkdir "$HOME/Work/"
@@ -38,9 +38,6 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
 
 # C#
 dotnet new install Avalonia.Templates
-
-# Flutter
-flutter config --no-analytics
 
 # Ranger
 git clone https://github.com/jchook/ranger-zoxide.git "$HOME/.config/ranger/plugins/zoxide/"
