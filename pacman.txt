@@ -59,6 +59,7 @@ jdk21-openjdk
 jdk8-openjdk
 linux-headers
 lld
+llvm
 mariadb
 mingw-w64-gcc
 networkmanager-openvpn

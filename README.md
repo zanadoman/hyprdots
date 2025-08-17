@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1142)](./pkgs.lock)
+# [Packages (1143)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -102,6 +102,7 @@
 | jdk8-openjdk                    | Java 8 development kit.                    |
 | linux-headers                   | Linux kernel headers.                      |
 | lld                             | LLVM linker.                               |
+| llvm                            | LLVM compiler infrastructure.              |
 | mariadb                         | MySQL compatible database system.          |
 | mingw-w64-gcc                   | x86_64 Windows compiler for C, C++.        |
 | networkmanager-openvpn          | NetworkManager OpenVPN plugin.             |
