@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1201)](./pkgs.lock)
+# [Packages (1142)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -123,7 +123,6 @@
 ### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| blender                         | 3D modeling software.                      |
 | chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
 | onlyoffice-bin (AUR)            | Office suite.                              |

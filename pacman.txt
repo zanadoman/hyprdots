@@ -75,7 +75,6 @@ valgrind
 vulkan-validation-layers
 wasm-pack
 watchexec
-blender
 chromium
 gimp
 pandoc-cli
