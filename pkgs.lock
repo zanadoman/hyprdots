@@ -788,6 +788,7 @@ linux-firmware-realtek
 linux-firmware-whence
 linux-headers
 lld
+llvm
 llvm-libs
 lm_sensors
 lmdb
