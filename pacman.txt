@@ -62,6 +62,7 @@ lld
 llvm
 mariadb
 mingw-w64-gcc
+mono
 networkmanager-openvpn
 openbsd-netcat
 qemu-desktop

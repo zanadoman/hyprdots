@@ -610,6 +610,7 @@ libffi
 libfontenc
 libfreeaptx
 libgcrypt
+libgdiplus
 libgexiv2
 libgirepository
 libglvnd
@@ -820,6 +821,7 @@ minizip
 mkinitcpio
 mkinitcpio-busybox
 mobile-broadband-provider-info
+mono
 mpdecimal
 mpfr
 mpg123
