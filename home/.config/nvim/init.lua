@@ -21,7 +21,6 @@ vim.opt.wrap = false
 
 vim.filetype.add {
     pattern = {
-        [".*.axaml"] = { "xml", { priority = math.huge } },
         [".*.html"] = { "html", { priority = math.huge } },
         [".*.php"] = { "php", { priority = math.huge } }
     }
@@ -82,7 +81,6 @@ local function setup_nvim_treesitter()
             "cmake",
             "cpp",
             "css",
-            "doxygen",
             "fish",
             "glsl",
             "html",
@@ -97,8 +95,7 @@ local function setup_nvim_treesitter()
             "python",
             "rust",
             "sql",
-            "typescript",
-            "xml"
+            "typescript"
         },
         highlight = { enable = true }
     }
@@ -202,15 +199,6 @@ local function setup_mason_lspconfig_nvim()
             }
         },
         kotlin_language_server = {},
-        lemminx = {
-            settings = {
-                xml = {
-                    catalogs = { vim.fn.stdpath "config" .. "/lemminx/catalog.xml" },
-                    completion = { autoCloseTags = false },
-                    validation = { noGrammar = "ignore" }
-                }
-            }
-        },
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
         csharp_ls = {},
         pyright = {},
