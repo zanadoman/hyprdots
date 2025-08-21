@@ -50,6 +50,9 @@ rustup target add wasm32-unknown-unknown
 rustup target add x86_64-linux-android
 rustup target add x86_64-pc-windows-gnu
 
+# Wine
+sudo ln -s /bin/wine /bin/wine64
+
 # Shell
 chsh -s /bin/fish
 
