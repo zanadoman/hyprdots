@@ -10,15 +10,27 @@ set -x VISUAL nvim
 set -x TERMINAL foot
 set -x BROWSER chromium
 set -x OPENER rifle
+fish_vi_key_bindings
+bind -M insert \ef forward-word
+bind -M insert \cf accept-autosuggestion
+starship init fish | source
+function fish_mode_prompt; echo \ ; end
+zoxide init fish --cmd cd | source
+fzf --fish | source
+alias clear='clear && fastfetch'
 alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
-alias clear='clear && fastfetch'
 alias hyprland='test $XDG_SESSION_TYPE = tty && command hyprland && clear'
-starship init fish | source
-zoxide init fish --cmd cd | source
-fzf --fish | source
 clear
+
+function fish_should_add_to_history
+    string match -rq ^\  -- $argv; and return 1; or return 0
+end
+
+function merge_history --on-event fish_prompt
+    history merge
+end
 
 function tmux
     if test 0 -lt (count $argv)

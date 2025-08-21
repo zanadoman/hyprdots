@@ -9,14 +9,15 @@ export VISUAL=nvim
 export TERMINAL=foot
 export BROWSER=chromium
 export OPENER=rifle
-alias wine='env -u DISPLAY wine'
-alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
-alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
-alias clear='clear && fastfetch'
-alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
+set -o vi
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"
 eval "$(fzf --bash)"
+alias clear='clear && fastfetch'
+alias wine='env -u DISPLAY wine'
+alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
+alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
+alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
 clear
 
 tmux () {
