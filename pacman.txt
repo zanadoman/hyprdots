@@ -9,6 +9,7 @@ hyprlock
 hyprpaper
 hyprsunset
 lib32-nvidia-utils
+libnotify
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
@@ -44,7 +45,6 @@ ueberzugpp
 atool
 unrar
 zip
-aarch64-linux-gnu-gcc
 cmake
 composer
 dbeaver
@@ -71,11 +71,9 @@ rpi-imager
 rustup
 sqlx-cli
 tinyxxd
-trunk
 v4l2loopback-dkms
 valgrind
 vulkan-validation-layers
-wasm-pack
 watchexec
 chromium
 gimp
@@ -87,8 +85,6 @@ texlive-langeuropean
 texlive-latexextra
 texlive-plaingeneric
 wf-recorder
-discord
-spotify-launcher
 steam
 dosfstools
 exfatprogs

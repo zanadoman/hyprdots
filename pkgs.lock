@@ -1,10 +1,6 @@
 7zip
 a52dec
 aalib
-aarch64-linux-gnu-binutils
-aarch64-linux-gnu-gcc
-aarch64-linux-gnu-glibc
-aarch64-linux-gnu-linux-api-headers
 abseil-cpp
 acl
 adwaita-cursors
@@ -36,7 +32,6 @@ audit
 autoconf
 automake
 avahi
-ayatana-ido
 babl
 base
 base-devel
@@ -87,7 +82,6 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
-discord
 dkms
 docker
 docker-compose
@@ -564,8 +558,6 @@ libassuan
 libasyncns
 libavc1394
 libavif
-libayatana-appindicator
-libayatana-indicator
 libb2
 libbluray
 libbpf
@@ -583,7 +575,6 @@ libcgif
 libcloudproviders
 libcolord
 libcups
-libcurl-gnutls
 libdaemon
 libdatrie
 libdbusmenu-glib
@@ -995,7 +986,6 @@ seabios
 seatd
 sed
 semver
-sequoia-sqv
 serd
 shaderc
 shadow
@@ -1015,7 +1005,6 @@ speexdsp
 spice
 spice-protocol
 spirv-tools
-spotify-launcher
 sqlite
 sqlx-cli
 sratom
@@ -1057,7 +1046,6 @@ tree-sitter-markdown
 tree-sitter-query
 tree-sitter-vim
 tree-sitter-vimdoc
-trunk
 tslib
 ttf-carlito
 ttf-dejavu
@@ -1087,7 +1075,6 @@ vte-common
 vte3
 vulkan-icd-loader
 vulkan-validation-layers
-wasm-pack
 watchexec
 waybar
 wayland

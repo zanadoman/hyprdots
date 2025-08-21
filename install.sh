@@ -17,6 +17,7 @@ sudo mariadb-secure-installation
 sudo usermod -aG docker "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
+mkdir "$HOME/Remote/"
 mkdir "$HOME/Work/"
 mkdir -p "$HOME/.local/bin/"
 mkdir -p "$HOME/Qemu/Linux/"

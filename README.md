@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1145)](./pkgs.lock)
+# [Packages (1132)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -24,6 +24,7 @@
 | hyprpaper                       | Wallpaper tool.                            |
 | hyprsunset                      | Bluelight filter.                          |
 | lib32-nvidia-utils              | NVIDIA Vulkan provider (32-bit).           |
+| libnotify                       | Desktop notifications.                     |
 | network-manager-applet          | NetworkManager applet.                     |
 | noto-fonts                      | Font provider.                             |
 | noto-fonts-emoji                | Colored emoji font.                        |
@@ -84,7 +85,6 @@
 ### Programming
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
-| aarch64-linux-gnu-gcc           | AArch64 Linux compiler for C, C++.         |
 | android-ndk (AUR)               | Android compiler for C, C++.               |
 | android-sdk (AUR)               | Android development kit.                   |
 | angular-cli (AUR)               | Angular command-line interface.            |
@@ -115,11 +115,9 @@
 | sdl3_image (AUR)                | SDL3 image library.                        |
 | sqlx-cli                        | SQLx migration tool.                       |
 | tinyxxd                         | Hex dump utility.                          |
-| trunk                           | WebAssembly server.                        |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C, C++.                 |
 | vulkan-validation-layers        | Vulkan validation layers.                  |
-| wasm-pack                       | Rust WebAssembly build tool.               |
 | watchexec                       | Live reload tool.                          |
 
 ### Media
@@ -141,8 +139,6 @@
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
 | atlauncher-bin (AUR)            | Minecraft launcher.                        |
-| discord                         | Discord client.                            |
-| spotify-launcher                | Music streaming service.                   |
 | steam                           | Steam client.                              |
 
 ### Compatibility
@@ -161,8 +157,9 @@
 #### \$HOME/.local/bin/screen_camera
 - video_nr=X
 
-#### discord
+#### chromium/discord
 - Appearance: Chat Font Scaling: 20px
+- Notifications: Enable Desktop Notifications: on
 - Show Member List
 
 #### filesystem
@@ -192,9 +189,6 @@
 
 #### qemu-desktop
 - "\$HOME/Qemu/**/*.img"
-
-#### spotify-launcher
-- Startup and window behaviour: Close button should minimize the Spotify window: on
 
 #### steam
 - Storage: Add Drive
