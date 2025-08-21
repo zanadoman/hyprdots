@@ -37,9 +37,6 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
     emulator \
     'system-images;android-34;google_apis_playstore;x86_64'
 
-# C#
-dotnet new install Avalonia.Templates
-
 # Ranger
 git clone https://github.com/jchook/ranger-zoxide.git "$HOME/.config/ranger/plugins/zoxide/"
 
@@ -47,7 +44,6 @@ git clone https://github.com/jchook/ranger-zoxide.git "$HOME/.config/ranger/plug
 rustup default stable
 rustup default nightly
 rustup target add aarch64-linux-android
-rustup target add wasm32-unknown-unknown
 rustup target add x86_64-linux-android
 rustup target add x86_64-pc-windows-gnu
 
