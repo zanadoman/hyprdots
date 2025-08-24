@@ -8,8 +8,8 @@ set -x PATH "$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/b
 set -x PAGER less
 set -x VISUAL nvim
 set -x TERMINAL foot
-set -x CHROME_BIN=chromium
-set -x BROWSER=$CHROME_BIN
+set -x CHROME_BIN chromium
+set -x BROWSER $CHROME_BIN
 set -x OPENER rifle
 fish_vi_key_bindings
 bind -M insert \ef forward-word
