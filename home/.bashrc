@@ -7,7 +7,8 @@ export PATH="$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/b
 export PAGER=less
 export VISUAL=nvim
 export TERMINAL=foot
-export BROWSER=chromium
+export CHROME_BIN=chromium
+export BROWSER=$CHROME_BIN
 export OPENER=rifle
 set -o vi
 eval "$(starship init bash)"
