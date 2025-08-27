@@ -37,9 +37,6 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
     emulator \
     'system-images;android-34;google_apis_playstore;x86_64'
 
-# Ranger
-git clone https://github.com/jchook/ranger-zoxide.git "$HOME/.config/ranger/plugins/zoxide/"
-
 # Rust
 rustup default stable
 rustup default nightly

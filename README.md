@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1132)](./pkgs.lock)
+# [Packages (1120)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -66,13 +66,6 @@
 |:-------------------------------:|:-------------------------------------------|
 | neovim                          | Vim-based text editor.                     |
 | tree-sitter-cli                 | Improved syntax highlighting for NeoVim.   |
-
-### File manager
-| Package                         | Description                                |
-|:-------------------------------:|:-------------------------------------------|
-| highlight                       | Syntax highlighting for ranger.            |
-| ranger                          | Vim-inspired file manager.                 |
-| ueberzugpp                      | Image preview for ranger.                  |
 
 ### Archiving
 | Package                         | Description                                |
