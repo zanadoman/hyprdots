@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1120)](./pkgs.lock)
+# [Packages (1125)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -60,6 +60,7 @@
 | rocm-smi-lib                    | AMD GPU support for BTOP.                  |
 | smartmontools                   | Disk monitoring tool.                      |
 | sshfs                           | Network filesystem client.                 |
+| tree                            | Recursive directory listing.               |
 
 ### Editor
 | Package                         | Description                                |
@@ -84,6 +85,7 @@
 | cmake                           | C, C++ build tool.                         |
 | composer                        | PHP package manager.                       |
 | dbeaver                         | Universal database manager.                |
+| directx-shader-compiler         | Vulkan/DirectX shader compiler.            |
 | docker                          | Application containerizer.                 |
 | docker-compose                  | Docker helper.                             |
 | dotnet-sdk                      | C# development kit.                        |
@@ -101,6 +103,7 @@
 | mono                            | Open-source .NET implementation.           |
 | networkmanager-openvpn          | NetworkManager OpenVPN plugin.             |
 | openbsd-netcat                  | Networking tool.                           |
+| perf                            | Performance profiler.                      |
 | qemu-desktop                    | Virtualization tool.                       |
 | renderdoc                       | OpenGL and Vulkan debugging tool.          |
 | rpi-imager                      | Raspberry Pi imager.                       |

@@ -36,6 +36,7 @@ ripgrep
 rocm-smi-lib
 smartmontools
 sshfs
+tree
 neovim
 tree-sitter-cli
 7zip
@@ -45,6 +46,7 @@ zip
 cmake
 composer
 dbeaver
+directx-shader-compiler
 docker
 docker-compose
 dotnet-sdk
@@ -62,6 +64,7 @@ mingw-w64-gcc
 mono
 networkmanager-openvpn
 openbsd-netcat
+perf
 qemu-desktop
 renderdoc
 rpi-imager

@@ -78,6 +78,7 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
+directx-shader-compiler
 dkms
 docker
 docker-compose
@@ -101,6 +102,7 @@ egl-gbm
 egl-wayland
 egl-x11
 eglexternalplatform
+elfutils
 exfatprogs
 exiv2
 expat
@@ -657,6 +659,7 @@ libp11-kit
 libpaper
 libpcap
 libpciaccess
+libpfm
 libpgm
 libpipeline
 libpipewire
@@ -866,6 +869,7 @@ pciutils
 pcre
 pcre2
 pcsclite
+perf
 perl
 perl-error
 perl-mailtools
@@ -1028,6 +1032,7 @@ tinyxxd
 tmux
 tomlplusplus
 tpm2-tss
+tree
 tree-sitter
 tree-sitter-c
 tree-sitter-cli
