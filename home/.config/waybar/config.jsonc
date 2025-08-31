@@ -80,7 +80,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-charging": "󰂄 {capacity}%",
-        "format-full": "",
+        "format-not-charging": " {capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "tooltip": false
     },

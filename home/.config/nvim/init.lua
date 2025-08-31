@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80,88"
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.guicursor = "a:block,i:ver25"
@@ -21,6 +21,7 @@ vim.opt.wrap = false
 
 vim.filetype.add {
     pattern = {
+        [".*.hlsl"] = { "hlsl", { priority = math.huge } },
         [".*.html"] = { "html", { priority = math.huge } },
         [".*.php"] = { "php", { priority = math.huge } }
     }
@@ -29,6 +30,10 @@ vim.filetype.add {
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "c",
     callback = function() vim.bo.commentstring = "/* %s */" end
+})
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "hlsl",
+    callback = function() vim.bo.commentstring = "// %s" end
 })
 
 vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
@@ -44,7 +49,7 @@ vim.keymap.set("n", "grf", function()
 end)
 
 vim.diagnostic.config { virtual_text = true }
-vim.keymap.set("n", "L", vim.diagnostic.open_float)
+vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
 
 local function setup_tokyonight_nvim()
     require "tokyonight".setup { style = "night" }
@@ -82,7 +87,7 @@ local function setup_nvim_treesitter()
             "cpp",
             "css",
             "fish",
-            "glsl",
+            "hlsl",
             "html",
             "java",
             "javascript",
@@ -116,8 +121,7 @@ local function setup_telescope_nvim()
     end)
     vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
     vim.keymap.set("n", "<Leader>S", telescope_builtin.spell_suggest)
-    vim.keymap.set("n", "<Leader>d", telescope_builtin.diagnostics)
-    vim.keymap.set("n", "<Leader>D", telescope_builtin.git_status)
+    vim.keymap.set("n", "<Leader>D", telescope_builtin.diagnostics)
     vim.keymap.set("n", "<Leader>f", telescope_builtin.find_files)
     vim.keymap.set("n", "<Leader>F", function()
         telescope_builtin.find_files { cwd = telescope_utils.buffer_dir() }
