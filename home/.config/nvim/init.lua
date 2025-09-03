@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
-vim.opt.colorcolumn = "80,88"
+vim.opt.colorcolumn = "80,88,174"
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.guicursor = "a:block,i:ver25"

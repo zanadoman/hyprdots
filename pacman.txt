@@ -77,7 +77,6 @@ vulkan-validation-layers
 watchexec
 chromium
 gimp
-pandoc-cli
 texlive-fontsrecommended
 texlive-fontutils
 texlive-langenglish

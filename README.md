@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (1125)](./pkgs.lock)
+# [Packages (896)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -122,7 +122,6 @@
 | chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
 | onlyoffice-bin (AUR)            | Office suite.                              |
-| pandoc-cli                      | Universal document converter.              |
 | texlive-fontsrecommended        | LaTeX - essential fonts.                   |
 | texlive-fontutils               | LaTeX - Doxygen dependency.                |
 | texlive-langenglish             | LaTeX - language support.                  |
