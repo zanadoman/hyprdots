@@ -46,7 +46,6 @@ zip
 cmake
 composer
 dbeaver
-directx-shader-compiler
 docker
 docker-compose
 dotnet-sdk

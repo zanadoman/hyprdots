@@ -78,7 +78,7 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
-directx-shader-compiler
+directx-shader-compiler-git
 dkms
 docker
 docker-compose

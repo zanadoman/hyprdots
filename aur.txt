@@ -3,6 +3,7 @@ supergfxctl
 android-ndk
 android-sdk
 angular-cli
+directx-shader-compiler-git
 sdl3_image
 onlyoffice-bin
 atlauncher-bin
