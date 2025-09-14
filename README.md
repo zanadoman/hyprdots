@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (896)](./pkgs.lock)
+# [Packages (900)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -119,6 +119,7 @@
 ### Media
 | Package                         | Description                                |
 |:-------------------------------:|:-------------------------------------------|
+| anydesk-bin (AUR)               | Remote desktop application.                |
 | chromium                        | Web browser.                               |
 | gimp                            | Image manipulation program.                |
 | onlyoffice-bin (AUR)            | Office suite.                              |

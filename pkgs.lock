@@ -16,6 +16,7 @@ amd-ucode
 android-ndk
 android-sdk
 angular-cli
+anydesk-bin
 aom
 appstream
 appstream-glib
@@ -425,6 +426,7 @@ libnma-common
 libnma-gtk4
 libnotify
 libnsl
+libnss_nis
 libnvme
 libogg
 libopenmpt
@@ -882,6 +884,8 @@ xxhash
 xz
 yay
 yay-debug
+yp-tools
+yp-tools-debug
 yyjson
 zenity
 zeromq
