@@ -371,6 +371,7 @@ libfdk-aac
 libffi
 libfontenc
 libfreeaptx
+libfyaml
 libgcrypt
 libgdiplus
 libgexiv2
@@ -885,7 +886,6 @@ xz
 yay
 yay-debug
 yp-tools
-yp-tools-debug
 yyjson
 zenity
 zeromq
