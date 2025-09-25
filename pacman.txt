@@ -62,14 +62,12 @@ mariadb
 mingw-w64-gcc
 mono
 networkmanager-openvpn
-openbsd-netcat
 perf
 qemu-desktop
 renderdoc
 rpi-imager
 rustup
 sqlx-cli
-tinyxxd
 v4l2loopback-dkms
 valgrind
 vulkan-validation-layers

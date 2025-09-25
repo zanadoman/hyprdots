@@ -102,7 +102,6 @@
 | mingw-w64-gcc                   | x86_64 Windows compiler for C, C++.        |
 | mono                            | Open-source .NET implementation.           |
 | networkmanager-openvpn          | NetworkManager OpenVPN plugin.             |
-| openbsd-netcat                  | Networking tool.                           |
 | perf                            | Performance profiler.                      |
 | qemu-desktop                    | Virtualization tool.                       |
 | renderdoc                       | OpenGL and Vulkan debugging tool.          |
@@ -110,7 +109,6 @@
 | rustup                          | Rust toolchain installer.                  |
 | sdl3_image (AUR)                | SDL3 image library.                        |
 | sqlx-cli                        | SQLx migration tool.                       |
-| tinyxxd                         | Hex dump utility.                          |
 | v4l2loopback-dkms               | V4L2 loopback kernel module.               |
 | valgrind                        | Debugging tool for C, C++.                 |
 | vulkan-validation-layers        | Vulkan validation layers.                  |

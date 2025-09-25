@@ -46,6 +46,7 @@ bluez-libs
 brightnessctl
 brotli
 btop
+bubblewrap
 bzip2
 c-ares
 ca-certificates
@@ -155,6 +156,7 @@ glibmm-2.68
 glm
 glslang
 glu
+glycin
 gmp
 gnulib-l10n
 gnupg
@@ -618,7 +620,6 @@ ocl-icd
 oniguruma
 onlyoffice-bin
 openal
-openbsd-netcat
 opencore-amr
 openexr
 openh264
@@ -802,7 +803,6 @@ texlive-latexrecommended
 texlive-pictures
 texlive-plaingeneric
 tinysparql
-tinyxxd
 tmux
 tomlplusplus
 tpm2-tss
