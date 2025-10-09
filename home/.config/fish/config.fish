@@ -18,6 +18,7 @@ function fish_mode_prompt; echo \ ; end
 zoxide init fish --cmd cd | source
 fzf --fish | source
 alias clear='clear && fastfetch'
+alias valgrind='env VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json valgrind'
 alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'

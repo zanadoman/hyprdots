@@ -14,6 +14,7 @@ eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"
 eval "$(fzf --bash)"
 alias clear='clear && fastfetch'
+alias valgrind='env VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json valgrind'
 alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'

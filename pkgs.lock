@@ -19,7 +19,6 @@ angular-cli
 anydesk-bin
 aom
 appstream
-appstream-glib
 aquamarine
 archlinux-keyring
 argon2
@@ -841,6 +840,8 @@ vmaf
 vte-common
 vte3
 vulkan-icd-loader
+vulkan-mesa-device-select
+vulkan-radeon
 vulkan-validation-layers
 watchexec
 waybar

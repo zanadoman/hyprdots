@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (899)](./pkgs.lock)
+# [Packages (900)](./pkgs.lock)
 
 ### Prerequisites
 | Package                         | Description                                |
@@ -34,6 +34,7 @@
 | slurp                           | Area selector.                             |
 | supergfxctl (AUR)               | ASUS GPU manager.                          |
 | ttf-hack-nerd                   | Source code font.                          |
+| vulkan-radeon                   | AMD Vulkan provider.                       |
 | waybar                          | Status bar.                                |
 | wl-clipboard                    | Clipboard manager.                         |
 | xdg-desktop-portal-hyprland     | Screen sharing tool.                       |
