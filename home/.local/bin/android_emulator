@@ -1,6 +1,6 @@
 #!/bin/bash
 
-emulator \
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json emulator \
     -accel on \
     -avd $(emulator -list-avds | fuzzel -p '  ' -l 5 -w 20 -d) \
     -partition-size 128000 \
