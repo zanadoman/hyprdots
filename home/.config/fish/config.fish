@@ -36,6 +36,13 @@ end
 function tmux
     if test 0 -lt (count $argv)
         command tmux $argv
+        return
+    end
+    if test (basename $PWD) = $USER
+        set selection (command tmux list-sessions -F '#{session_id}: #{session_name}' | fzf -1 -0 | grep -Po '^\$[0-9]+')
+        if test -n $selection
+            command tmux attach-session -t $selection
+        end
     else
         command tmux attach-session -t (basename $PWD) &>/dev/null || command tmux new-session -s (basename $PWD)
     end

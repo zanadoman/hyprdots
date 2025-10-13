@@ -24,6 +24,13 @@ clear
 tmux () {
     if [ 0 -lt $# ]; then
         command tmux "$@"
+        return
+    fi
+    if [ "$(basename "$PWD")" = "$USER" ]; then
+        selection=$(command tmux list-sessions -F '#{session_id}: #{session_name}' | fzf -1 -0 | grep -Po '^\$[0-9]+')
+        if [ -n $selection ]; then
+            command tmux attach-session -t $selection
+        fi
     else
         command tmux attach-session -t "$(basename "$PWD")" &>/dev/null || command tmux new-session -s "$(basename "$PWD")"
     fi
