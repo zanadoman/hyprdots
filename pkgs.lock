@@ -470,6 +470,7 @@ libstemmer
 libsynctex
 libsysprof-capture
 libtasn1
+libtatsu
 libteam
 libthai
 libtheora
@@ -724,9 +725,7 @@ qt5-translations
 qt5-x11extras
 qt6-base
 qt6-declarative
-qt6-svg
 qt6-translations
-qt6-wayland
 rav1e
 rdma-core
 re2

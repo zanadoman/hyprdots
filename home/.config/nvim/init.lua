@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
-vim.opt.colorcolumn = "81,88"
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.guicursor = "a:block,i:ver25"
@@ -21,6 +20,7 @@ vim.opt.wrap = false
 
 vim.filetype.add {
     pattern = {
+        [".*.h"] = { "c", { priority = math.huge } },
         [".*.hlsl"] = { "hlsl", { priority = math.huge } },
         [".*.html"] = { "html", { priority = math.huge } },
         [".*.php"] = { "php", { priority = math.huge } }
@@ -29,6 +29,10 @@ vim.filetype.add {
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "c",
+    callback = function() vim.bo.commentstring = "/* %s */" end
+})
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "cpp",
     callback = function() vim.bo.commentstring = "/* %s */" end
 })
 vim.api.nvim_create_autocmd("FileType", {
