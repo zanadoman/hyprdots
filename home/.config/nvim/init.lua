@@ -9,7 +9,6 @@ vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
 vim.opt.showmode = false
-vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -74,10 +73,6 @@ local function setup_lualine_nvim()
         },
         sections = { lualine_c = { "buffers" }, lualine_x = { "filetype" } }
     }
-end
-
-local function setup_indent_blankline_nvim()
-    require "ibl".setup { indent = { char = "." }, scope = { enabled = false } }
 end
 
 local function setup_nvim_treesitter()
@@ -255,11 +250,6 @@ require "lazy".setup(
             "nvim-lualine/lualine.nvim",
             event = "VeryLazy",
             config = setup_lualine_nvim
-        },
-        {
-            "lukas-reineke/indent-blankline.nvim",
-            event = "VeryLazy",
-            config = setup_indent_blankline_nvim
         },
         {
             "nvim-treesitter/nvim-treesitter",
