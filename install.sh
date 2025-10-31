@@ -36,7 +36,7 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
 
 # Rust
 rustup default stable
-rustup default nightly
+rustup toolchain install nightly
 rustup target add aarch64-linux-android
 rustup target add x86_64-linux-android
 rustup target add x86_64-pc-windows-gnu
