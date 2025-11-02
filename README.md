@@ -87,8 +87,7 @@
 | composer                          | PHP package manager.                       |
 | dbeaver                           | Universal database manager.                |
 | directx-shader-compiler-git (AUR) | Vulkan/DirectX shader compiler.            |
-| docker                            | Application containerizer.                 |
-| docker-compose                    | Docker helper.                             |
+| docker-compose                    | Docker orchestration tool.                 |
 | docker-rootless-extras (AUR)      | Rootless Docker.                           |
 | dotnet-sdk                        | C# development kit.                        |
 | doxygen                           | Documentation generator.                   |

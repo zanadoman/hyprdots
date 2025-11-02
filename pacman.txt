@@ -47,7 +47,6 @@ zip
 cmake
 composer
 dbeaver
-docker
 docker-compose
 dotnet-sdk
 doxygen
