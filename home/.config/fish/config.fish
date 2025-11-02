@@ -5,6 +5,7 @@ set -x LD_LIBRARY_PATH "/usr/local/lib/:$LD_LIBRARY_PATH"
 set -x ANDROID_SDK_ROOT /opt/android-sdk
 set -x ANDROID_NDK_HOME /opt/android-ndk
 set -x PATH "$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/bin/:$ANDROID_SDK_ROOT/platform-tools/:$ANDROID_SDK_ROOT/emulator/:$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/docker.sock
 set -x PAGER less
 set -x VISUAL nvim
 set -x TERMINAL foot

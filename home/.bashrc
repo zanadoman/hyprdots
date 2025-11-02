@@ -4,6 +4,7 @@ export LD_LIBRARY_PATH="/usr/local/lib/:$LD_LIBRARY_PATH"
 export ANDROID_SDK_ROOT=/opt/android-sdk
 export ANDROID_NDK_HOME=/opt/android-ndk
 export PATH="$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/bin/:$ANDROID_SDK_ROOT/platform-tools/:$ANDROID_SDK_ROOT/emulator/:$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export PAGER=less
 export VISUAL=nvim
 export TERMINAL=foot

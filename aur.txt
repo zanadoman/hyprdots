@@ -4,6 +4,7 @@ android-ndk
 android-sdk
 angular-cli
 directx-shader-compiler-git
+docker-rootless-extras
 sdl3_image
 anydesk-bin
 onlyoffice-bin
