@@ -83,6 +83,7 @@ directx-shader-compiler-git
 dkms
 docker
 docker-compose
+docker-rootless-extras
 dos2unix
 dosfstools
 dotnet-host
@@ -737,6 +738,7 @@ rocm-core
 rocm-device-libs
 rocm-smi-lib
 rocprofiler-register
+rootlesskit
 rpi-imager
 rtkit
 rubberband
@@ -759,6 +761,7 @@ shadow
 shared-mime-info
 simdjson
 slang
+slirp4netns
 slurp
 smartmontools
 snappy
