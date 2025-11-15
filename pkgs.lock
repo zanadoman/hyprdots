@@ -204,12 +204,12 @@ hyprcursor
 hyprgraphics
 hypridle
 hyprland
-hyprland-qt-support
-hyprland-qtutils
+hyprland-guiutils
 hyprlang
 hyprlock
 hyprpaper
 hyprsunset
+hyprtoolkit
 hyprutils
 hyprwayland-scanner
 iana-etc
