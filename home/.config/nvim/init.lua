@@ -55,13 +55,17 @@ vim.diagnostic.config { virtual_text = true }
 vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
 
 local function setup_tokyonight_nvim()
-    require "tokyonight".setup { style = "night" }
-    vim.cmd.colorscheme "tokyonight"
-    local win_separator = vim.api.nvim_get_hl(0, { name = "WinSeparator" })
-    vim.api.nvim_set_hl(0, "WinSeparator", {
-        fg = win_separator.fg,
-        bg = win_separator.fg
-    })
+    if os.getenv("TERM") == "linux" then
+        vim.cmd.colorscheme "quiet"
+    else
+        require "tokyonight".setup { style = "night" }
+        vim.cmd.colorscheme "tokyonight"
+        local win_separator = vim.api.nvim_get_hl(0, { name = "WinSeparator" })
+        vim.api.nvim_set_hl(0, "WinSeparator", {
+            fg = win_separator.fg,
+            bg = win_separator.fg
+        })
+    end
 end
 
 local function setup_lualine_nvim()
