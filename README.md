@@ -99,7 +99,6 @@
 | linux-headers                     | Linux kernel headers.                      |
 | lld                               | LLVM linker.                               |
 | llvm                              | LLVM compiler infrastructure.              |
-| mariadb                           | MySQL compatible database system.          |
 | mingw-w64-gcc                     | x86_64 Windows compiler for C, C++.        |
 | mono                              | Open-source .NET implementation.           |
 | networkmanager-openvpn            | NetworkManager OpenVPN plugin.             |

@@ -8,11 +8,6 @@ cat ./pacman.txt | sudo pacman -Syu -
 cat ./aur.txt | yay -Syu -
 yes | sudo pacman -Rns $(pacman -Qdtq)
 
-# MariaDB
-sudo mariadb-install-db --user=mysql --basedir=/usr/ --datadir=/var/lib/mysql/
-sudo systemctl start mariadb.service
-sudo mariadb-secure-installation
-
 # User
 sudo usermod -aG docker "$USER"
 xdg-user-dirs-update
