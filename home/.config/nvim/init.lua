@@ -55,7 +55,7 @@ vim.diagnostic.config { virtual_text = true }
 vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
 
 local function setup_tokyonight_nvim()
-    if os.getenv("TERM") == "linux" then
+    if os.getenv("XDG_SESSION_TYPE") == "tty" then
         vim.cmd.colorscheme "quiet"
     else
         require "tokyonight".setup { style = "night" }

@@ -231,7 +231,6 @@ jbigkit
 jdk17-openjdk
 jdk21-openjdk
 jdk8-openjdk
-jemalloc
 jre8-openjdk
 jre8-openjdk-headless
 json-c
@@ -572,9 +571,6 @@ mailcap
 make
 man-db
 man-pages
-mariadb
-mariadb-clients
-mariadb-libs
 md4c
 mesa
 mingw-w64-binutils
@@ -602,6 +598,7 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 networkmanager-vpn-plugin-openvpn
+nftables
 nm-connection-editor
 node-gyp
 nodejs
@@ -676,6 +673,7 @@ python
 python-cairo
 python-gobject
 python-i3ipc
+python-pyelftools
 python-six
 python-xlib
 qemu-audio-alsa
