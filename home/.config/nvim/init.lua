@@ -85,7 +85,6 @@ local function setup_nvim_treesitter()
             "angular",
             "bash",
             "c",
-            "c_sharp",
             "cmake",
             "cpp",
             "css",
@@ -209,7 +208,6 @@ local function setup_mason_lspconfig_nvim()
         },
         kotlin_language_server = {},
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
-        csharp_ls = {},
         pyright = {},
         rust_analyzer = {
             settings = {

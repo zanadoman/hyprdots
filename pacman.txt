@@ -48,7 +48,6 @@ cmake
 composer
 dbeaver
 docker-compose
-dotnet-sdk
 doxygen
 github-cli
 gradle

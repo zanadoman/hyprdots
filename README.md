@@ -89,7 +89,6 @@
 | directx-shader-compiler-git (AUR) | Vulkan/DirectX shader compiler.            |
 | docker-compose                    | Docker orchestration tool.                 |
 | docker-rootless-extras (AUR)      | Rootless Docker.                           |
-| dotnet-sdk                        | C# development kit.                        |
 | doxygen                           | Documentation generator.                   |
 | github-cli                        | GitHub command-line interface.             |
 | gradle                            | Java build tool.                           |
