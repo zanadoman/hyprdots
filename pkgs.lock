@@ -86,10 +86,6 @@ docker-compose
 docker-rootless-extras
 dos2unix
 dosfstools
-dotnet-host
-dotnet-runtime
-dotnet-sdk
-dotnet-targeting-pack
 double-conversion
 doxygen
 dtc
@@ -104,7 +100,6 @@ egl-gbm
 egl-wayland
 egl-x11
 eglexternalplatform
-elfutils
 exfatprogs
 exiv2
 expat
@@ -399,6 +394,7 @@ libldap
 libliftoff
 liblqr
 libluv
+libmakepkg-dropins
 libmd
 libmicrohttpd
 libmm-glib
@@ -436,7 +432,6 @@ libp11-kit
 libpaper
 libpcap
 libpciaccess
-libpfm
 libpgm
 libpipeline
 libpipewire
@@ -554,7 +549,6 @@ linux-firmware-realtek
 linux-firmware-whence
 linux-headers
 lld
-llvm
 llvm-libs
 lm_sensors
 lmdb
@@ -592,7 +586,6 @@ mypaint-brushes1
 ncurses
 ndctl
 neovim
-netstandard-targeting-pack
 nettle
 network-manager-applet
 networkmanager
@@ -642,7 +635,6 @@ pciutils
 pcre
 pcre2
 pcsclite
-perf
 perl
 perl-error
 perl-mailtools
@@ -777,7 +769,6 @@ sqlite
 sqlx-cli
 sratom
 srt
-sshfs
 starship
 steam
 sudo
@@ -840,7 +831,7 @@ vmaf
 vte-common
 vte3
 vulkan-icd-loader
-vulkan-mesa-device-select
+vulkan-mesa-implicit-layers
 vulkan-radeon
 vulkan-validation-layers
 watchexec
@@ -885,6 +876,7 @@ xvidcore
 xxhash
 xz
 yay
+yay-debug
 yp-tools
 yyjson
 zenity

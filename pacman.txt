@@ -36,7 +36,6 @@ man-pages
 ripgrep
 rocm-smi-lib
 smartmontools
-sshfs
 tree
 neovim
 tree-sitter-cli
@@ -56,11 +55,9 @@ jdk21-openjdk
 jdk8-openjdk
 linux-headers
 lld
-llvm
 mingw-w64-gcc
 mono
 networkmanager-openvpn
-perf
 qemu-desktop
 renderdoc
 rpi-imager
