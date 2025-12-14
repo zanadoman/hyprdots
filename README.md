@@ -104,7 +104,7 @@
 | linux-headers                     | Linux kernel headers                     |
 | lld                               | LLVM linker                              |
 | mingw-w64-gcc                     | x86_64 Windows compiler for C, C++       |
-| mono                              | Open-source  NET implementation          |
+| mono                              | Open-source .NET implementation          |
 | networkmanager-openvpn            | NetworkManager OpenVPN plugin            |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
@@ -151,37 +151,47 @@
 
 # Manual setup
 
-#### \$HOME/.local/bin/android_emulator
+#### $HOME/.local/bin/android_emulator
+
 - -camera-back webcamX
 
 #### $HOME/.local/bin/screen_camera
+
 - video_nr=X
 
 #### chromium/discord
+
 - Appearance: Chat Font Scaling: 20px
 - Notifications: Enable Desktop Notifications: on
 - Show Member List
 
 #### git
+
 - git config --global user.email
 - git config --global user.name
 - Generate new token (classic)
 
 #### github-cli
+
 - gh auth login
 
 #### hyprland
+
 - nwg-displays
 
 #### onlyoffice-bin
+
 - Interface scaling *: 100%
 
 #### openssh
-- "\$HOME/.ssh/config"
+
+- "$HOME/.ssh/config"
 
 #### qemu-desktop
-- "\$HOME/Qemu/**/*.img"
+
+- "$HOME/Qemu/**/*.img"
 
 #### steam
+
 - Compatibility: Enable Steam Play for all other titles: on
 - Controller: PlayStation Controller Support: Enabled
