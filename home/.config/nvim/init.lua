@@ -19,10 +19,10 @@ vim.opt.wrap = false
 
 vim.filetype.add {
     pattern = {
-        [".*.h"] = { "c", { priority = math.huge } },
-        [".*.hlsl"] = { "hlsl", { priority = math.huge } },
-        [".*.html"] = { "html", { priority = math.huge } },
-        [".*.php"] = { "php", { priority = math.huge } }
+        ["%.h$"] = { "c", { priority = math.huge } },
+        ["%.hlsl$"] = { "hlsl", { priority = math.huge } },
+        ["%.html$"] = { "html", { priority = math.huge } },
+        ["%.php$"] = { "php", { priority = math.huge } }
     }
 }
 

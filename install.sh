@@ -12,7 +12,6 @@ yes | sudo pacman -Rns $(pacman -Qdtq)
 sudo usermod -aG docker "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
-mkdir "$HOME/Remote/"
 mkdir "$HOME/Work/"
 mkdir -p "$HOME/.local/bin/"
 mkdir -p "$HOME/Qemu/Linux/"
@@ -31,9 +30,6 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
 
 # Rust
 rustup default stable
-rustup target add x86_64-pc-windows-gnu
-rustup target add aarch64-linux-android
-rustup target add x86_64-linux-android
 
 # Wine
 sudo ln -s /bin/wine /bin/wine64
