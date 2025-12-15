@@ -52,7 +52,7 @@ vim.api.nvim_create_user_command("BDelete", function()
 end, {})
 
 local function setup_tokyonight_nvim()
-    if os.getenv("XDG_SESSION_TYPE") == "tty" then
+    if os.getenv "XDG_SESSION_TYPE" == "tty" then
         vim.cmd.colorscheme "quiet"
     else
         require "tokyonight".setup { style = "night" }
