@@ -39,16 +39,16 @@ vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "grd", vim.lsp.buf.definition)
-vim.keymap.set("n", "grf", function()
-    if vim.bo.filetype == "rust" then
-        vim.cmd "silent !cargo fmt"
-    else
-        vim.lsp.buf.format()
-    end
-end)
+vim.keymap.set("n", "grf", vim.lsp.buf.format)
 
 vim.diagnostic.config { virtual_text = true }
 vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
+
+vim.api.nvim_create_user_command("BDelete", function()
+    if not pcall(vim.cmd, "bnext | bdelete #") then
+        vim.cmd "bdelete"
+    end
+end, {})
 
 local function setup_tokyonight_nvim()
     if os.getenv("XDG_SESSION_TYPE") == "tty" then
@@ -193,15 +193,7 @@ local function setup_mason_lspconfig_nvim()
         emmet_language_server = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
         html = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
         intelephense = {},
-        jdtls = {
-            settings = {
-                java = {
-                    settings = {
-                        url = vim.fn.stdpath "config" .. "/org.eclipse.jdt.core.prefs"
-                    }
-                }
-            }
-        },
+        jdtls = {},
         kotlin_language_server = {},
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
         pyright = {},
