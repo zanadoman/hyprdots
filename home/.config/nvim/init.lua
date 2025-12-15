@@ -8,6 +8,7 @@ vim.opt.number = true
 vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
+vim.opt.showtabline = 2
 vim.opt.showmode = false
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
