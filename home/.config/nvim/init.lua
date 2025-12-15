@@ -18,26 +18,22 @@ vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
 vim.filetype.add {
-    pattern = {
-        ["%.h$"] = { "c", { priority = math.huge } },
-        ["%.hlsl$"] = { "hlsl", { priority = math.huge } },
-        ["%.html$"] = { "html", { priority = math.huge } },
-        ["%.php$"] = { "php", { priority = math.huge } }
+    extension = {
+        h = "c",
+        hlsl = "hlsl"
     }
 }
 
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "c",
-    callback = function() vim.bo.commentstring = "/* %s */" end
-})
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "cpp",
-    callback = function() vim.bo.commentstring = "/* %s */" end
-})
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "hlsl",
-    callback = function() vim.bo.commentstring = "// %s" end
-})
+for pattern, commentstring in pairs({
+    c = "/* %s */",
+    cpp = "/* %s */",
+    hlsl = "/* %s */"
+}) do
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = pattern,
+        callback = function() vim.bo.commentstring = commentstring end
+    })
+end
 
 vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
@@ -194,8 +190,8 @@ local function setup_mason_lspconfig_nvim()
         angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
         cssls = {},
-        emmet_language_server = { filetypes = { "html", "javascript", "php", "typescript" } },
-        html = { filetypes = { "html", "javascript", "php", "typescript" } },
+        emmet_language_server = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
+        html = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
         intelephense = {},
         jdtls = {
             settings = {

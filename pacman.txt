@@ -25,6 +25,7 @@ xdg-desktop-portal-hyprland
 fastfetch
 fish
 foot
+lftp
 starship
 tmux
 zoxide

@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (892)](./pkgs.lock)
+# [Packages (893)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -48,6 +48,7 @@
 | fastfetch                         | System information                       |
 | fish                              | Smart shell                              |
 | foot                              | Terminal emulator                        |
+| lftp                              | Advanced FTP client                      |
 | starship                          | Improved prompt                          |
 | tmux                              | Terminal multiplexer                     |
 | zoxide                            | Smart cd                                 |
