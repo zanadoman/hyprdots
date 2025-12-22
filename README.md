@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (893)](./pkgs.lock)
+# [Packages (894)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -107,6 +107,7 @@
 | mingw-w64-gcc                     | x86_64 Windows compiler for C, C++       |
 | mono                              | Open-source .NET implementation          |
 | networkmanager-openvpn            | NetworkManager OpenVPN plugin            |
+| perf                              | Performance profiler                     |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |

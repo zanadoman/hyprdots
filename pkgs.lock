@@ -100,6 +100,7 @@ egl-gbm
 egl-wayland
 egl-x11
 eglexternalplatform
+elfutils
 exfatprogs
 exiv2
 expat
@@ -426,13 +427,13 @@ libnma-gtk4
 libnotify
 libnsl
 libnss_nis
-libnvme
 libogg
 libopenmpt
 libp11-kit
 libpaper
 libpcap
 libpciaccess
+libpfm
 libpgm
 libpipeline
 libpipewire
@@ -636,6 +637,7 @@ pciutils
 pcre
 pcre2
 pcsclite
+perf
 perl
 perl-error
 perl-mailtools
@@ -877,7 +879,6 @@ xvidcore
 xxhash
 xz
 yay
-yay-debug
 yp-tools
 yyjson
 zenity

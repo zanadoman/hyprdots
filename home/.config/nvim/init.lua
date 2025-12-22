@@ -19,10 +19,8 @@ vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
 vim.filetype.add {
-    extension = {
-        h = "c",
-        hlsl = "hlsl"
-    }
+    extension = { h = "c", hlsl = "hlsl", html = "html" },
+    pattern = { ['.*.ng.html'] = { 'htmlangular', { priority = math.huge } } }
 }
 
 for pattern, commentstring in pairs({
