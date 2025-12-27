@@ -13,7 +13,7 @@ libnotify
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
-nvidia
+nvidia-open
 nwg-displays
 pavucontrol
 slurp

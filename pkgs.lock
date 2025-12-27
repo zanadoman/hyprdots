@@ -98,6 +98,7 @@ efibootmgr
 efivar
 egl-gbm
 egl-wayland
+egl-wayland2
 egl-x11
 eglexternalplatform
 elfutils
@@ -606,7 +607,7 @@ nspr
 nss
 ntfs-3g
 numactl
-nvidia
+nvidia-open
 nvidia-utils
 nwg-displays
 ocl-icd
