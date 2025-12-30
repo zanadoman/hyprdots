@@ -24,6 +24,7 @@ alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
 alias hyprland='test $XDG_SESSION_TYPE = tty && command hyprland && clear'
+alias start-hyprland='test $XDG_SESSION_TYPE = tty && command start-hyprland && clear'
 clear
 
 function fish_should_add_to_history

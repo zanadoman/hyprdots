@@ -20,6 +20,7 @@ alias wine='env -u DISPLAY wine'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
 alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
+alias start-hyprland='[ $XDG_SESSION_TYPE = tty ] && start-hyprland && clear'
 clear
 
 tmux () {
