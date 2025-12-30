@@ -209,6 +209,7 @@ hyprsunset
 hyprtoolkit
 hyprutils
 hyprwayland-scanner
+hyprwire
 iana-etc
 icu
 ijs
@@ -585,6 +586,7 @@ mpfr
 mpg123
 msgpack-c
 mtdev
+muparser
 mypaint-brushes1
 ncurses
 ndctl
