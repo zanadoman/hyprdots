@@ -1,6 +1,10 @@
 7zip
 a52dec
 aalib
+aarch64-linux-gnu-binutils
+aarch64-linux-gnu-gcc
+aarch64-linux-gnu-glibc
+aarch64-linux-gnu-linux-api-headers
 abseil-cpp
 acl
 adwaita-cursors

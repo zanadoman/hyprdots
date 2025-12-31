@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (897)](./pkgs.lock)
+# [Packages (901)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -87,6 +87,7 @@
 
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
+| aarch64-linux-gnu-gcc             | ARM64 compiler for C, C++                |
 | android-ndk (AUR)                 | Android compiler for C, C++              |
 | android-sdk (AUR)                 | Android development kit                  |
 | angular-cli (AUR)                 | Angular command-line interface           |
