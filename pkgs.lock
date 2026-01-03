@@ -210,7 +210,6 @@ hyprland
 hyprland-guiutils
 hyprlang
 hyprlock
-hyprpaper
 hyprsunset
 hyprtoolkit
 hyprutils
@@ -787,6 +786,7 @@ sudo
 suitesparse
 supergfxctl
 svt-av1
+swaybg
 systemd
 systemd-libs
 systemd-sysvcompat

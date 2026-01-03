@@ -23,7 +23,6 @@
 | hypridle                          | Idle management daemon                   |
 | hyprland                          | Tiling compositor                        |
 | hyprlock                          | Lock screen                              |
-| hyprpaper                         | Wallpaper tool                           |
 | hyprsunset                        | Bluelight filter                         |
 | lib32-nvidia-utils                | NVIDIA Vulkan provider (32-bit)          |
 | libnotify                         | Desktop notifications                    |
@@ -35,6 +34,7 @@
 | pavucontrol                       | Audio manager                            |
 | slurp                             | Area selector                            |
 | supergfxctl (AUR)                 | ASUS GPU manager                         |
+| swaybg                            | Wallpaper tool                           |
 | ttf-hack-nerd                     | Source code font                         |
 | vulkan-radeon                     | AMD Vulkan provider                      |
 | waybar                            | Status bar                               |

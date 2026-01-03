@@ -6,7 +6,6 @@ grim
 hypridle
 hyprland
 hyprlock
-hyprpaper
 hyprsunset
 lib32-nvidia-utils
 libnotify
@@ -17,6 +16,7 @@ nvidia-open
 nwg-displays
 pavucontrol
 slurp
+swaybg
 ttf-hack-nerd
 vulkan-radeon
 waybar
