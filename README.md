@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (901)](./pkgs.lock)
+# [Packages (903)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -88,8 +88,9 @@
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
 | aarch64-linux-gnu-gcc             | ARM64 compiler for C, C++                |
-| android-ndk (AUR)                 | Android compiler for C, C++              |
+| android-aarch64-gtest (AUR)       | GoogleTest for ARM64 Android             |
 | android-sdk (AUR)                 | Android development kit                  |
+| android-x86-64-gtest (AUR)        | GoogleTest for x86-64 Android            |
 | angular-cli (AUR)                 | Angular command-line interface           |
 | cmake                             | C, C++ build tool                        |
 | composer                          | PHP package manager                      |
@@ -105,7 +106,8 @@
 | jdk8-openjdk                      | Java 8 development kit                   |
 | linux-headers                     | Linux kernel headers                     |
 | lld                               | LLVM linker                              |
-| mingw-w64-gcc                     | x86_64 Windows compiler for C, C++       |
+| mingw-w64-gcc                     | x86-64 Windows compiler for C, C++       |
+| mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
 | mono                              | Open-source .NET implementation          |
 | networkmanager-openvpn            | NetworkManager OpenVPN plugin            |
 | perf                              | Performance profiler                     |
@@ -113,7 +115,6 @@
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |
 | rustup                            | Rust toolchain installer                 |
-| sdl3_image (AUR)                  | SDL3 image library                       |
 | sqlx-cli                          | SQLx migration tool                      |
 | v4l2loopback-dkms                 | V4L2 loopback kernel module              |
 | valgrind                          | Debugging tool for C, C++                |

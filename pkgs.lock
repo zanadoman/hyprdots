@@ -17,8 +17,10 @@ alsa-plugins
 alsa-topology-conf
 alsa-ucm-conf
 amd-ucode
+android-aarch64-gtest
 android-ndk
 android-sdk
+android-x86-64-gtest
 angular-cli
 anydesk-bin
 aom
@@ -578,6 +580,7 @@ mesa
 mingw-w64-binutils
 mingw-w64-crt
 mingw-w64-gcc
+mingw-w64-gtest
 mingw-w64-headers
 mingw-w64-winpthreads
 minizip
@@ -750,7 +753,6 @@ sdbus-cpp
 sdl2-compat
 sdl2_image
 sdl3
-sdl3_image
 seabios
 seatd
 sed

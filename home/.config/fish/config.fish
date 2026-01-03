@@ -2,9 +2,8 @@ not status is-interactive && return
 set -U fish_greeting
 set -x LIBRARY_PATH "/usr/local/lib/:$LIBRARY_PATH"
 set -x LD_LIBRARY_PATH "/usr/local/lib/:$LD_LIBRARY_PATH"
-set -x PATH "$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/bin/:$ANDROID_SDK_ROOT/platform-tools/:$ANDROID_SDK_ROOT/emulator/:$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+set -x PATH "$HOME/.local/bin/:$HOME/.cargo/bin/:$PATH:$ANDROID_SDK_ROOT/tools/bin/:$ANDROID_SDK_ROOT/platform-tools/:$ANDROID_SDK_ROOT/emulator"
 set -x DEBUGINFOD_URLS https://debuginfod.archlinux.org
-set -x ANDROID_NDK_HOME /opt/android-ndk
 set -x ANDROID_SDK_ROOT /opt/android-sdk
 set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/docker.sock
 set -x PAGER less

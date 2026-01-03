@@ -1,11 +1,12 @@
 asusctl
 supergfxctl
-android-ndk
+android-aarch64-gtest
 android-sdk
+android-x86-64-gtest
 angular-cli
 directx-shader-compiler-git
 docker-rootless-extras
-sdl3_image
+mingw-w64-gtest
 anydesk-bin
 onlyoffice-bin
 atlauncher-bin
