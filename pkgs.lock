@@ -751,7 +751,7 @@ sbc
 sdbus-cpp
 sdl2-compat
 sdl2_image
-sdl3
+sdl3-git
 seabios
 seatd
 sed

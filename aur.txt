@@ -7,6 +7,7 @@ angular-cli
 directx-shader-compiler-git
 docker-rootless-extras
 mingw-w64-gtest
+sdl3-git
 anydesk-bin
 onlyoffice-bin
 atlauncher-bin

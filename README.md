@@ -115,6 +115,7 @@
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |
 | rustup                            | Rust toolchain installer                 |
+| sdl3-git (AUR)                    | Simple DirectMedia Layer                 |
 | sqlx-cli                          | SQLx migration tool                      |
 | v4l2loopback-dkms                 | V4L2 loopback kernel module              |
 | valgrind                          | Debugging tool for C, C++                |
