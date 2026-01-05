@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (903)](./pkgs.lock)
+# [Packages (906)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -106,6 +106,7 @@
 | jdk8-openjdk                      | Java 8 development kit                   |
 | linux-headers                     | Linux kernel headers                     |
 | lld                               | LLVM linker                              |
+| mingw-w64-cmake (AUR)             | CMake for x86-64 Windows                 |
 | mingw-w64-gcc                     | x86-64 Windows compiler for C, C++       |
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
 | mono                              | Open-source .NET implementation          |
