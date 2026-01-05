@@ -606,6 +606,7 @@ networkmanager
 networkmanager-openvpn
 networkmanager-vpn-plugin-openvpn
 nftables
+ninja
 nm-connection-editor
 node-gyp
 nodejs

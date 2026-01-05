@@ -60,6 +60,7 @@ lld
 mingw-w64-gcc
 mono
 networkmanager-openvpn
+ninja
 perf
 qemu-desktop
 renderdoc

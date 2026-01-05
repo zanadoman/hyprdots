@@ -10,6 +10,7 @@ export VISUAL=nvim
 export TERMINAL=foot
 export BROWSER=chromium
 export OPENER=rifle
+export CMAKE_GENERATOR=Ninja
 set -o vi
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd cd)"

@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (906)](./pkgs.lock)
+# [Packages (907)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -111,6 +111,7 @@
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
 | mono                              | Open-source .NET implementation          |
 | networkmanager-openvpn            | NetworkManager OpenVPN plugin            |
+| ninja                             | Performant CMake generator.              |
 | perf                              | Performance profiler                     |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
