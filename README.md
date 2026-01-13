@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (904)](./pkgs.lock)
+# [Packages (908)](./pkgs.lock)
 
 ### Prerequisites
 
