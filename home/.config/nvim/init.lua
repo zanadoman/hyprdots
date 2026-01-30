@@ -20,7 +20,10 @@ vim.opt.wrap = false
 
 vim.filetype.add {
     extension = { h = "c", hlsl = "hlsl", html = "html" },
-    pattern = { ['.*.ng.html'] = { 'htmlangular', { priority = math.huge } } }
+    pattern = {
+        ['.*.blade.php'] = { 'php', { priority = math.huge } },
+        ['.*.ng.html'] = { 'htmlangular', { priority = math.huge } }
+    }
 }
 
 for pattern, commentstring in pairs({
@@ -188,7 +191,7 @@ local function setup_mason_lspconfig_nvim()
     local servers = {
         angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
-        cssls = {},
+        cssls = { filetypes = { "css", "html", "htmlangular", "javascript", "php", "scss", "typescript" } },
         emmet_language_server = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
         html = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
         intelephense = {},
@@ -204,7 +207,7 @@ local function setup_mason_lspconfig_nvim()
                 }
             }
         },
-        ts_ls = {}
+        ts_ls = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } }
     }
     local cmp_nvim_lsp_capabilities = require "cmp_nvim_lsp".default_capabilities()
     for server, config in pairs(servers) do
