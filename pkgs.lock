@@ -739,6 +739,7 @@ rdma-core
 re2
 readline
 renderdoc
+resvg
 rhash
 ripgrep
 rocm-core
