@@ -19,7 +19,7 @@ vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
 vim.filetype.add {
-    extension = { h = "c", hlsl = "hlsl", html = "html" },
+    extension = { h = "c", hlsl = "hlsl" },
     pattern = {
         ['.*.blade.php'] = { 'php', { priority = math.huge } },
         ['.*.ng.html'] = { 'htmlangular', { priority = math.huge } }
@@ -191,9 +191,9 @@ local function setup_mason_lspconfig_nvim()
     local servers = {
         angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
-        cssls = { filetypes = { "css", "html", "htmlangular", "javascript", "php", "scss", "typescript" } },
-        emmet_language_server = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
-        html = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } },
+        cssls = {},
+        emmet_language_server = { filetypes = { "html", "htmlangular", "javascriptreact", "php", "typescriptreact" } },
+        html = { filetypes = { "html", "htmlangular" } },
         intelephense = {},
         jdtls = {},
         kotlin_language_server = {},
@@ -207,7 +207,7 @@ local function setup_mason_lspconfig_nvim()
                 }
             }
         },
-        ts_ls = { filetypes = { "html", "htmlangular", "javascript", "php", "typescript" } }
+        ts_ls = {}
     }
     local cmp_nvim_lsp_capabilities = require "cmp_nvim_lsp".default_capabilities()
     for server, config in pairs(servers) do
