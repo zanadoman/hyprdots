@@ -101,6 +101,7 @@
 | doxygen                           | Documentation generator                  |
 | github-cli                        | GitHub command-line interface            |
 | gradle                            | Java build tool                          |
+| iptables-nft                      | Rootless Docker dependency               |
 | jdk17-openjdk                     | Java 17 development kit                  |
 | jdk21-openjdk                     | Java 21 development kit                  |
 | jdk8-openjdk                      | Java 8 development kit                   |

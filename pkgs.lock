@@ -222,7 +222,7 @@ imagemagick
 imath
 iniparser
 iproute2
-iptables
+iptables-nft
 iputils
 iso-codes
 jansson

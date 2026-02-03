@@ -52,6 +52,7 @@ docker-compose
 doxygen
 github-cli
 gradle
+iptables-nft
 jdk17-openjdk
 jdk21-openjdk
 jdk8-openjdk
