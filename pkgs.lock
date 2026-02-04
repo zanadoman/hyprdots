@@ -682,9 +682,13 @@ python
 python-cairo
 python-gobject
 python-i3ipc
+python-prettytable
+python-pyaml
 python-pyelftools
 python-six
+python-wcwidth
 python-xlib
+python-yaml
 qemu-audio-alsa
 qemu-audio-dbus
 qemu-audio-jack
