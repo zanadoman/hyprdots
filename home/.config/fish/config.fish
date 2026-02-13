@@ -10,7 +10,6 @@ set -x PAGER less
 set -x VISUAL nvim
 set -x TERMINAL foot
 set -x BROWSER chromium
-set -x OPENER rifle
 set -x CMAKE_GENERATOR Ninja
 fish_vi_key_bindings
 bind -M insert \ef forward-word

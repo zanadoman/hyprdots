@@ -253,7 +253,6 @@ less
 lftp
 lib32-alsa-lib
 lib32-alsa-plugins
-lib32-audit
 lib32-brotli
 lib32-bzip2
 lib32-curl
@@ -272,7 +271,6 @@ lib32-icu
 lib32-json-c
 lib32-keyutils
 lib32-krb5
-lib32-libcap
 lib32-libdrm
 lib32-libelf
 lib32-libffi
@@ -285,14 +283,12 @@ lib32-libnghttp2
 lib32-libnghttp3
 lib32-libngtcp2
 lib32-libnm
-lib32-libnsl
 lib32-libpciaccess
 lib32-libpipewire
 lib32-libpng
 lib32-libpsl
 lib32-libssh2
 lib32-libtasn1
-lib32-libtirpc
 lib32-libunistring
 lib32-libva
 lib32-libx11
@@ -318,7 +314,6 @@ lib32-nss
 lib32-nvidia-utils
 lib32-openssl
 lib32-p11-kit
-lib32-pam
 lib32-pcre2
 lib32-pipewire
 lib32-spirv-tools
@@ -505,6 +500,7 @@ libvpx
 libvterm
 libwacom
 libwebp
+libwebp-utils
 libwireplumber
 libwmf
 libx11
