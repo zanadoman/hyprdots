@@ -199,7 +199,6 @@ gupnp-igd
 gzip
 harfbuzz
 hicolor-icon-theme
-hidapi
 highway
 hsa-rocr
 hwdata
@@ -330,9 +329,11 @@ libaemu
 libaio
 libappindicator
 libarchive
+libasan
 libass
 libassuan
 libasyncns
+libatomic
 libavc1394
 libavif
 libb2
@@ -376,11 +377,14 @@ libffi
 libfontenc
 libfreeaptx
 libfyaml
+libgcc
 libgcrypt
 libgdiplus
 libgexiv2
+libgfortran
 libgirepository
 libglvnd
+libgomp
 libgpg-error
 libgudev
 libheif
@@ -401,6 +405,7 @@ libldac
 libldap
 libliftoff
 liblqr
+liblsan
 libluv
 libmakepkg-dropins
 libmd
@@ -433,6 +438,7 @@ libnma-gtk4
 libnotify
 libnsl
 libnss_nis
+libobjc
 libogg
 libopenmpt
 libp11-kit
@@ -449,6 +455,7 @@ libpng
 libproxy
 libpsl
 libpulse
+libquadmath
 libraqm
 libraw
 libraw1394
@@ -469,6 +476,7 @@ libsoxr
 libspiro
 libssh
 libssh2
+libstdc++
 libstemmer
 libsynctex
 libsysprof-capture
@@ -482,6 +490,8 @@ libtirpc
 libtool
 libtraceevent
 libtracefs
+libtsan
+libubsan
 libunibreak
 libunistring
 libunwind
@@ -788,6 +798,7 @@ sratom
 srt
 starship
 steam
+steam-devices
 sudo
 suitesparse
 supergfxctl

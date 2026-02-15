@@ -9,7 +9,6 @@ cat ./aur.txt | yay -Syu -
 yes | sudo pacman -Rns $(pacman -Qdtq)
 
 # User
-sudo usermod -aG docker "$USER"
 xdg-user-dirs-update
 mkdir "$HOME/Projects/"
 mkdir "$HOME/Work/"
