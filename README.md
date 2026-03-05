@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (920)](./pkgs.lock)
+# [Packages (922)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -94,6 +94,7 @@
 | angular-cli (AUR)                 | Angular command-line interface           |
 | cmake                             | C, C++ build tool                        |
 | composer                          | PHP package manager                      |
+| cppreference (AUR)                | Comprehensive C++ reference.             |
 | dbeaver                           | Universal database manager               |
 | directx-shader-compiler-git (AUR) | Vulkan/DirectX shader compiler           |
 | docker-compose                    | Docker orchestration tool                |

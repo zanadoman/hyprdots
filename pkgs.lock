@@ -69,6 +69,7 @@ composer
 containerd
 coreutils
 cppdap
+cppreference
 cryptsetup
 curl
 dav1d
@@ -637,6 +638,7 @@ opencore-amr
 openexr
 openh264
 openjpeg2
+openjph
 openssh
 openssl
 openvpn
