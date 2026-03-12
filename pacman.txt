@@ -59,7 +59,6 @@ jdk8-openjdk
 linux-headers
 lld
 mingw-w64-gcc
-mono
 networkmanager-openvpn
 ninja
 perf

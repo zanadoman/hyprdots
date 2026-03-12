@@ -200,6 +200,7 @@ gupnp-igd
 gzip
 harfbuzz
 hicolor-icon-theme
+hidapi
 highway
 hsa-rocr
 hwdata
@@ -372,7 +373,6 @@ libelf
 libepoxy
 libevdev
 libevent
-libexif
 libfdk-aac
 libffi
 libfontenc
@@ -380,7 +380,6 @@ libfreeaptx
 libfyaml
 libgcc
 libgcrypt
-libgdiplus
 libgexiv2
 libgfortran
 libgirepository
@@ -597,7 +596,6 @@ minizip
 mkinitcpio
 mkinitcpio-busybox
 mobile-broadband-provider-info
-mono
 mpdecimal
 mpfr
 mpg123
@@ -769,7 +767,7 @@ sbc
 sdbus-cpp
 sdl2-compat
 sdl2_image
-sdl3-git
+sdl3
 seabios
 seatd
 sed
