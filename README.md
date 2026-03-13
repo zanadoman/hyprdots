@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (923)](./pkgs.lock)
+# [Packages (871)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -15,7 +15,6 @@
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
 | asusctl (AUR)                     | ASUS control daemon                      |
-| blueman                           | Bluetooth applet                         |
 | brightnessctl                     | Brightness manager                       |
 | dunst                             | Notification daemon                      |
 | fuzzel                            | Application launcher                     |
@@ -24,7 +23,6 @@
 | hyprland                          | Tiling compositor                        |
 | hyprlock                          | Lock screen                              |
 | hyprsunset                        | Bluelight filter                         |
-| lib32-nvidia-utils                | NVIDIA Vulkan provider (32-bit)          |
 | libnotify                         | Desktop notifications                    |
 | network-manager-applet            | NetworkManager applet                    |
 | noto-fonts                        | Font provider                            |
@@ -91,7 +89,6 @@
 | android-aarch64-gtest (AUR)       | GoogleTest for ARM64 Android             |
 | android-sdk (AUR)                 | Android development kit                  |
 | android-x86-64-gtest (AUR)        | GoogleTest for x86-64 Android            |
-| angular-cli (AUR)                 | Angular command-line interface           |
 | cmake                             | C, C++ build tool                        |
 | composer                          | PHP package manager                      |
 | cppreference (AUR)                | Comprehensive C++ reference.             |
@@ -100,28 +97,22 @@
 | docker-compose                    | Docker orchestration tool                |
 | docker-rootless-extras (AUR)      | Rootless Docker                          |
 | doxygen                           | Documentation generator                  |
-| github-cli                        | GitHub command-line interface            |
 | gradle                            | Java build tool                          |
 | iptables-nft                      | Rootless Docker dependency               |
-| jdk17-openjdk                     | Java 17 development kit                  |
 | jdk21-openjdk                     | Java 21 development kit                  |
 | jdk8-openjdk                      | Java 8 development kit                   |
 | linux-headers                     | Linux kernel headers                     |
 | lld                               | LLVM linker                              |
 | mingw-w64-gcc                     | x86-64 Windows compiler for C, C++       |
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
-| networkmanager-openvpn            | NetworkManager OpenVPN plugin            |
 | ninja                             | Performant CMake generator.              |
-| perf                              | Performance profiler                     |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |
 | rustup                            | Rust toolchain installer                 |
-| sqlx-cli                          | SQLx migration tool                      |
 | v4l2loopback-dkms                 | V4L2 loopback kernel module              |
 | valgrind                          | Debugging tool for C, C++                |
 | vulkan-validation-layers          | Vulkan validation layers                 |
-| watchexec                         | Live reload tool                         |
 
 ### Media
 
@@ -144,7 +135,6 @@
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
 | atlauncher-bin (AUR)              | Minecraft launcher                       |
-| steam                             | Steam client                             |
 
 ### Compatibility
 
@@ -177,10 +167,6 @@
 - git config --global user.name
 - Generate new token (classic)
 
-#### github-cli
-
-- gh auth login
-
 #### hyprland
 
 - nwg-displays
@@ -196,8 +182,3 @@
 #### qemu-desktop
 
 - "$HOME/Qemu/**/*.img"
-
-#### steam
-
-- Compatibility: Enable Steam Play for all other titles: on
-- Controller: PlayStation Controller Support: Enabled

@@ -3,7 +3,6 @@ supergfxctl
 android-aarch64-gtest
 android-sdk
 android-x86-64-gtest
-angular-cli
 cppreference
 directx-shader-compiler-git
 docker-rootless-extras
