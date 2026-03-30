@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (871)](./pkgs.lock)
+# [Packages (889)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -47,6 +47,7 @@
 | fish                              | Smart shell                              |
 | foot                              | Terminal emulator                        |
 | lftp                              | Advanced FTP client                      |
+| sesh-bin (AUR)                    | tmux session manager                     |
 | starship                          | Improved prompt                          |
 | tmux                              | Terminal multiplexer                     |
 | zoxide                            | Smart cd                                 |
@@ -87,8 +88,10 @@
 |:---------------------------------:|:-----------------------------------------|
 | aarch64-linux-gnu-gcc             | ARM64 compiler for C, C++                |
 | android-aarch64-gtest (AUR)       | GoogleTest for ARM64 Android             |
+| android-aarch64-sdl3 (AUR)        | SDL3 for x86-64 Android                  |
 | android-sdk (AUR)                 | Android development kit                  |
 | android-x86-64-gtest (AUR)        | GoogleTest for x86-64 Android            |
+| android-x86-64-sdl3 (AUR)         | SDL3 for x86-64 Android                  |
 | cmake                             | C, C++ build tool                        |
 | composer                          | PHP package manager                      |
 | cppreference (AUR)                | Comprehensive C++ reference.             |
@@ -106,6 +109,7 @@
 | mingw-w64-gcc                     | x86-64 Windows compiler for C, C++       |
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
 | ninja                             | Performant CMake generator.              |
+| npm                               | Node Package Manager                     |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |

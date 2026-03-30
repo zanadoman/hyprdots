@@ -1,8 +1,11 @@
 asusctl
 supergfxctl
+sesh-bin
 android-aarch64-gtest
+android-aarch64-sdl3
 android-sdk
 android-x86-64-gtest
+android-x86-64-sdl3
 cppreference
 directx-shader-compiler-git
 docker-rootless-extras
