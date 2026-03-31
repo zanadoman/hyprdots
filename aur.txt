@@ -8,8 +8,6 @@ android-x86-64-gtest
 android-x86-64-sdl3
 cppreference
 directx-shader-compiler-git
-docker-rootless-extras
 mingw-w64-gtest
-anydesk-bin
-onlyoffice-bin
+mingw-w64-sdl3
 atlauncher-bin

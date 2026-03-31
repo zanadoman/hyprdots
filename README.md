@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (889)](./pkgs.lock)
+# [Packages (856)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -44,9 +44,7 @@
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
 | fastfetch                         | System information                       |
-| fish                              | Smart shell                              |
 | foot                              | Terminal emulator                        |
-| lftp                              | Advanced FTP client                      |
 | sesh-bin (AUR)                    | tmux session manager                     |
 | starship                          | Improved prompt                          |
 | tmux                              | Terminal multiplexer                     |
@@ -80,6 +78,7 @@
 | 7zip                              | 7-Zip support for atool                  |
 | atool                             | Archive manager                          |
 | unrar                             | RAR support for atool                    |
+| unzip                             | ZIP support for atool                    |
 | zip                               | ZIP support for atool                    |
 
 ### Programming
@@ -93,27 +92,20 @@
 | android-x86-64-gtest (AUR)        | GoogleTest for x86-64 Android            |
 | android-x86-64-sdl3 (AUR)         | SDL3 for x86-64 Android                  |
 | cmake                             | C, C++ build tool                        |
-| composer                          | PHP package manager                      |
-| cppreference (AUR)                | Comprehensive C++ reference.             |
-| dbeaver                           | Universal database manager               |
+| cppreference (AUR)                | Comprehensive C++ reference              |
 | directx-shader-compiler-git (AUR) | Vulkan/DirectX shader compiler           |
-| docker-compose                    | Docker orchestration tool                |
-| docker-rootless-extras (AUR)      | Rootless Docker                          |
 | doxygen                           | Documentation generator                  |
-| gradle                            | Java build tool                          |
-| iptables-nft                      | Rootless Docker dependency               |
 | jdk21-openjdk                     | Java 21 development kit                  |
 | jdk8-openjdk                      | Java 8 development kit                   |
 | linux-headers                     | Linux kernel headers                     |
 | lld                               | LLVM linker                              |
 | mingw-w64-gcc                     | x86-64 Windows compiler for C, C++       |
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
-| ninja                             | Performant CMake generator.              |
-| npm                               | Node Package Manager                     |
+| mingw-w64-sdl3 (AUR)              | SDL3 for x86-64 Windows                  |
+| ninja                             | Performant CMake generator               |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |
-| rustup                            | Rust toolchain installer                 |
 | v4l2loopback-dkms                 | V4L2 loopback kernel module              |
 | valgrind                          | Debugging tool for C, C++                |
 | vulkan-validation-layers          | Vulkan validation layers                 |
@@ -122,16 +114,12 @@
 
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
-| anydesk-bin (AUR)                 | Remote desktop application               |
 | chromium                          | Web browser                              |
 | gimp                              | Image manipulation program               |
-| onlyoffice-bin (AUR)              | Office suite                             |
 | texlive-fontsrecommended          | LaTeX - essential fonts                  |
-| texlive-fontutils                 | LaTeX - Doxygen dependency               |
 | texlive-langenglish               | LaTeX - language support                 |
 | texlive-langeuropean              | LaTeX - language support                 |
 | texlive-latexextra                | LaTeX - core packages                    |
-| texlive-plaingeneric              | LaTeX - Doxygen dependency               |
 | wf-recorder                       | Screen recorder                          |
 
 ### Entertainment
@@ -174,10 +162,6 @@
 #### hyprland
 
 - nwg-displays
-
-#### onlyoffice-bin
-
-- Interface scaling *: 100%
 
 #### openssh
 

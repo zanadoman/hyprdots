@@ -19,13 +19,7 @@ vim.opt.undofile = true
 vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
-vim.filetype.add {
-    extension = { h = "c", hlsl = "hlsl" },
-    pattern = {
-        ['.*.blade.php'] = { 'php', { priority = math.huge } },
-        ['.*.ng.html'] = { 'htmlangular', { priority = math.huge } }
-    }
-}
+vim.filetype.add { extension = { h = "c", hlsl = "hlsl" } }
 
 for pattern, commentstring in pairs({
     c = "/* %s */",
@@ -79,33 +73,32 @@ local function setup_lualine_nvim()
 end
 
 local function setup_nvim_treesitter()
-    require "nvim-treesitter.configs".setup {
-        ensure_installed = {
-            "angular",
-            "bash",
+    require "nvim-treesitter".install {
+        "bash",
+        "c",
+        "cmake",
+        "cpp",
+        "doxygen",
+        "hlsl",
+        "java",
+        "latex",
+        "lua",
+        "markdown"
+    }
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = {
+            "sh",
             "c",
             "cmake",
             "cpp",
-            "css",
-            "fish",
             "hlsl",
-            "html",
             "java",
-            "javascript",
-            "kotlin",
-            "latex",
+            "tex",
             "lua",
-            "markdown",
-            "pascal",
-            "php",
-            "printf",
-            "python",
-            "rust",
-            "sql",
-            "typescript"
+            "markdown"
         },
-        highlight = { enable = true }
-    }
+        callback = function() vim.treesitter.start() end
+    })
 end
 
 local function setup_telescope_nvim()
@@ -190,25 +183,8 @@ end
 local function setup_mason_lspconfig_nvim()
     require "mason".setup { ui = { border = "rounded" } }
     local servers = {
-        angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
-        cssls = {},
-        emmet_language_server = { filetypes = { "html", "htmlangular", "javascriptreact", "php", "typescriptreact" } },
-        html = { filetypes = { "html", "htmlangular" } },
-        intelephense = {},
-        jdtls = {},
-        kotlin_language_server = {},
-        lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
-        pyright = {},
-        rust_analyzer = {
-            settings = {
-                ["rust-analyzer"] = {
-                    check = { command = "clippy" },
-                    diagnostics = { disabled = { "inactive-code" } }
-                }
-            }
-        },
-        ts_ls = {}
+        lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } }
     }
     local cmp_nvim_lsp_capabilities = require "cmp_nvim_lsp".default_capabilities()
     for server, config in pairs(servers) do
@@ -246,7 +222,7 @@ require "lazy".setup(
         },
         {
             "nvim-treesitter/nvim-treesitter",
-            event = "VeryLazy",
+            event = false,
             config = setup_nvim_treesitter
         },
         {
