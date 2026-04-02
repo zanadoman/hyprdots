@@ -6,11 +6,7 @@ export ANDROID_HOME=/opt/android-sdk
 export PATH=$HOME/.local/bin/:$PATH:$ANDROID_HOME/tools/bin/:$ANDROID_HOME/platform-tools/:$ANDROID_HOME/emulator/
 alias avdmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk avdmanager'
 alias clear='clear && fastfetch'
-alias diff='diff --color'
-alias grep='grep --color'
 alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
-alias less='less -r --use-color'
-alias ls='ls --color'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias start-hyprland='[ $XDG_SESSION_TYPE = tty ] && start-hyprland && clear'
 alias valgrind='env VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json valgrind'

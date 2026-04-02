@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (856)](./pkgs.lock)
+# [Packages (857)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -44,6 +44,7 @@
 | Package                           | Description                              |
 |:---------------------------------:|:-----------------------------------------|
 | fastfetch                         | System information                       |
+| fish                              | Smart shell                              |
 | foot                              | Terminal emulator                        |
 | sesh-bin (AUR)                    | tmux session manager                     |
 | starship                          | Improved prompt                          |

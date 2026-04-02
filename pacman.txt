@@ -21,6 +21,7 @@ waybar
 wl-clipboard
 xdg-desktop-portal-hyprland
 fastfetch
+fish
 foot
 starship
 tmux
