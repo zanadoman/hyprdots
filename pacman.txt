@@ -51,6 +51,7 @@ linux-headers
 lld
 mingw-w64-gcc
 ninja
+perf
 qemu-desktop
 renderdoc
 rpi-imager

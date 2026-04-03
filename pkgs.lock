@@ -102,6 +102,7 @@ egl-wayland
 egl-wayland2
 egl-x11
 eglexternalplatform
+elfutils
 exfatprogs
 exiv2
 expat
@@ -411,6 +412,7 @@ libp11-kit
 libpaper
 libpcap
 libpciaccess
+libpfm
 libpgm
 libpipeline
 libpipewire
@@ -613,6 +615,7 @@ pciutils
 pcre
 pcre2
 pcsclite
+perf
 perl
 perl-error
 perl-mailtools

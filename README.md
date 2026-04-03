@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (857)](./pkgs.lock)
+# [Packages (860)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -104,6 +104,7 @@
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
 | mingw-w64-sdl3 (AUR)              | SDL3 for x86-64 Windows                  |
 | ninja                             | Performant CMake generator               |
+| perf                              | Performance auditing tool                |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |
