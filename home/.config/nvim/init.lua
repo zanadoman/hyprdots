@@ -8,8 +8,8 @@ vim.opt.number = true
 vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
-vim.opt.showtabline = 2
 vim.opt.showmode = false
+vim.opt.showtabline = vim.env.TMUX and 0 or 2
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -20,7 +20,6 @@ vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
 vim.filetype.add { extension = { h = "c", hlsl = "hlsl" } }
-
 for pattern, commentstring in pairs({
     c = "/* %s */",
     cpp = "/* %s */",
@@ -32,24 +31,39 @@ for pattern, commentstring in pairs({
     })
 end
 
-vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-
 vim.keymap.set("n", "grd", vim.lsp.buf.definition)
 vim.keymap.set("n", "grf", vim.lsp.buf.format)
-
-vim.diagnostic.config { virtual_text = true }
 vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
-
+vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.diagnostic.config { virtual_text = true, update_in_insert = true }
 vim.api.nvim_create_user_command("BDelete", function()
     if not pcall(vim.cmd, "bnext | bdelete #") then
         vim.cmd "bdelete"
     end
 end, {})
 
-local function setup_tokyonight_nvim()
+vim.pack.add {
+    "https://github.com/folke/tokyonight.nvim",
+    "https://github.com/nvim-lualine/lualine.nvim",
+    "https://github.com/nvim-treesitter/nvim-treesitter",
+    "https://github.com/nvim-telescope/telescope.nvim",
+    "https://github.com/nvim-lua/plenary.nvim",
+    "https://github.com/lewis6991/gitsigns.nvim",
+    "https://github.com/hrsh7th/nvim-cmp",
+    "https://github.com/hrsh7th/cmp-nvim-lsp",
+    "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help",
+    "https://github.com/hrsh7th/cmp-buffer",
+    "https://github.com/hrsh7th/cmp-path",
+    "https://github.com/hrsh7th/cmp-cmdline",
+    "https://github.com/williamboman/mason-lspconfig.nvim",
+    "https://github.com/williamboman/mason.nvim",
+    "https://github.com/neovim/nvim-lspconfig"
+}
+
+do
     if os.getenv "XDG_SESSION_TYPE" == "tty" then
-        vim.cmd.colorscheme "quiet"
+        vim.cmd.colorscheme "vim"
     else
         require "tokyonight".setup { style = "night" }
         vim.cmd.colorscheme "tokyonight"
@@ -61,7 +75,7 @@ local function setup_tokyonight_nvim()
     end
 end
 
-local function setup_lualine_nvim()
+do
     require "lualine".setup {
         options = {
             component_separators = { left = "|", right = "|" },
@@ -72,7 +86,7 @@ local function setup_lualine_nvim()
     }
 end
 
-local function setup_nvim_treesitter()
+do
     require "nvim-treesitter".install {
         "bash",
         "c",
@@ -103,7 +117,7 @@ local function setup_nvim_treesitter()
     })
 end
 
-local function setup_telescope_nvim()
+do
     local telescope = require "telescope"
     telescope.setup {
         pickers = {
@@ -141,7 +155,7 @@ local function setup_telescope_nvim()
     }
 end
 
-local function setup_nvim_cmp()
+do
     local cmp = require "cmp"
     cmp.setup {
         snippet = {
@@ -182,7 +196,7 @@ local function setup_nvim_cmp()
     })
 end
 
-local function setup_mason_lspconfig_nvim()
+do
     require "mason".setup { ui = { border = "rounded" } }
     local servers = {
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
@@ -197,66 +211,3 @@ local function setup_mason_lspconfig_nvim()
     vim.keymap.set("n", "grs", ":LspStart<CR>")
     vim.keymap.set("n", "grh", ":LspStop<CR>")
 end
-
-local lazy_nvim_path = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazy_nvim_path) then
-    vim.fn.system {
-        "git",
-        "clone",
-        "--filter=blob:none",
-        "--branch=stable",
-        "https://github.com/folke/lazy.nvim.git",
-        lazy_nvim_path
-    }
-end
-vim.opt.rtp:prepend(lazy_nvim_path)
-require "lazy".setup(
-    {
-        {
-            "folke/tokyonight.nvim",
-            lazy = false,
-            config = setup_tokyonight_nvim
-        },
-        {
-            "nvim-lualine/lualine.nvim",
-            event = "VeryLazy",
-            config = setup_lualine_nvim
-        },
-        {
-            "nvim-treesitter/nvim-treesitter",
-            event = false,
-            config = setup_nvim_treesitter
-        },
-        {
-            "nvim-telescope/telescope.nvim",
-            dependencies = {
-                "nvim-lua/plenary.nvim",
-                "lewis6991/gitsigns.nvim"
-            },
-            event = "VeryLazy",
-            config = setup_telescope_nvim
-        },
-        {
-            "hrsh7th/nvim-cmp",
-            dependencies = {
-                "hrsh7th/cmp-nvim-lsp",
-                "hrsh7th/cmp-nvim-lsp-signature-help",
-                "hrsh7th/cmp-buffer",
-                "hrsh7th/cmp-path",
-                "hrsh7th/cmp-cmdline"
-            },
-            event = { "CmdlineEnter", "InsertEnter" },
-            config = setup_nvim_cmp
-        },
-        {
-            "williamboman/mason-lspconfig.nvim",
-            dependencies = {
-                "williamboman/mason.nvim",
-                "neovim/nvim-lspconfig"
-            },
-            lazy = false,
-            config = setup_mason_lspconfig_nvim
-        }
-    },
-    { ui = { border = "rounded" } }
-)
