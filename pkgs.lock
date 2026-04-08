@@ -91,7 +91,6 @@ double-conversion
 doxygen
 dtc
 duktape
-dunst
 dvisvgm
 e2fsprogs
 edk2-ovmf
@@ -202,7 +201,6 @@ hyprland
 hyprland-guiutils
 hyprlang
 hyprlock
-hyprsunset
 hyprtoolkit
 hyprutils
 hyprwayland-scanner
@@ -214,7 +212,7 @@ imagemagick
 imath
 iniparser
 iproute2
-iptables-nft
+iptables
 iputils
 iso-codes
 jansson
@@ -403,7 +401,6 @@ libnl
 libnm
 libnma
 libnma-common
-libnotify
 libnsl
 libobjc
 libogg
@@ -537,7 +534,6 @@ lld
 llvm-libs
 lm_sensors
 lmdb
-lsof
 lua
 lua51-lpeg
 lua54
@@ -750,7 +746,6 @@ srt
 starship
 sudo
 suitesparse
-supergfxctl
 svt-av1
 swaybg
 systemd

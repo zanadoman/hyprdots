@@ -1,12 +1,9 @@
 brightnessctl
-dunst
 fuzzel
 grim
 hypridle
 hyprland
 hyprlock
-hyprsunset
-libnotify
 network-manager-applet
 noto-fonts
 noto-fonts-emoji

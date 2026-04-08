@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (860)](./pkgs.lock)
+# [Packages (855)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -16,14 +16,11 @@
 |:---------------------------------:|:-----------------------------------------|
 | asusctl (AUR)                     | ASUS control daemon                      |
 | brightnessctl                     | Brightness manager                       |
-| dunst                             | Notification daemon                      |
 | fuzzel                            | Application launcher                     |
 | grim                              | Screenshot tool                          |
 | hypridle                          | Idle management daemon                   |
 | hyprland                          | Tiling compositor                        |
 | hyprlock                          | Lock screen                              |
-| hyprsunset                        | Bluelight filter                         |
-| libnotify                         | Desktop notifications                    |
 | network-manager-applet            | NetworkManager applet                    |
 | noto-fonts                        | Font provider                            |
 | noto-fonts-emoji                  | Colored emoji font                       |
@@ -31,7 +28,6 @@
 | nwg-displays                      | Display manager                          |
 | pavucontrol                       | Audio manager                            |
 | slurp                             | Area selector                            |
-| supergfxctl (AUR)                 | ASUS GPU manager                         |
 | swaybg                            | Wallpaper tool                           |
 | ttf-hack-nerd                     | Source code font                         |
 | vulkan-radeon                     | AMD Vulkan provider                      |
@@ -152,7 +148,6 @@
 #### chromium/discord
 
 - Appearance: Chat Font Scaling: 20px
-- Notifications: Enable Desktop Notifications: on
 - Show Member List
 
 #### git

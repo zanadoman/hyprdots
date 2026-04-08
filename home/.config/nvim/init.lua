@@ -36,7 +36,7 @@ vim.keymap.set("n", "grf", vim.lsp.buf.format)
 vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
 vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-vim.diagnostic.config { virtual_text = true, update_in_insert = true }
+vim.diagnostic.config { virtual_text = true }
 vim.api.nvim_create_user_command("BDelete", function()
     if not pcall(vim.cmd, "bnext | bdelete #") then
         vim.cmd "bdelete"

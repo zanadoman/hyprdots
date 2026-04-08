@@ -1,5 +1,4 @@
 asusctl
-supergfxctl
 sesh-bin
 android-aarch64-gtest
 android-aarch64-sdl3
