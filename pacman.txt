@@ -25,7 +25,6 @@ tmux
 zoxide
 btop
 fzf
-imagemagick
 man-db
 man-pages
 ripgrep

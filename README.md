@@ -53,7 +53,6 @@
 |:---------------------------------:|:-----------------------------------------|
 | btop                              | Resource monitor                         |
 | fzf                               | Fuzzy finder                             |
-| imagemagick                       | Image manipulation program               |
 | man-db                            | Manual pages implementation              |
 | man-pages                         | Linux/POSIX manual pages                 |
 | ripgrep                           | Recursive search tool                    |

@@ -122,7 +122,7 @@ do
     telescope.setup {
         pickers = {
             find_files = { hidden = true },
-            live_grep = { additional_args = { "-." } }
+            live_grep = { glob_pattern = "!.git", additional_args = { "-U." } }
         }
     }
     local telescope_builtin = require "telescope.builtin"

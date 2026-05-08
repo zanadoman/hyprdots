@@ -201,6 +201,7 @@ hyprland
 hyprland-guiutils
 hyprlang
 hyprlock
+hyprsunset
 hyprtoolkit
 hyprutils
 hyprwayland-scanner
@@ -208,7 +209,6 @@ hyprwire
 iana-etc
 icu
 ijs
-imagemagick
 imath
 iniparser
 iproute2
@@ -372,7 +372,6 @@ liblc3
 libldac
 libldap
 libliftoff
-liblqr
 liblsan
 libluv
 libmakepkg-dropins
@@ -420,7 +419,6 @@ libproxy
 libpsl
 libpulse
 libquadmath
-libraqm
 libraw
 libraw1394
 librsvg
@@ -532,6 +530,7 @@ linux-firmware-whence
 linux-headers
 lld
 llvm-libs
+llvm21-libs
 lm_sensors
 lmdb
 lua
@@ -827,6 +826,7 @@ xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xdg-desktop-portal
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
 xkeyboard-config
