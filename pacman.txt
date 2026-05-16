@@ -1,14 +1,11 @@
 brightnessctl
 fuzzel
 grim
-hypridle
 hyprland
-hyprlock
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
 nvidia-open
-nwg-displays
 pavucontrol
 slurp
 swaybg
@@ -40,6 +37,7 @@ unzip
 zip
 aarch64-linux-gnu-gcc
 cmake
+docker-compose
 doxygen
 jdk21-openjdk
 jdk8-openjdk
@@ -47,10 +45,12 @@ linux-headers
 lld
 mingw-w64-gcc
 ninja
+npm
 perf
 qemu-desktop
 renderdoc
 rpi-imager
+rustup
 v4l2loopback-dkms
 valgrind
 vulkan-validation-layers

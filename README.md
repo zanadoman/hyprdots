@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (855)](./pkgs.lock)
+# [Packages (865)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -18,14 +18,11 @@
 | brightnessctl                     | Brightness manager                       |
 | fuzzel                            | Application launcher                     |
 | grim                              | Screenshot tool                          |
-| hypridle                          | Idle management daemon                   |
 | hyprland                          | Tiling compositor                        |
-| hyprlock                          | Lock screen                              |
 | network-manager-applet            | NetworkManager applet                    |
 | noto-fonts                        | Font provider                            |
 | noto-fonts-emoji                  | Colored emoji font                       |
 | nvidia-open                       | Proprietary NVIDIA driver for Linux      |
-| nwg-displays                      | Display manager                          |
 | pavucontrol                       | Audio manager                            |
 | slurp                             | Area selector                            |
 | swaybg                            | Wallpaper tool                           |
@@ -42,7 +39,6 @@
 | fastfetch                         | System information                       |
 | fish                              | Smart shell                              |
 | foot                              | Terminal emulator                        |
-| sesh-bin (AUR)                    | tmux session manager                     |
 | starship                          | Improved prompt                          |
 | tmux                              | Terminal multiplexer                     |
 | zoxide                            | Smart cd                                 |
@@ -90,6 +86,8 @@
 | cmake                             | C, C++ build tool                        |
 | cppreference (AUR)                | Comprehensive C++ reference              |
 | directx-shader-compiler-git (AUR) | Vulkan/DirectX shader compiler           |
+| docker-compose                    | Docker orchestration tool                |
+| docker-rootless-extras (AUR)      | Rootless Docker                          |
 | doxygen                           | Documentation generator                  |
 | jdk21-openjdk                     | Java 21 development kit                  |
 | jdk8-openjdk                      | Java 8 development kit                   |
@@ -99,10 +97,12 @@
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
 | mingw-w64-sdl3 (AUR)              | SDL3 for x86-64 Windows                  |
 | ninja                             | Performant CMake generator               |
+| npm                               | Node Package Manager                     |
 | perf                              | Performance auditing tool                |
 | qemu-desktop                      | Virtualization tool                      |
 | renderdoc                         | OpenGL and Vulkan debugging tool         |
 | rpi-imager                        | Raspberry Pi imager                      |
+| rustup                            | Rust toolchain installer                 |
 | v4l2loopback-dkms                 | V4L2 loopback kernel module              |
 | valgrind                          | Debugging tool for C, C++                |
 | vulkan-validation-layers          | Vulkan validation layers                 |
@@ -154,10 +154,6 @@
 - git config --global user.email
 - git config --global user.name
 - Generate new token (classic)
-
-#### hyprland
-
-- nwg-displays
 
 #### openssh
 

@@ -21,11 +21,10 @@ mkdir -p "$HOME/Qemu/Windows/"
 cp -r ./home/. "$HOME/"
 
 # Android
-env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager 'platforms;android-36' 'build-tools;35.0.0' platform-tools
+sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkmanager 'platforms;android-36' 'build-tools;35.0.0' platform-tools
 
 # Shell
 chsh -s /bin/fish
 
 # Daemons
 sudo systemctl enable supergfxd.service
-sudo systemctl enable bluetooth.service
