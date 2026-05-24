@@ -17,17 +17,9 @@ alsa-topology-conf
 alsa-ucm-conf
 amd-ucode
 android-aarch64-gtest
-android-aarch64-hidapi
-android-aarch64-libusb
-android-aarch64-sdl3
-android-aarch64-zlib
 android-ndk
 android-sdk
 android-x86-64-gtest
-android-x86-64-hidapi
-android-x86-64-libusb
-android-x86-64-sdl3
-android-x86-64-zlib
 aom
 appstream
 aquamarine
@@ -555,7 +547,6 @@ mingw-w64-crt
 mingw-w64-gcc
 mingw-w64-gtest
 mingw-w64-headers
-mingw-w64-sdl3
 mingw-w64-winpthreads
 minizip
 mkinitcpio

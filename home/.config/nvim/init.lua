@@ -106,6 +106,7 @@ do
         "latex",
         "lua",
         "markdown",
+        "python",
         "rust",
         "sql",
         "typescript"
@@ -123,6 +124,7 @@ do
             "javascript",
             "lua",
             "markdown",
+            "python",
             "rust",
             "sh",
             "sql",
@@ -220,6 +222,7 @@ do
         cssls = {},
         emmet_language_server = { filetypes = { "html", "htmlangular" } },
         html = { filetypes = { "html", "htmlangular" } },
+        jdtls = {},
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
         rust_analyzer = {
             settings = {

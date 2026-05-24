@@ -207,8 +207,8 @@ hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURC
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl s 5%+"), { repeating = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl s 5%-"), { repeating = true })
 
-hl.window_rule { match = { class = "org.pulseaudio.pavucontrol" }, float = true, opacity = 0.95 }
+hl.window_rule { match = { class = "org\\.stellarlib\\..*" }, float = true }
+hl.window_rule { match = { class = "org\\.pulseaudio\\.pavucontrol" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-connection-editor" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-applet" }, opacity = 0.95 }
-hl.window_rule { match = { class = "Emulator" }, float = true }
 hl.workspace_rule { workspace = "special:magic", gaps_out = 50, layout = "scrolling" }

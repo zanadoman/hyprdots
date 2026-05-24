@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (865)](./pkgs.lock)
+# [Packages (856)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -79,10 +79,8 @@
 |:---------------------------------:|:-----------------------------------------|
 | aarch64-linux-gnu-gcc             | ARM64 compiler for C, C++                |
 | android-aarch64-gtest (AUR)       | GoogleTest for ARM64 Android             |
-| android-aarch64-sdl3 (AUR)        | SDL3 for x86-64 Android                  |
 | android-sdk (AUR)                 | Android development kit                  |
 | android-x86-64-gtest (AUR)        | GoogleTest for x86-64 Android            |
-| android-x86-64-sdl3 (AUR)         | SDL3 for x86-64 Android                  |
 | cmake                             | C, C++ build tool                        |
 | cppreference (AUR)                | Comprehensive C++ reference              |
 | directx-shader-compiler-git (AUR) | Vulkan/DirectX shader compiler           |
@@ -95,7 +93,6 @@
 | lld                               | LLVM linker                              |
 | mingw-w64-gcc                     | x86-64 Windows compiler for C, C++       |
 | mingw-w64-gtest (AUR)             | GoogleTest for x86-64 Windows            |
-| mingw-w64-sdl3 (AUR)              | SDL3 for x86-64 Windows                  |
 | ninja                             | Performant CMake generator               |
 | npm                               | Node Package Manager                     |
 | perf                              | Performance auditing tool                |
