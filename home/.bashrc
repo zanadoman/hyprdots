@@ -9,7 +9,7 @@ alias clear='clear && fastfetch'
 alias hyprland='[ $XDG_SESSION_TYPE = tty ] && hyprland && clear'
 alias sdkmanager='env JAVA_HOME=/usr/lib/jvm/java-8-openjdk sdkmanager'
 alias start-hyprland='[ $XDG_SESSION_TYPE = tty ] && start-hyprland && clear'
-alias valgrind='env VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json valgrind'
+alias valgrind='env VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.json valgrind'
 alias wf-recorder='wf-recorder -c h264_nvenc --audio=alsa_output.pci-0000_65_00.6.analog-stereo.monitor'
 export PAGER=less
 export VISUAL=nvim
