@@ -1,4 +1,5 @@
 asusctl
+aarch64-linux-gnu-pkg-config
 android-aarch64-gtest
 android-aarch64-sdl3
 android-sdk

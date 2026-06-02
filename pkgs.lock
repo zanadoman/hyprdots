@@ -4,6 +4,7 @@ aarch64-linux-gnu-binutils
 aarch64-linux-gnu-gcc
 aarch64-linux-gnu-glibc
 aarch64-linux-gnu-linux-api-headers
+aarch64-linux-gnu-pkg-config
 abseil-cpp
 acl
 ada
