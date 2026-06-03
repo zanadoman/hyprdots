@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (856)](./pkgs.lock)
+# [Packages (861)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -121,7 +121,7 @@
 
 | Package                            | Description                              |
 |:----------------------------------:|:-----------------------------------------|
-| atlauncher-bin (AUR)               | Minecraft launcher                       |
+| prismlauncher                      | Minecraft launcher                       |
 
 ### Compatibility
 

@@ -1,13 +1,9 @@
 asusctl
 aarch64-linux-gnu-pkg-config
 android-aarch64-gtest
-android-aarch64-sdl3
 android-sdk
 android-x86-64-gtest
-android-x86-64-sdl3
 cppreference
 directx-shader-compiler-git
 docker-rootless-extras
 mingw-w64-gtest
-mingw-w64-sdl3
-atlauncher-bin

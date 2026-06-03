@@ -61,6 +61,7 @@ texlive-langenglish
 texlive-langeuropean
 texlive-latexextra
 wf-recorder
+prismlauncher
 dosfstools
 exfatprogs
 ntfs-3g

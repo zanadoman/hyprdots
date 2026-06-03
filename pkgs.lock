@@ -28,7 +28,6 @@ archlinux-keyring
 asusctl
 at-spi2-core
 atkmm
-atlauncher-bin
 atool
 attr
 audit
@@ -60,6 +59,7 @@ capstone
 chromium
 clang
 cmake
+cmark
 compiler-rt
 containerd
 coreutils
@@ -542,6 +542,7 @@ man-db
 man-pages
 md4c
 mesa
+mesa-utils
 mingw-w64-binutils
 mingw-w64-crt
 mingw-w64-gcc
@@ -583,7 +584,6 @@ numactl
 nvidia-open
 nvidia-utils
 ocl-icd
-openal
 opencore-amr
 openexr
 openh264
@@ -630,6 +630,7 @@ popt
 portaudio
 potrace
 pps-tools
+prismlauncher
 procps-ng
 psmisc
 pugixml
@@ -683,12 +684,16 @@ qemu-ui-sdl
 qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-vhost-user-gpu
+qrencode
 qt5-base
 qt5-svg
 qt5-translations
 qt5-x11extras
 qt6-base
 qt6-declarative
+qt6-imageformats
+qt6-networkauth
+qt6-svg
 qt6-translations
 rav1e
 rdma-core
