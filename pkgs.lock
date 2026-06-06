@@ -7,7 +7,6 @@ aarch64-linux-gnu-linux-api-headers
 aarch64-linux-gnu-pkg-config
 abseil-cpp
 acl
-ada
 adwaita-cursors
 adwaita-fonts
 adwaita-icon-theme
@@ -48,7 +47,6 @@ brotli
 btop
 bubblewrap
 bzip2
-c-ares
 ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
@@ -84,8 +82,6 @@ diffutils
 directx-shader-compiler-git
 dkms
 docker
-docker-compose
-docker-rootless-extras
 dos2unix
 dosfstools
 double-conversion
@@ -570,12 +566,8 @@ networkmanager
 nftables
 ninja
 nm-connection-editor
-node-gyp
-nodejs
-nodejs-nopt
 noto-fonts
 noto-fonts-emoji
-npm
 npth
 nspr
 nss
@@ -707,12 +699,10 @@ rocm-core
 rocm-device-libs
 rocm-smi-lib
 rocprofiler-register
-rootlesskit
 rpi-imager
 rtkit
 rubberband
 runc
-rustup
 rutabaga-ffi
 sbc
 sdbus-cpp
@@ -722,14 +712,11 @@ sdl3
 seabios
 seatd
 sed
-semver
 serd
 shaderc
 shadow
 shared-mime-info
-simdjson
 slang
-slirp4netns
 slurp
 smartmontools
 snappy

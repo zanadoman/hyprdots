@@ -19,10 +19,7 @@ vim.opt.undofile = true
 vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
-vim.filetype.add {
-    extension = { h = "c", hlsl = "hlsl" },
-    pattern = { ['.*%.ng%.html'] = { 'htmlangular', { priority = math.huge } } }
-}
+vim.filetype.add { extension = { h = "c", hlsl = "hlsl" } }
 for pattern, commentstring in pairs({
     c = "/* %s */",
     cpp = "/* %s */",
@@ -91,45 +88,32 @@ end
 
 do
     require "nvim-treesitter".install {
-        "angular",
         "bash",
         "c",
         "cmake",
         "cpp",
-        "css",
         "doxygen",
         "fish",
         "hlsl",
-        "html",
         "java",
-        "javascript",
         "latex",
         "lua",
         "markdown",
-        "python",
-        "rust",
-        "sql",
-        "typescript"
+        "python"
     }
     vim.api.nvim_create_autocmd("FileType", {
         pattern = {
             "c",
             "cmake",
             "cpp",
-            "css",
             "fish",
             "hlsl",
-            "html",
             "java",
-            "javascript",
             "lua",
             "markdown",
             "python",
-            "rust",
             "sh",
-            "sql",
-            "tex",
-            "typescript"
+            "tex"
         },
         callback = function() vim.treesitter.start() end
     })
@@ -217,22 +201,9 @@ end
 do
     require "mason".setup { ui = { border = "rounded" } }
     local servers = {
-        angularls = {},
         clangd = { cmd = { "clangd", "--header-insertion=never" } },
-        cssls = {},
-        emmet_language_server = { filetypes = { "html", "htmlangular" } },
-        html = { filetypes = { "html", "htmlangular" } },
         jdtls = {},
-        lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } },
-        rust_analyzer = {
-            settings = {
-                ["rust-analyzer"] = {
-                    check = { command = "clippy" },
-                    diagnostics = { disabled = { "inactive-code" } }
-                }
-            }
-        },
-        ts_ls = {}
+        lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } }
     }
     local cmp_nvim_lsp_capabilities = require "cmp_nvim_lsp".default_capabilities()
     for server, config in pairs(servers) do
