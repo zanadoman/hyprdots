@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (848)](./pkgs.lock)
+# [Packages (849)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -148,10 +148,6 @@
 - git config --global user.email
 - git config --global user.name
 - Generate new token (classic)
-
-#### openssh
-
-- "$HOME/.ssh/config"
 
 #### qemu-desktop
 

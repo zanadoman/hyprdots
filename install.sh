@@ -25,6 +25,3 @@ sudo env JAVA_HOME=/usr/lib/jvm/java-8-openjdk /opt/android-sdk/tools/bin/sdkman
 
 # Shell
 chsh -s /bin/fish
-
-# Daemons
-sudo systemctl enable supergfxd.service

@@ -394,6 +394,7 @@ libnm
 libnma
 libnma-common
 libnsl
+libntfs-3g
 libobjc
 libogg
 libopenmpt
