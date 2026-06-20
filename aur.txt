@@ -1,8 +1,5 @@
 asusctl
 aarch64-linux-gnu-pkg-config
-android-aarch64-gtest
 android-sdk
-android-x86-64-gtest
 cppreference
 directx-shader-compiler-git
-mingw-w64-gtest

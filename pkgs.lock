@@ -16,10 +16,8 @@ alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
 amd-ucode
-android-aarch64-gtest
 android-ndk
 android-sdk
-android-x86-64-gtest
 aom
 appstream
 aquamarine
@@ -543,7 +541,6 @@ mesa-utils
 mingw-w64-binutils
 mingw-w64-crt
 mingw-w64-gcc
-mingw-w64-gtest
 mingw-w64-headers
 mingw-w64-winpthreads
 minizip
