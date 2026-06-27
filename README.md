@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (846)](./pkgs.lock)
+# [Packages (850)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -20,7 +20,7 @@
 | grim                               | Screenshot tool                         |
 | hyprland                           | Tiling compositor                       |
 | network-manager-applet             | NetworkManager applet                   |
-| noto-fonts                         | Font provider                           |
+| ttf-noto-nerd                      | Default font provider                   |
 | noto-fonts-emoji                   | Colored emoji font                      |
 | nvidia-open                        | Proprietary NVIDIA driver for Linux     |
 | pavucontrol                        | Audio manager                           |

@@ -191,6 +191,7 @@ hidapi
 highway
 hsa-rocr
 hwdata
+hwloc
 hyprcursor
 hyprgraphics
 hyprland
@@ -300,6 +301,7 @@ libatomic
 libavc1394
 libavif
 libb2
+libblake3
 libbluray
 libbpf
 libbs2b
@@ -348,6 +350,7 @@ libgomp
 libgpg-error
 libgudev
 libheif
+libhwasan
 libice
 libidn
 libidn2
@@ -398,6 +401,7 @@ libogg
 libopenmpt
 libp11-kit
 libpaper
+libpathrs
 libpcap
 libpciaccess
 libpfm
@@ -521,7 +525,6 @@ linux-firmware-whence
 linux-headers
 lld
 llvm-libs
-llvm21-libs
 lm_sensors
 lmdb
 lua
@@ -564,7 +567,6 @@ networkmanager
 nftables
 ninja
 nm-connection-editor
-noto-fonts
 noto-fonts-emoji
 npth
 nspr
@@ -574,6 +576,7 @@ numactl
 nvidia-open
 nvidia-utils
 ocl-icd
+onetbb
 opencore-amr
 openexr
 openh264
@@ -770,6 +773,7 @@ tslib
 ttf-dejavu
 ttf-hack-nerd
 ttf-liberation
+ttf-noto-nerd
 tzdata
 unibilium
 unrar

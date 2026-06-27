@@ -58,7 +58,11 @@ vim.pack.add {
     "https://github.com/hrsh7th/cmp-cmdline",
     "https://github.com/williamboman/mason-lspconfig.nvim",
     "https://github.com/williamboman/mason.nvim",
-    "https://github.com/neovim/nvim-lspconfig"
+    "https://github.com/neovim/nvim-lspconfig",
+    "https://github.com/jay-babu/mason-nvim-dap.nvim",
+    "https://github.com/nvim-neotest/nvim-nio",
+    "https://github.com/mfussenegger/nvim-dap",
+    "https://github.com/rcarriga/nvim-dap-ui"
 }
 
 do
@@ -86,7 +90,7 @@ do
     }
 end
 
-do
+if vim.fn.exepath "tree-sitter" ~= "" then
     require "nvim-treesitter".install {
         "bash",
         "c",
@@ -139,10 +143,15 @@ do
     vim.keymap.set("n", "<Leader>F", function()
         telescope_builtin.find_files { cwd = telescope_utils.buffer_dir() }
     end)
-    vim.keymap.set("n", "<Leader>g", telescope_builtin.live_grep)
-    vim.keymap.set("n", "<Leader>G", function()
-        telescope_builtin.live_grep { cwd = telescope_utils.buffer_dir() }
-    end)
+    if vim.fn.exepath "rg" == "" then
+        vim.keymap.set("n", "<Leader>g", telescope_builtin.current_buffer_fuzzy_find)
+        vim.keymap.set("n", "<Leader>G", telescope_builtin.current_buffer_fuzzy_find)
+    else
+        vim.keymap.set("n", "<Leader>g", telescope_builtin.live_grep)
+        vim.keymap.set("n", "<Leader>G", function()
+            telescope_builtin.live_grep { cwd = telescope_utils.buffer_dir() }
+        end)
+    end
     local gitsigns = require "gitsigns"
     gitsigns.setup {
         on_attach = function()
@@ -213,4 +222,48 @@ do
     require "mason-lspconfig".setup { ensure_installed = vim.tbl_keys(servers) }
     vim.keymap.set("n", "grs", ":LspStart<CR>")
     vim.keymap.set("n", "grh", ":LspStop<CR>")
+end
+
+do
+    require "mason-nvim-dap" { ensure_installed = { "codelldb" } }
+    local dapui = require "dapui"
+    dapui.setup {
+        controls = { enabled = false },
+        floating = { border = "rounded" },
+        layouts = {
+            {
+                elements = {
+                    { id = "breakpoints", size = 0.5 },
+                    { id = "stacks", size = 0.5 }
+                },
+                position = "right",
+                size = 40
+            },
+            { elements = { { id = "console" } }, position = "bottom", size = 10 },
+        }
+    }
+    local dap = require "dap"
+    dap.listeners.before.attach.dapui_config = dapui.open
+    dap.listeners.before.launch.dapui_config = dapui.open
+    dap.listeners.before.event_terminated.dapui_config = dapui.close
+    dap.listeners.before.event_exited.dapui_config = dapui.close
+    vim.keymap.set("n", "<F1>", dap.run)
+    vim.keymap.set("n", "<F2>", dap.restart)
+    vim.keymap.set("n", "<F3>", dap.terminate)
+    vim.keymap.set("n", "<Leader>?", function() dapui.eval(nil, { enter = true }) end)
+    vim.keymap.set("n", "<Leader>:", dap.toggle_breakpoint)
+    if vim.fn.exepath "codelldb" ~= "" then
+        dap.adapters.codelldb = {
+            type = "executable",
+            command = "codelldb"
+        }
+        dap.configurations.c = {{
+            name = "Launch file",
+            type = "codelldb",
+            request = "launch",
+            program = function() return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file') end,
+            cwd = '${workspaceFolder}'
+        }}
+        dap.configurations.cpp = dap.configurations.c
+    end
 end

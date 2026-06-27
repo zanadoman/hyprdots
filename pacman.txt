@@ -3,7 +3,7 @@ fuzzel
 grim
 hyprland
 network-manager-applet
-noto-fonts
+ttf-noto-nerd
 noto-fonts-emoji
 nvidia-open
 pavucontrol
