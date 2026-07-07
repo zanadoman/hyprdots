@@ -58,25 +58,17 @@ vim.pack.add {
     "https://github.com/hrsh7th/cmp-cmdline",
     "https://github.com/williamboman/mason-lspconfig.nvim",
     "https://github.com/williamboman/mason.nvim",
-    "https://github.com/neovim/nvim-lspconfig",
-    "https://github.com/jay-babu/mason-nvim-dap.nvim",
-    "https://github.com/nvim-neotest/nvim-nio",
-    "https://github.com/mfussenegger/nvim-dap",
-    "https://github.com/rcarriga/nvim-dap-ui"
+    "https://github.com/neovim/nvim-lspconfig"
 }
 
 do
-    if os.getenv "XDG_SESSION_TYPE" == "tty" then
-        vim.cmd.colorscheme "vim"
-    else
-        require "tokyonight".setup { style = "night", transparent = true }
-        vim.cmd.colorscheme "tokyonight"
-        local win_separator = vim.api.nvim_get_hl(0, { name = "WinSeparator" })
-        vim.api.nvim_set_hl(0, "WinSeparator", {
-            fg = win_separator.fg,
-            bg = win_separator.fg
-        })
-    end
+    require "tokyonight".setup { style = "night", transparent = true }
+    vim.cmd.colorscheme "tokyonight"
+    local win_separator = vim.api.nvim_get_hl(0, { name = "WinSeparator" })
+    vim.api.nvim_set_hl(0, "WinSeparator", {
+        fg = win_separator.fg,
+        bg = win_separator.fg
+    })
 end
 
 do
@@ -96,6 +88,7 @@ if vim.fn.exepath "tree-sitter" ~= "" then
         "c",
         "cmake",
         "cpp",
+        "dart",
         "doxygen",
         "fish",
         "hlsl",
@@ -110,6 +103,7 @@ if vim.fn.exepath "tree-sitter" ~= "" then
             "c",
             "cmake",
             "cpp",
+            "dart",
             "fish",
             "hlsl",
             "java",
@@ -210,7 +204,6 @@ end
 do
     require "mason".setup { ui = { border = "rounded" } }
     local servers = {
-        clangd = { cmd = { "clangd", "--header-insertion=never" } },
         jdtls = {},
         lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } }
     }
@@ -219,51 +212,13 @@ do
         config.capabilities = cmp_nvim_lsp_capabilities
         vim.lsp.config[server] = config
     end
+    if vim.fn.exepath "clangd" ~= "" then
+        vim.lsp.config("clangd", { cmd = { "clangd", "--header-insertion=never" } })
+        vim.lsp.enable "clangd"
+    end
     require "mason-lspconfig".setup { ensure_installed = vim.tbl_keys(servers) }
-    vim.keymap.set("n", "grs", ":LspStart<CR>")
-    vim.keymap.set("n", "grh", ":LspStop<CR>")
-end
-
-do
-    require "mason-nvim-dap" { ensure_installed = { "codelldb" } }
-    local dapui = require "dapui"
-    dapui.setup {
-        controls = { enabled = false },
-        floating = { border = "rounded" },
-        layouts = {
-            {
-                elements = {
-                    { id = "breakpoints", size = 0.5 },
-                    { id = "stacks", size = 0.5 }
-                },
-                position = "right",
-                size = 40
-            },
-            { elements = { { id = "console" } }, position = "bottom", size = 10 },
-        }
-    }
-    local dap = require "dap"
-    dap.listeners.before.attach.dapui_config = dapui.open
-    dap.listeners.before.launch.dapui_config = dapui.open
-    dap.listeners.before.event_terminated.dapui_config = dapui.close
-    dap.listeners.before.event_exited.dapui_config = dapui.close
-    vim.keymap.set("n", "<F1>", dap.run)
-    vim.keymap.set("n", "<F2>", dap.restart)
-    vim.keymap.set("n", "<F3>", dap.terminate)
-    vim.keymap.set("n", "<Leader>?", function() dapui.eval(nil, { enter = true }) end)
-    vim.keymap.set("n", "<Leader>:", dap.toggle_breakpoint)
-    if vim.fn.exepath "codelldb" ~= "" then
-        dap.adapters.codelldb = {
-            type = "executable",
-            command = "codelldb"
-        }
-        dap.configurations.c = {{
-            name = "Launch file",
-            type = "codelldb",
-            request = "launch",
-            program = function() return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file') end,
-            cwd = '${workspaceFolder}'
-        }}
-        dap.configurations.cpp = dap.configurations.c
+    if vim.fn.exepath "dart" ~= "" then
+        vim.lsp.config("dartls", { cmd = { "dart", "language-server" } })
+        vim.lsp.enable "dartls"
     end
 end
