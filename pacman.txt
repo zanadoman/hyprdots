@@ -39,9 +39,9 @@ aarch64-linux-gnu-gcc
 cmake
 doxygen
 jdk21-openjdk
-jdk8-openjdk
 linux-headers
 lld
+lldb
 mingw-w64-gcc
 ninja
 perf

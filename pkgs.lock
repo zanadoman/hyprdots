@@ -17,7 +17,7 @@ alsa-topology-conf
 alsa-ucm-conf
 amd-ucode
 android-ndk
-android-sdk
+android-sdk-cmdline-tools-latest
 aom
 appstream
 aquamarine
@@ -112,6 +112,7 @@ findutils
 fish
 flac
 flex
+flutter-bin
 fmt
 fontconfig
 foot
@@ -218,9 +219,6 @@ java-runtime-common
 jbig2dec
 jbigkit
 jdk21-openjdk
-jdk8-openjdk
-jre8-openjdk
-jre8-openjdk-headless
 json-c
 json-glib
 jsoncpp
@@ -394,6 +392,7 @@ libnl
 libnm
 libnma
 libnma-common
+libnotify
 libnsl
 libntfs-3g
 libobjc
@@ -524,9 +523,12 @@ linux-firmware-realtek
 linux-firmware-whence
 linux-headers
 lld
+lldb
+llvm
 llvm-libs
 lm_sensors
 lmdb
+lsof
 lua
 lua51-lpeg
 lua54
@@ -776,6 +778,7 @@ ttf-liberation
 ttf-noto-nerd
 tzdata
 unibilium
+unionfs-fuse
 unrar
 unzip
 upower
@@ -790,6 +793,7 @@ vde2
 vid.stab
 virglrenderer
 virtiofsd
+visual-studio-code-bin
 vmaf
 vte-common
 vte3

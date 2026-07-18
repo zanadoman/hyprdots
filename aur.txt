@@ -1,5 +1,8 @@
 asusctl
 aarch64-linux-gnu-pkg-config
-android-sdk
+android-ndk
+android-sdk-cmdline-tools-latest
 cppreference
 directx-shader-compiler-git
+flutter-bin
+visual-studio-code-bin

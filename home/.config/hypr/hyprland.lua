@@ -211,4 +211,5 @@ hl.window_rule { match = { class = "org\\.stellarlib\\..*" }, float = true }
 hl.window_rule { match = { class = "org\\.pulseaudio\\.pavucontrol" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-connection-editor" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-applet" }, opacity = 0.95 }
+hl.window_rule { match = { class = "Emulator" }, float = true }
 hl.workspace_rule { workspace = "special:magic", gaps_out = 50, layout = "scrolling" }
