@@ -3,13 +3,13 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.guicursor = "a:block,i:ver25"
-vim.opt.mouse = "";
+vim.opt.mouse = ""
 vim.opt.number = true
 vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
 vim.opt.showmode = false
-vim.opt.showtabline = vim.env.TMUX and 0 or 2
+vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -43,35 +43,16 @@ vim.api.nvim_create_user_command("BDelete", function()
     end
 end, {})
 
-vim.pack.add {
-    "https://github.com/folke/tokyonight.nvim",
-    "https://github.com/nvim-lualine/lualine.nvim",
-    "https://github.com/nvim-treesitter/nvim-treesitter",
-    "https://github.com/nvim-telescope/telescope.nvim",
-    "https://github.com/nvim-lua/plenary.nvim",
-    "https://github.com/lewis6991/gitsigns.nvim",
-    "https://github.com/hrsh7th/nvim-cmp",
-    "https://github.com/hrsh7th/cmp-nvim-lsp",
-    "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help",
-    "https://github.com/hrsh7th/cmp-buffer",
-    "https://github.com/hrsh7th/cmp-path",
-    "https://github.com/hrsh7th/cmp-cmdline",
-    "https://github.com/williamboman/mason-lspconfig.nvim",
-    "https://github.com/williamboman/mason.nvim",
-    "https://github.com/neovim/nvim-lspconfig"
-}
-
 do
+    vim.pack.add { "folke/tokyonight.nvim" }
     require "tokyonight".setup { style = "night", transparent = true }
     vim.cmd.colorscheme "tokyonight"
-    local win_separator = vim.api.nvim_get_hl(0, { name = "WinSeparator" })
-    vim.api.nvim_set_hl(0, "WinSeparator", {
-        fg = win_separator.fg,
-        bg = win_separator.fg
-    })
+    local fg = vim.api.nvim_get_hl(0, { name = "WinSeparator" }).fg
+    vim.api.nvim_set_hl(0, "WinSeparator", { fg = fg, bg = fg })
 end
 
 do
+    vim.pack.add { "nvim-lualine/lualine.nvim" }
     require "lualine".setup {
         options = {
             component_separators = { left = "|", right = "|" },
@@ -83,6 +64,7 @@ do
 end
 
 if vim.fn.exepath "tree-sitter" ~= "" then
+    vim.pack.add { "nvim-treesitter/nvim-treesitter" }
     require "nvim-treesitter".install {
         "bash",
         "c",
@@ -118,6 +100,7 @@ if vim.fn.exepath "tree-sitter" ~= "" then
 end
 
 do
+    vim.pack.add { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", "lewis6991/gitsigns.nvim" }
     local telescope = require "telescope"
     telescope.setup {
         pickers = {
@@ -202,23 +185,54 @@ do
 end
 
 do
+    vim.pack.add { "williamboman/mason.nvim", "neovim/nvim-lspconfig", "williamboman/mason-lspconfig.nvim" }
+    local servers = { jdtls = {}, lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } } }
     require "mason".setup { ui = { border = "rounded" } }
-    local servers = {
-        jdtls = {},
-        lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } }
-    }
-    local cmp_nvim_lsp_capabilities = require "cmp_nvim_lsp".default_capabilities()
-    for server, config in pairs(servers) do
-        config.capabilities = cmp_nvim_lsp_capabilities
-        vim.lsp.config[server] = config
-    end
+    require "mason-lspconfig".setup { ensure_installed = vim.tbl_keys(servers) }
+    for server, config in pairs(servers) do vim.lsp.config[server] = config end
     if vim.fn.exepath "clangd" ~= "" then
         vim.lsp.config("clangd", { cmd = { "clangd", "--header-insertion=never" } })
         vim.lsp.enable "clangd"
     end
-    require "mason-lspconfig".setup { ensure_installed = vim.tbl_keys(servers) }
-    if vim.fn.exepath "dart" ~= "" then
-        vim.lsp.config("dartls", { cmd = { "dart", "language-server" } })
-        vim.lsp.enable "dartls"
+end
+
+do
+    vim.pack.add { "akinsho/toggleterm.nvim" }
+    local terminals = {}
+    local id
+    local config = {
+        on_create = function()
+            vim.keymap.set("n", "<Escape>", "<Cmd>close<CR>", { buf = 0 })
+            vim.keymap.set("n", "q", function()
+                terminals[tonumber(string.match(vim.api.nvim_buf_get_name(0), "toggleterm#(%d+)"))]:shutdown()
+            end, { buf = 0 })
+        end,
+        on_open = function() id = tonumber(string.match(vim.api.nvim_buf_get_name(0), "toggleterm#(%d+)")) end,
+        highlights = { FloatBorder = { guifg = vim.api.nvim_get_hl(0, { name = "FloatBorder" }).fg } },
+        persist_mode = false,
+        direction = "float",
+        float_opts = { border = "rounded" }
+    }
+    local terminal = require "toggleterm.terminal".Terminal;
+    for i = 1, 9, 1 do
+        vim.keymap.set("n", "<C-s>" .. i, function()
+            if terminals[i] == nil then terminals[i] = terminal:new(vim.tbl_extend("force", config, { id = i })) end
+            terminals[i]:open()
+        end)
     end
+    vim.keymap.set("n", "<C-s>s", function() if id ~= nil then terminals[id]:open() end end)
+end
+
+do
+    vim.pack.add { "nvim-lua/plenary.nvim", "stevearc/dressing.nvim", "flutter-tools.nvim" }
+    require "flutter-tools".setup()
+end
+
+if vim.fn.exepath "claude" ~= "" then
+    vim.pack.add { "coder/claudecode.nvim" }
+    require "claudecode".setup {
+        terminal_cmd = "ollama launch claude",
+        diff_opts = { layout = "horizontal", open_in_new_tab = true }
+    }
+    vim.keymap.set("n", "<Leader>a", "<Cmd>ClaudeCode<CR>")
 end
