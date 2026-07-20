@@ -40,11 +40,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
 })
 
-vim.api.nvim_create_autocmd("BufEnter", {
-    pattern = "term://*",
-    callback = function() if vim.api.nvim_buf_get_name(0) then vim.cmd "startinsert" end end
-})
-
 vim.filetype.add { extension = { h = "c", hlsl = "hlsl" } }
 for pattern, commentstring in pairs({
     c = "/* %s */",
@@ -61,13 +56,8 @@ vim.keymap.set("n", "grd", vim.lsp.buf.definition)
 vim.keymap.set("n", "grf", vim.lsp.buf.format)
 vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
 vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.diagnostic.config { virtual_text = true }
-vim.api.nvim_create_user_command("BDelete", function()
-    if not pcall(vim.cmd, "bnext | bdelete #") then
-        vim.cmd "bdelete"
-    end
-end, {})
+vim.api.nvim_create_user_command("BDelete", function() pcall(vim.cmd, "bnext | bdelete #") end, {})
 
 do
     vim.pack.add { "https://github.com/folke/tokyonight.nvim" }
@@ -193,41 +183,49 @@ end
 
 do
     vim.pack.add { "https://github.com/akinsho/toggleterm.nvim" }
-    local terminals = {}
-    local id
+    local toggleterm = require "toggleterm.terminal"
+    local timer = vim.uv:new_timer()
+    local terminal
     local config = {
-        on_create = function()
-            vim.keymap.set("n", "<Escape>", "<Cmd>close<CR>", { buf = 0 })
-            vim.keymap.set("n", "q", function()
-                terminals[tonumber(string.match(vim.api.nvim_buf_get_name(0), "toggleterm#(%d+)"))]:shutdown()
-            end, { buf = 0 })
+        on_create = function(t)
+            vim.api.nvim_create_autocmd("BufEnter", {
+                callback = function() t:set_mode(toggleterm.mode.INSERT) end,
+                buf = 0
+            })
+            vim.keymap.set("t", "<Esc>", function()
+                if timer:is_active() then
+                    timer:stop()
+                    return "<C-\\><C-n>"
+                end
+                timer:start(200, 0, function() end)
+                return "<Esc>"
+            end, { expr = true, buf = 0 })
+            vim.keymap.set("n", "<Esc>", function() t:close() end)
+            vim.keymap.set("n", "q", function() t:shutdown() end, { buf = 0 })
+            vim.api.nvim_create_autocmd("BufLeave", { callback = function() t:close() end, buf = 0 })
         end,
-        on_open = function() id = tonumber(string.match(vim.api.nvim_buf_get_name(0), "toggleterm#(%d+)")) end,
+        on_open = function(t) terminal = t end,
         highlights = { FloatBorder = { guifg = vim.api.nvim_get_hl(0, { name = "FloatBorder" }).fg } },
         direction = "float",
         float_opts = { border = "rounded" }
     }
-    local terminal = require "toggleterm.terminal".Terminal;
     for i = 1, 9, 1 do
+        local t
         vim.keymap.set("n", "<C-s>" .. i, function()
-            if not terminals[i] then terminals[i] = terminal:new(vim.tbl_extend("force", config, { id = i })) end
-            terminals[i]:open()
+            if not t then t = toggleterm.Terminal:new(vim.tbl_extend("force", config, { id = i })) end
+            t:open()
         end)
     end
-    vim.keymap.set("n", "<C-s>s", function() if id then terminals[id]:open() end end)
+    vim.keymap.set("n", "<C-s>0", function() if terminal then terminal:open() end end)
 end
 
 do
-    vim.pack.add {
-        "https://github.com/nvim-lua/plenary.nvim",
-        "https://github.com/stevearc/dressing.nvim",
-        "https://github.com/nvim-flutter/flutter-tools.nvim"
-    }
+    vim.pack.add { "https://github.com/nvim-lua/plenary.nvim", "https://github.com/nvim-flutter/flutter-tools.nvim" }
     require "flutter-tools".setup { dev_log = { open_cmd = "tabnew" } }
 end
 
 if vim.fn.exepath "claude" ~= "" then
-    vim.pack.add { "https://github.com/coder/claudecode.nvim" }
+    vim.pack.add { "https://github.com/folke/snacks.nvim", "https://github.com/coder/claudecode.nvim" }
     require "claudecode".setup {
         terminal_cmd = "ollama launch claude",
         terminal = { auto_insert = true },
