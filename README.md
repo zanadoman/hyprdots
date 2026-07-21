@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (854)](./pkgs.lock)
+# [Packages (847)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -40,7 +40,6 @@
 | fish                                   | Smart shell                             |
 | foot                                   | Terminal emulator                       |
 | starship                               | Improved prompt                         |
-| tmux                                   | Terminal multiplexer                    |
 | zoxide                                 | Smart cd                                |
 
 ### CLI tools
@@ -48,7 +47,6 @@
 | Package                                | Description                             |
 |:--------------------------------------:|:----------------------------------------|
 | btop                                   | Resource monitor                        |
-| fzf                                    | Fuzzy finder                            |
 | man-db                                 | Manual pages implementation             |
 | man-pages                              | Linux/POSIX manual pages                |
 | ripgrep                                | Recursive search tool                   |
@@ -89,7 +87,6 @@
 | jdk21-openjdk                          | Java 21 development kit                 |
 | linux-headers                          | Linux kernel headers                    |
 | lld                                    | LLVM linker                             |
-| lldb                                   | C, C++ debugger                         |
 | mingw-w64-gcc                          | x86-64 Windows compiler for C, C++      |
 | ninja                                  | Performant CMake generator              |
 | perf                                   | Performance auditing tool               |
@@ -98,7 +95,6 @@
 | rpi-imager                             | Raspberry Pi imager                     |
 | v4l2loopback-dkms                      | V4L2 loopback kernel module             |
 | valgrind                               | Debugging tool for C, C++               |
-| visual-studio-code-bin (AUR)           | Visual Studio Code                      |
 | vulkan-validation-layers               | Vulkan validation layers                |
 
 ### Media

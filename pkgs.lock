@@ -123,7 +123,6 @@ fuse-common
 fuse2
 fuse3
 fuzzel
-fzf
 gawk
 gc
 gcc
@@ -392,7 +391,6 @@ libnl
 libnm
 libnma
 libnma-common
-libnotify
 libnsl
 libntfs-3g
 libobjc
@@ -455,7 +453,6 @@ libunwind
 liburing
 libusb
 libusbmuxd
-libutempter
 libutf8proc
 libuv
 libva
@@ -523,12 +520,10 @@ linux-firmware-realtek
 linux-firmware-whence
 linux-headers
 lld
-lldb
 llvm
 llvm-libs
 lm_sensors
 lmdb
-lsof
 lua
 lua51-lpeg
 lua54
@@ -759,7 +754,6 @@ texlive-latexextra
 texlive-latexrecommended
 texlive-pictures
 tinysparql
-tmux
 tomlplusplus
 tpm2-tss
 tree
@@ -793,7 +787,6 @@ vde2
 vid.stab
 virglrenderer
 virtiofsd
-visual-studio-code-bin
 vmaf
 vte-common
 vte3
