@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (847)](./pkgs.lock)
+# [Packages (851)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -40,6 +40,7 @@
 | fish                                   | Smart shell                             |
 | foot                                   | Terminal emulator                       |
 | starship                               | Improved prompt                         |
+| tmux                                   | Terminal multiplexer                    |
 | zoxide                                 | Smart cd                                |
 
 ### CLI tools
@@ -47,6 +48,7 @@
 | Package                                | Description                             |
 |:--------------------------------------:|:----------------------------------------|
 | btop                                   | Resource monitor                        |
+| fzf                                    | Fuzzy finder                            |
 | man-db                                 | Manual pages implementation             |
 | man-pages                              | Linux/POSIX manual pages                |
 | ripgrep                                | Recursive search tool                   |

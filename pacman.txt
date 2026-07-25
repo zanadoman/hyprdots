@@ -18,8 +18,10 @@ fastfetch
 fish
 foot
 starship
+tmux
 zoxide
 btop
+fzf
 man-db
 man-pages
 ripgrep

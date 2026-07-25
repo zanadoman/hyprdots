@@ -1,75 +1,46 @@
 vim.g.mapleader = " "
-vim.opt.autocomplete = true
-vim.opt.clipboard = "unnamedplus"
-vim.opt.complete = "o"
-vim.opt.completeopt = "fuzzy,menuone,noinsert"
-vim.opt.cursorline = true
-vim.opt.expandtab = true
-vim.opt.guicursor = "a:block,i:ver25"
-vim.opt.mouse = ""
-vim.opt.number = true
-vim.opt.pumborder = "rounded"
-vim.opt.pumheight = 10
-vim.opt.relativenumber = true
-vim.opt.shiftwidth = 4
-vim.opt.showmode = false
-vim.opt.showtabline = 2
-vim.opt.signcolumn = "yes"
-vim.opt.splitbelow = true
-vim.opt.splitright = true
-vim.opt.swapfile = false
-vim.opt.tabstop = 4
-vim.opt.undofile = true
-vim.opt.winborder = "rounded"
-vim.opt.wrap = false
-
-vim.keymap.set("i", "<Up>", function() return vim.fn.pumvisible() == 1 and "<C-e><Up>" or "<Up>" end, { expr = true })
-vim.keymap.set("i", "<CR>", function() return vim.fn.pumvisible() == 1 and "<C-e><CR>" or "<CR>" end, { expr = true })
-vim.keymap.set("i", "<Down>", function() return vim.fn.pumvisible() == 1 and "<C-e><Down>" or "<Down>" end, { expr = true })
-vim.keymap.set("i", "<C-Up>", function() return vim.fn.pumvisible() == 1 and "<C-p>" or "<C-Up>" end, { expr = true })
-vim.keymap.set("i", "<C-k>", function() return vim.fn.pumvisible() == 1 and "<C-p>" or "<C-k>" end, { expr = true })
-vim.keymap.set("i", "<C-Down>", function() return vim.fn.pumvisible() == 1 and "<C-n>" or "<C-Down>" end, { expr = true })
-vim.keymap.set("i", "<C-j>", function() return vim.fn.pumvisible() == 1 and "<C-n>" or "<C-j>" end, { expr = true })
-vim.keymap.set("i", "<C-f>", function() return vim.fn.pumvisible() == 1 and "<C-y>" or "<C-f>" end, { expr = true })
-vim.api.nvim_create_autocmd("LspAttach", {
-    callback = function(event)
-        local client = vim.lsp.get_client_by_id(event.data.client_id)
-        if client and client:supports_method("textDocument/completion") then
-            vim.lsp.completion.enable(true, client.id, event.buf, { autotrigger = true })
-        end
-    end
-})
+vim.o.autocomplete = true
+vim.o.clipboard = "unnamedplus"
+vim.o.complete = ".,o"
+vim.o.completeopt = "fuzzy,menuone,noinsert"
+vim.o.cursorline = true
+vim.o.expandtab = true
+vim.o.guicursor = "a:block,i:ver25,t:ver25,r:hor25"
+vim.o.mouse = ""
+vim.o.number = true
+vim.o.pumborder = "rounded"
+vim.o.pumheight = 5
+vim.o.relativenumber = true
+vim.o.shiftwidth = 4
+vim.o.showmode = false
+vim.o.showtabline = 2
+vim.o.signcolumn = "yes"
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.swapfile = false
+vim.o.tabstop = 4
+vim.o.timeoutlen = 333
+vim.o.undofile = true
+vim.o.winborder = "rounded"
+vim.o.wrap = false
 
 vim.filetype.add { extension = { h = "c", hlsl = "hlsl" } }
-for pattern, commentstring in pairs({
-    c = "/* %s */",
-    cpp = "/* %s */",
-    hlsl = "/* %s */"
-}) do
-    vim.api.nvim_create_autocmd("FileType", {
-        pattern = pattern,
-        callback = function() vim.bo.commentstring = commentstring end
-    })
-end
-
+vim.keymap.set("i", "<C-f>", function() return vim.fn.pumvisible() == 0 and "<C-f>" or "<C-y>" end, { expr = true })
+vim.keymap.set("i", "<CR>", function() return vim.fn.pumvisible() == 0 and "<CR>" or "<C-e><CR>" end, { expr = true })
+vim.keymap.set("i", "<C-y>", function() return vim.fn.pumvisible() == 0 and "<C-y>" or "<C-e><C-y>" end, { expr = true })
+vim.keymap.set("i", "<Down>", function() return vim.fn.pumvisible() == 0 and "<Down>" or "<C-e><Down>" end, { expr = true })
+vim.keymap.set("i", "<Up>", function() return vim.fn.pumvisible() == 0 and "<Up>" or "<C-e><Up>" end, { expr = true })
+vim.keymap.set("t", "<Esc><Esc>", "<Cmd>stopinsert<CR>")
 vim.keymap.set("n", "grd", vim.lsp.buf.definition)
 vim.keymap.set("n", "grf", vim.lsp.buf.format)
-vim.keymap.set("n", "<Leader>d", vim.diagnostic.open_float)
-vim.keymap.set("i", "<C-l>", function() vim.cmd ":nohlsearch" end)
 vim.diagnostic.config { virtual_text = true }
-vim.api.nvim_create_user_command("BDelete", function() pcall(vim.cmd, "bnext | bdelete #") end, {})
-
-do
-    vim.pack.add { "https://github.com/folke/tokyonight.nvim" }
-    require "tokyonight".setup { style = "night", transparent = true }
-    vim.cmd.colorscheme "tokyonight"
-    vim.api.nvim_set_hl(0, "TabLineFill", { bg = vim.api.nvim_get_hl(0, { name = "StatusLine" }).bg })
-    vim.api.nvim_set_hl(0, "Pmenu", { link = "Normal" })
-    vim.api.nvim_set_hl(0, "PmenuSel", { link = "Visual" })
-    vim.api.nvim_set_hl(0, "PmenuMatchSel", { link = "Visual" })
-    vim.api.nvim_set_hl(0, "PmenuBorder", { link = "FloatBorder" })
-    local fg = vim.api.nvim_get_hl(0, { name = "WinSeparator" }).fg
-    vim.api.nvim_set_hl(0, "WinSeparator", { fg = fg, bg = fg })
+vim.keymap.set("n", "<C-w>q", vim.diagnostic.setqflist)
+vim.keymap.set("n", "zs", function() vim.o.spell = not vim.o.spell end)
+for pattern, commentstring in pairs({ c = "/* %s */", cpp = "/* %s */", hlsl = "/* %s */" }) do
+    vim.api.nvim_create_autocmd("FileType", {
+        callback = function() vim.bo.commentstring = commentstring end,
+        pattern = pattern
+    })
 end
 
 do
@@ -84,88 +55,28 @@ do
     }
 end
 
-if vim.fn.exepath "tree-sitter" ~= "" then
-    vim.pack.add { "https://github.com/nvim-treesitter/nvim-treesitter" }
-    require "nvim-treesitter".install {
-        "bash",
-        "c",
-        "cmake",
-        "cpp",
-        "dart",
-        "doxygen",
-        "fish",
-        "hlsl",
-        "java",
-        "latex",
-        "lua",
-        "markdown",
-        "python"
-    }
-    vim.api.nvim_create_autocmd("FileType", {
-        pattern = {
-            "c",
-            "cmake",
-            "cpp",
-            "dart",
-            "fish",
-            "hlsl",
-            "java",
-            "lua",
-            "markdown",
-            "python",
-            "sh",
-            "tex"
-        },
-        callback = function() vim.treesitter.start() end
-    })
-end
-
 do
-    vim.pack.add {
-        "https://github.com/nvim-telescope/telescope.nvim",
-        "https://github.com/nvim-lua/plenary.nvim",
-        "https://github.com/lewis6991/gitsigns.nvim"
-    }
-    local telescope = require "telescope"
-    telescope.setup {
-        pickers = {
-            find_files = { hidden = true },
-            live_grep = { glob_pattern = { "!.git", "!external" }, additional_args = { "-U." } }
-        }
-    }
-    local telescope_builtin = require "telescope.builtin"
-    local telescope_utils = require "telescope.utils"
-    vim.keymap.set("n", "<Leader><Leader>", function()
-        telescope_builtin.buffers { ignore_current_buffer = true, sort_mru = true }
-    end)
-    vim.keymap.set("n", "<Leader>s", function() vim.o.spell = not vim.o.spell end)
-    vim.keymap.set("n", "<Leader>S", telescope_builtin.spell_suggest)
-    vim.keymap.set("n", "<Leader>D", telescope_builtin.diagnostics)
-    vim.keymap.set("n", "<Leader>f", telescope_builtin.find_files)
-    vim.keymap.set("n", "<Leader>F", function()
-        telescope_builtin.find_files { cwd = telescope_utils.buffer_dir() }
-    end)
-    if vim.fn.exepath "rg" == "" then
-        vim.keymap.set("n", "<Leader>g", telescope_builtin.current_buffer_fuzzy_find)
-        vim.keymap.set("n", "<Leader>G", telescope_builtin.current_buffer_fuzzy_find)
-    else
-        vim.keymap.set("n", "<Leader>g", telescope_builtin.live_grep)
-        vim.keymap.set("n", "<Leader>G", function()
-            telescope_builtin.live_grep { cwd = telescope_utils.buffer_dir() }
-        end)
-    end
-    local gitsigns = require "gitsigns"
-    gitsigns.setup {
-        on_attach = function()
-            vim.keymap.set("n", "<Leader>hs", gitsigns.stage_hunk)
-            vim.keymap.set("n", "<Leader>hu", gitsigns.undo_stage_hunk)
-            vim.keymap.set("n", "<Leader>hr", gitsigns.reset_hunk)
-            vim.keymap.set("n", "<Leader>hS", gitsigns.stage_buffer)
-            vim.keymap.set("n", "<Leader>hR", gitsigns.reset_buffer)
-            vim.keymap.set("n", "<Leader>hd", gitsigns.preview_hunk_inline)
-            vim.keymap.set("n", "<Leader>hb", gitsigns.blame_line)
+    vim.pack.add { "https://github.com/folke/tokyonight.nvim" }
+    require "tokyonight".setup {
+        style = "night",
+        transparent = true,
+        styles = { comments = { italic = false }, keywords = { italic = false } },
+        on_highlights = function(highlights, colors)
+            highlights.PmenuBorder = { bg = colors.bg_dark, fg = colors.border_highlight }
+            highlights.TabLineFill = { bg = colors.bg_dark }
+            highlights.WinSeparator = { bg = colors.bg_dark, fg = colors.bg_dark }
         end
     }
+    vim.cmd.colorscheme "tokyonight"
+end
+
+if vim.fn.exepath "curl" ~= "" and vim.fn.exepath "tar" ~= "" and vim.fn.exepath "cc" ~= "" and vim.fn.exepath "tree-sitter" ~= "" then
+    vim.pack.add { "https://github.com/nvim-treesitter/nvim-treesitter" }
+    require "nvim-treesitter".install { "c", "cpp", "dart", "hlsl", "java", "lua" }
+    vim.api.nvim_create_autocmd("FileType", {
+        callback = function() vim.treesitter.start() end,
+        pattern = { "c", "cpp", "dart", "hlsl", "java", "lua" }
+    })
 end
 
 do
@@ -174,65 +85,59 @@ do
         "https://github.com/neovim/nvim-lspconfig",
         "https://github.com/williamboman/mason-lspconfig.nvim"
     }
-    local servers = { jdtls = {}, lua_ls = { settings = { Lua = { diagnostics = { globals = { "vim" } } } } } }
-    require "mason".setup { ui = { border = "rounded" } }
-    require "mason-lspconfig".setup { ensure_installed = vim.tbl_keys(servers) }
-    for server, config in pairs(servers) do vim.lsp.config[server] = config end
+    require "mason".setup()
+    require "mason-lspconfig".setup { ensure_installed = { "jdtls", "lua_ls" } }
+    vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
     if vim.fn.exepath "clangd" ~= "" then
         vim.lsp.config("clangd", { cmd = { "clangd", "--header-insertion=never" } })
         vim.lsp.enable "clangd"
     end
-end
-
-do
-    vim.pack.add { "https://github.com/akinsho/toggleterm.nvim" }
-    local toggleterm = require "toggleterm.terminal"
-    local timer = vim.uv:new_timer()
-    local terminal
-    local config = {
-        on_create = function(t)
-            vim.api.nvim_create_autocmd("BufEnter", {
-                callback = function() t:set_mode(toggleterm.mode.INSERT) end,
-                buf = 0
-            })
-            vim.keymap.set("t", "<Esc>", function()
-                if timer:is_active() then
-                    timer:stop()
-                    return "<C-\\><C-n>"
-                end
-                timer:start(200, 0, function() end)
-                return "<Esc>"
-            end, { expr = true, buf = 0 })
-            vim.keymap.set("n", "<Esc>", function() t:close() end, { buf = 0 })
-            vim.keymap.set("n", "q", function() t:shutdown() end, { buf = 0 })
-            vim.api.nvim_create_autocmd("BufLeave", { callback = function() t:close() end, buf = 0 })
+    if vim.fn.exepath "dart" ~= "" then vim.lsp.enable "dartls" end
+    vim.lsp.config("lua_ls", { settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
+    vim.api.nvim_create_autocmd("LspAttach", {
+        callback = function(ev)
+            if vim.lsp.get_client_by_id(ev.data.client_id):supports_method("textDocument/completion") then
+                vim.lsp.completion.enable(true, ev.data.client_id, ev.buf, { autotrigger = true })
+            end
         end,
-        on_open = function(t) terminal = t end,
-        highlights = { FloatBorder = { guifg = vim.api.nvim_get_hl(0, { name = "FloatBorder" }).fg } },
-        direction = "float",
-        float_opts = { border = "rounded" }
-    }
-    for i = 1, 9, 1 do
-        local t
-        vim.keymap.set("n", "<C-s>" .. i, function()
-            if not t then t = toggleterm.Terminal:new(vim.tbl_extend("force", config, { id = i })) end
-            t:open()
-        end)
-    end
-    vim.keymap.set("n", "<C-s>0", function() if terminal then terminal:open() end end)
+    })
 end
 
-do
-    vim.pack.add { "https://github.com/nvim-lua/plenary.nvim", "https://github.com/nvim-flutter/flutter-tools.nvim" }
-    require "flutter-tools".setup { dev_log = { open_cmd = "tabnew" } }
+if vim.fn.exepath "flutter" ~= "" then
+    vim.pack.add {
+        "https://github.com/nvim-lua/plenary.nvim",
+        "https://github.com/mfussenegger/nvim-dap",
+        "https://github.com/zanadoman/flutter-tools.nvim"
+    }
+    require "flutter-tools".setup { dev_log = { enabled = false }, dev_tools = { autostart = true, auto_open_browser = true } }
+end
+
+if vim.fn.exepath "fzf" ~= "" and vim.fn.exepath "rg" ~= "" then
+    vim.pack.add { "https://github.com/ibhagwan/fzf-lua" }
+    local FzfLua = require "fzf-lua"
+    vim.keymap.set("n", "<Leader><Leader>", FzfLua.buffers)
+    vim.keymap.set("n", "<Leader>f", FzfLua.files)
+    vim.keymap.set("n", "<Leader>F", function() FzfLua.files { cwd = vim.fn.expand("%:p:h") } end)
+    vim.keymap.set("n", "<Leader>g", function() FzfLua.live_grep { cwd = vim.fn.getcwd(), resume = true } end)
+    vim.keymap.set("n", "<Leader>G", function() FzfLua.live_grep { cwd = vim.fn.expand("%:p:h"), resume = true } end)
+end
+
+if vim.fn.exepath "git" ~= "" then
+    vim.pack.add { "https://github.com/lewis6991/gitsigns.nvim" }
+    local gitsigns = require "gitsigns"
+    gitsigns.setup {
+        on_attach = function(bufnr)
+            vim.keymap.set("n", "<Leader>hs", gitsigns.stage_hunk, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hr", gitsigns.reset_hunk, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hS", gitsigns.stage_buffer, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hR", gitsigns.reset_buffer, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hd", gitsigns.preview_hunk_inline, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hq", gitsigns.setqflist, { buf = bufnr })
+        end
+    }
 end
 
 if vim.fn.exepath "claude" ~= "" then
-    vim.pack.add { "https://github.com/folke/snacks.nvim", "https://github.com/coder/claudecode.nvim" }
-    require "claudecode".setup {
-        terminal_cmd = "ollama launch claude",
-        terminal = { auto_insert = true },
-        diff_opts = { layout = "horizontal", open_in_new_tab = true }
-    }
-    vim.keymap.set("n", "<Leader>a", "<Cmd>ClaudeCode<CR>")
+    vim.pack.add { "https://github.com/coder/claudecode.nvim" }
+    require "claudecode".setup { terminal = { provider = "none" }, diff_opts = { open_in_new_tab = true } }
 end

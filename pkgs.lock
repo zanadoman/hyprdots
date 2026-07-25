@@ -123,6 +123,7 @@ fuse-common
 fuse2
 fuse3
 fuzzel
+fzf
 gawk
 gc
 gcc
@@ -453,6 +454,7 @@ libunwind
 liburing
 libusb
 libusbmuxd
+libutempter
 libutf8proc
 libuv
 libva
@@ -569,6 +571,7 @@ npth
 nspr
 nss
 ntfs-3g
+ntsync-autoload
 numactl
 nvidia-open
 nvidia-utils
@@ -754,6 +757,7 @@ texlive-latexextra
 texlive-latexrecommended
 texlive-pictures
 tinysparql
+tmux
 tomlplusplus
 tpm2-tss
 tree
