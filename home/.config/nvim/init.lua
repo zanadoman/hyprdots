@@ -63,8 +63,11 @@ do
     vim.pack.add { "https://github.com/folke/tokyonight.nvim" }
     require "tokyonight".setup { style = "night", transparent = true }
     vim.cmd.colorscheme "tokyonight"
-    vim.api.nvim_set_hl(0, "Pmenu", vim.api.nvim_get_hl(0, { name = "Normal" }))
-    vim.api.nvim_set_hl(0, "PmenuBorder", vim.api.nvim_get_hl(0, { name = "FloatBorder" }))
+    vim.api.nvim_set_hl(0, "TabLineFill", { bg = vim.api.nvim_get_hl(0, { name = "StatusLine" }).bg })
+    vim.api.nvim_set_hl(0, "Pmenu", { link = "Normal" })
+    vim.api.nvim_set_hl(0, "PmenuSel", { link = "Visual" })
+    vim.api.nvim_set_hl(0, "PmenuMatchSel", { link = "Visual" })
+    vim.api.nvim_set_hl(0, "PmenuBorder", { link = "FloatBorder" })
     local fg = vim.api.nvim_get_hl(0, { name = "WinSeparator" }).fg
     vim.api.nvim_set_hl(0, "WinSeparator", { fg = fg, bg = fg })
 end
@@ -127,7 +130,7 @@ do
     telescope.setup {
         pickers = {
             find_files = { hidden = true },
-            live_grep = { glob_pattern = "!.git", additional_args = { "-U." } }
+            live_grep = { glob_pattern = { "!.git", "!external" }, additional_args = { "-U." } }
         }
     }
     local telescope_builtin = require "telescope.builtin"
@@ -200,7 +203,7 @@ do
                 timer:start(200, 0, function() end)
                 return "<Esc>"
             end, { expr = true, buf = 0 })
-            vim.keymap.set("n", "<Esc>", function() t:close() end)
+            vim.keymap.set("n", "<Esc>", function() t:close() end, { buf = 0 })
             vim.keymap.set("n", "q", function() t:shutdown() end, { buf = 0 })
             vim.api.nvim_create_autocmd("BufLeave", { callback = function() t:close() end, buf = 0 })
         end,

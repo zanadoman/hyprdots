@@ -7,13 +7,15 @@ hl.env("XCURSOR_SIZE", "24")
 hl.monitor {
     output = "eDP-1",
     mode = "1920x1200@165.0",
-    position = "1920x0",
+    position = "0x0",
+    scale = 1,
 }
 
 hl.monitor {
     output = "HDMI-A-1",
     mode = "1920x1080@60.0",
-    position = "0x0",
+    position = "1920x0",
+    scale = 1,
 }
 
 local function setup_workspaces()
@@ -211,5 +213,5 @@ hl.window_rule { match = { class = "org\\.stellarlib\\..*" }, float = true }
 hl.window_rule { match = { class = "org\\.pulseaudio\\.pavucontrol" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-connection-editor" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-applet" }, opacity = 0.95 }
-hl.window_rule { match = { class = "Emulator" }, float = true }
+hl.window_rule { match = { class = "Emulator" }, float = true, border_size = 0, rounding = 0 }
 hl.workspace_rule { workspace = "special:magic", gaps_out = 50, layout = "scrolling" }
