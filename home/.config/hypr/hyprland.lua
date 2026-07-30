@@ -210,6 +210,7 @@ hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl s 5%+"), { repeati
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl s 5%-"), { repeating = true })
 
 hl.window_rule { match = { class = "org\\.stellarlib\\..*" }, float = true }
+hl.window_rule { match = { class = "com\\.example\\..*" }, float = true }
 hl.window_rule { match = { class = "org\\.pulseaudio\\.pavucontrol" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-connection-editor" }, float = true, opacity = 0.95 }
 hl.window_rule { match = { class = "nm-applet" }, opacity = 0.95 }

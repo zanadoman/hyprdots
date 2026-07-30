@@ -3,6 +3,7 @@ set -U fish_greeting
 set -g fish_cursor_default beam
 set -x LIBRARY_PATH /usr/local/lib/:$LIBRARY_PATH
 set -x LD_LIBRARY_PATH /usr/local/lib/:$LD_LIBRARY_PATH
+set -x CHROME_EXECUTABLE /usr/bin/chromium
 set -x ANDROID_HOME /opt/android-sdk
 set -x PATH $HOME/.local/bin/:$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/:$ANDROID_HOME/tools/bin/:$ANDROID_HOME/platform-tools/:$ANDROID_HOME/emulator/
 alias clear='clear && fastfetch'

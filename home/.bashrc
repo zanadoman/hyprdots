@@ -2,6 +2,7 @@
 HISTCONTROL=ignoreboth
 export LIBRARY_PATH=/usr/local/lib/:$LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+export CHROME_EXECUTABLE=/usr/bin/chromium
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$HOME/.local/bin/:$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/:$ANDROID_HOME/tools/bin/:$ANDROID_HOME/platform-tools/:$ANDROID_HOME/emulator/
 alias clear='clear && fastfetch'
