@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (852)](./pkgs.lock)
+# [Packages (854)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -81,16 +81,15 @@
 | aarch64-linux-gnu-pkg-config (AUR)     | ARM64 pkg-config                        |
 | android-ndk                            | Android compiler for C/C++              |
 | android-sdk-cmdline-tools-latest (AUR) | Android development kit                 |
-| cmake                                  | C, C++ build tool                       |
+| claude-code (AUR)                      | Agentic coding tool                     |
 | cppreference (AUR)                     | Comprehensive C++ reference             |
 | directx-shader-compiler-git (AUR)      | Vulkan/DirectX shader compiler          |
 | doxygen                                | Documentation generator                 |
 | flutter-bin (AUR)                      | Flutter development kit                 |
 | jdk21-openjdk                          | Java 21 development kit                 |
 | linux-headers                          | Linux kernel headers                    |
-| lld                                    | LLVM linker                             |
 | mingw-w64-gcc                          | x86-64 Windows compiler for C, C++      |
-| ninja                                  | Performant CMake generator              |
+| ollama-vulkan                          | Local LLM runner                        |
 | perf                                   | Performance auditing tool               |
 | qemu-desktop                           | Virtualization tool                     |
 | renderdoc                              | OpenGL and Vulkan debugging tool        |

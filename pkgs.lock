@@ -54,6 +54,7 @@ cairomm-1.16
 capstone
 chromium
 clang
+claude-code
 cmake
 cmark
 compiler-rt
@@ -577,6 +578,8 @@ numactl
 nvidia-open
 nvidia-utils
 ocl-icd
+ollama
+ollama-vulkan
 onetbb
 opencore-amr
 openexr

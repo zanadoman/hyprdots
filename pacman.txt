@@ -36,13 +36,11 @@ unrar
 unzip
 zip
 aarch64-linux-gnu-gcc
-cmake
 doxygen
 jdk21-openjdk
 linux-headers
-lld
 mingw-w64-gcc
-ninja
+ollama-vulkan
 perf
 qemu-desktop
 renderdoc
