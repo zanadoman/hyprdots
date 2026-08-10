@@ -9,7 +9,6 @@ set -x PATH $HOME/.local/bin/:$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/:$AND
 alias clear='clear && fastfetch'
 alias hyprland='test $XDG_SESSION_TYPE = tty && command hyprland && clear'
 alias start-hyprland='test $XDG_SESSION_TYPE = tty && command start-hyprland && clear'
-alias valgrind='env VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.json valgrind'
 alias wf-recorder='wf-recorder -c h264_nvenc --audio=alsa_output.pci-0000_65_00.6.analog-stereo.monitor'
 set -x PAGER less
 set -x VISUAL nvim

@@ -4,3 +4,5 @@
 	postBuffer = 524288000
 [pull]
 	rebase = false
+[push]
+	autoSetupRemote = true

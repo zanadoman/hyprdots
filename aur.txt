@@ -1,8 +1,3 @@
 asusctl
-aarch64-linux-gnu-pkg-config
-android-ndk
 android-sdk-cmdline-tools-latest
-claude-code
-cppreference
-directx-shader-compiler-git
 flutter-bin
