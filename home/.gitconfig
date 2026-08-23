@@ -1,5 +1,9 @@
+[commit]
+	gpgsign = true
 [credential]
 	helper = store
+[gpg]
+	format = ssh
 [http]
 	postBuffer = 524288000
 [pull]

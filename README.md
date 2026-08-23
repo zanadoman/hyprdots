@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (840)](./pkgs.lock)
+# [Packages (801)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -93,7 +93,10 @@
 | Package                                | Description                             |
 |:--------------------------------------:|:----------------------------------------|
 | chromium                               | Web browser                             |
+| freerdp                                | RDP support for Remmina                 |
 | gimp                                   | Image manipulation program              |
+| remmina                                | Remote desktop client                   |
+| rustdesk-bin (AUR)                     | Remote desktop application              |
 | texlive-fontsrecommended               | LaTeX - essential fonts                 |
 | texlive-langenglish                    | LaTeX - language support                |
 | texlive-langeuropean                   | LaTeX - language support                |
@@ -134,8 +137,23 @@
 
 - git config --global user.email
 - git config --global user.name
+- git config --global signingkey
+- sentinel setup
 - Generate new token (classic)
+
+#### networkmanager
+
+- nmcli connection import type wireguard file example.conf
+- sudo nmcli connection modify example +ipv4.routes 192.168.1.0/24
 
 #### qemu-desktop
 
 - "$HOME/Qemu/**/*.img"
+
+#### remmina
+
+- Setup remotes
+
+#### rustdesk
+
+- Network: ID/Relay server

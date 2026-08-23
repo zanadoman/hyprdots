@@ -14,7 +14,7 @@ vim.o.pummaxwidth = 50
 vim.o.relativenumber = true
 vim.o.shiftwidth = 4
 vim.o.showmode = false
-vim.o.showtabline = vim.env.TERM_PROGRAM and 0 or 2
+vim.o.showtabline = 2
 vim.o.signcolumn = "yes"
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -86,7 +86,7 @@ if vim.fn.exepath "git" ~= "" then
     vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
     vim.lsp.enable "dartls"
     vim.lsp.config("lua_ls", { settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
-    vim.lsp.config("rust_analyzer", { settings = { ["rust-analyzer"] = { check = { command = "clippy" }, diagnostics = { disabled = { "inactive-code" } } } } })
+    vim.lsp.config("rust_analyzer", { settings = { ["rust-analyzer"] = { cargo = { features = { "dev" } }, check = { command = "clippy" } } } })
     vim.api.nvim_create_autocmd("LspAttach", {
         callback = function(ev)
             if vim.lsp.get_client_by_id(ev.data.client_id):supports_method "textDocument/completion" then

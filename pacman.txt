@@ -44,7 +44,9 @@ rpi-imager
 rustup
 v4l2loopback-dkms
 chromium
+freerdp
 gimp
+remmina
 texlive-fontsrecommended
 texlive-langenglish
 texlive-langeuropean
