@@ -11,7 +11,6 @@ alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
 amd-ucode
-android-sdk-cmdline-tools-latest
 aom
 appstream
 aquamarine
@@ -48,10 +47,8 @@ cairomm-1.16
 capstone
 cdparanoia
 chromium
-clang
 cmake
 cmark
-compiler-rt
 containerd
 coreutils
 cpio
@@ -70,7 +67,6 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
-dkms
 docker
 dos2unix
 dosfstools
@@ -103,7 +99,6 @@ findutils
 fish
 flac
 flex
-flutter-bin
 fmt
 fontconfig
 foot
@@ -208,11 +203,8 @@ iputils
 iso-codes
 jansson
 jasper
-java-environment-common
-java-runtime-common
 jbig2dec
 jbigkit
-jdk21-openjdk
 json-c
 json-glib
 jsoncpp
@@ -328,7 +320,6 @@ libmpdclient
 libmypaint
 libmysofa
 libndp
-libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
@@ -469,9 +460,7 @@ linux-firmware-other
 linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
-linux-headers
 lld
-llvm
 llvm-libs
 lm_sensors
 lmdb
@@ -538,7 +527,6 @@ orc
 p11-kit
 pacman
 pacman-mirrorlist
-pahole
 pam
 pambase
 pango
@@ -727,7 +715,6 @@ ttf-liberation
 ttf-noto-nerd
 tzdata
 unibilium
-unionfs-fuse
 unrar
 unzip
 upower
@@ -735,7 +722,6 @@ usbredir
 util-linux
 util-linux-libs
 v4l-utils
-v4l2loopback-dkms
 vapoursynth
 vde2
 vid.stab

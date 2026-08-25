@@ -1,4 +1,2 @@
 asusctl
-android-sdk-cmdline-tools-latest
-flutter-bin
 rustdesk-bin

@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.o.autocomplete = true
 vim.o.clipboard = "unnamedplus"
-vim.o.completeopt = "fuzzy,menuone,noinsert"
+vim.o.completeopt = "fuzzy,menuone,noinsert,nosort"
 vim.o.cursorline = true
 vim.o.expandtab = true
 vim.o.exrc = true
@@ -70,7 +70,7 @@ if vim.fn.exepath "git" ~= "" then
     vim.cmd.colorscheme "tokyonight"
 end
 
-if vim.fn.exepath "git" and vim.fn.exepath "curl" ~= "" and vim.fn.exepath "tar" ~= "" and vim.fn.exepath "cc" ~= "" and vim.fn.exepath "tree-sitter" ~= "" then
+if vim.fn.exepath "git" ~= "" and vim.fn.exepath "curl" ~= "" and vim.fn.exepath "tar" ~= "" and vim.fn.exepath "cc" ~= "" and vim.fn.exepath "tree-sitter" ~= "" then
     vim.pack.add { "https://github.com/nvim-treesitter/nvim-treesitter" }
     require "nvim-treesitter".install { "dart", "lua", "rust", "wgsl" }
     vim.api.nvim_create_autocmd("FileType", {
@@ -86,7 +86,7 @@ if vim.fn.exepath "git" ~= "" then
     vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
     vim.lsp.enable "dartls"
     vim.lsp.config("lua_ls", { settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
-    vim.lsp.config("rust_analyzer", { settings = { ["rust-analyzer"] = { cargo = { features = { "dev" } }, check = { command = "clippy" } } } })
+    vim.lsp.config("rust_analyzer", { settings = { ["rust-analyzer"] = { check = { command = "clippy" } } } })
     vim.api.nvim_create_autocmd("LspAttach", {
         callback = function(ev)
             if vim.lsp.get_client_by_id(ev.data.client_id):supports_method "textDocument/completion" then
@@ -97,12 +97,12 @@ if vim.fn.exepath "git" ~= "" then
     })
 end
 
-if vim.fn.exepath "git" and vim.fn.exepath "flutter" ~= "" then
+if vim.fn.exepath "git" ~= "" and vim.fn.exepath "flutter" ~= "" then
     vim.pack.add { "https://github.com/nvim-lua/plenary.nvim", "https://github.com/mfussenegger/nvim-dap", "https://github.com/zanadoman/flutter-tools.nvim" }
     require "flutter-tools".setup { debugger = { enabled = true }, dev_log = { enabled = false }, dev_tools = { autostart = true, auto_open_browser = true } }
 end
 
-if vim.fn.exepath "git" and vim.fn.exepath "fzf" ~= "" then
+if vim.fn.exepath "git" ~= "" and vim.fn.exepath "fzf" ~= "" then
     vim.pack.add { "https://github.com/ibhagwan/fzf-lua" }
     local FzfLua = require "fzf-lua"
     vim.keymap.set("n", "<Leader><Leader>", function() FzfLua.combine { pickers = "buffers;oldfiles" } end)
@@ -119,15 +119,23 @@ if vim.fn.exepath "git" ~= "" then
         on_attach = function(bufnr)
             vim.keymap.set("n", "<Leader>hs", gitsigns.stage_hunk, { buf = bufnr })
             vim.keymap.set("n", "<Leader>hr", gitsigns.reset_hunk, { buf = bufnr })
+            vim.keymap.set("v", "<Leader>hs", function() gitsigns.stage_hunk { vim.fn.line ".", vim.fn.line "v" } end)
+            vim.keymap.set("v", "<Leader>hr", function() gitsigns.reset_hunk { vim.fn.line ".", vim.fn.line "v" } end)
             vim.keymap.set("n", "<Leader>hS", gitsigns.stage_buffer, { buf = bufnr })
             vim.keymap.set("n", "<Leader>hR", gitsigns.reset_buffer, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hb", gitsigns.blame_line, { buf = bufnr })
             vim.keymap.set("n", "<Leader>hd", gitsigns.preview_hunk_inline, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hD", function()
+                vim.cmd "tab split"
+                gitsigns.diffthis()
+            end, { buf = bufnr })
+            vim.keymap.set("n", "<Leader>hQ", function() gitsigns.setqflist "all" end, { buf = bufnr })
             vim.keymap.set("n", "<Leader>hq", gitsigns.setqflist, { buf = bufnr })
         end
     }
 end
 
-if vim.fn.exepath "git" and vim.fn.exepath "claude" ~= "" then
+if vim.fn.exepath "git" ~= "" and vim.fn.exepath "claude" ~= "" then
     vim.pack.add { "https://github.com/coder/claudecode.nvim" }
     require "claudecode".setup { terminal = { provider = "none" }, diff_opts = { open_in_new_tab = true } }
 end

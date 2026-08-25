@@ -35,14 +35,11 @@ atool
 unrar
 unzip
 zip
-jdk21-openjdk
-linux-headers
 mingw-w64-gcc
 qemu-desktop
 renderdoc
 rpi-imager
 rustup
-v4l2loopback-dkms
 chromium
 freerdp
 gimp
