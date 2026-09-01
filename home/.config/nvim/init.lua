@@ -80,6 +80,10 @@ if vim.fn.exepath "git" ~= "" and vim.fn.exepath "curl" ~= "" and vim.fn.exepath
 end
 
 if vim.fn.exepath "git" ~= "" then
+    vim.pack.add { "https://github.com/MeanderingProgrammer/render-markdown.nvim" }
+end
+
+if vim.fn.exepath "git" ~= "" then
     vim.pack.add { "https://github.com/williamboman/mason.nvim", "https://github.com/neovim/nvim-lspconfig", "https://github.com/williamboman/mason-lspconfig.nvim" }
     require "mason".setup()
     require "mason-lspconfig".setup { ensure_installed = { "lua_ls", "rust_analyzer" } }

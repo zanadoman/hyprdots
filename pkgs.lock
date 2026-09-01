@@ -46,6 +46,7 @@ cairomm
 cairomm-1.16
 capstone
 cdparanoia
+cfitsio
 chromium
 cmake
 cmark
@@ -253,6 +254,7 @@ libcanberra
 libcap
 libcap-ng
 libcbor
+libcgif
 libcloudproviders
 libcolord
 libcups
@@ -275,6 +277,7 @@ libelf
 libepoxy
 libevdev
 libevent
+libexif
 libfdk-aac
 libffi
 libfido2
@@ -296,6 +299,7 @@ libice
 libidn
 libidn2
 libiec61883
+libimagequant
 libimobiledevice
 libimobiledevice-glue
 libinih
@@ -400,6 +404,7 @@ libuv
 libva
 libvdpau
 libverto
+libvips
 libvorbis
 libvpl
 libvpx
