@@ -35,7 +35,14 @@ atool
 unrar
 unzip
 zip
+composer
+mariadb
 mingw-w64-gcc
+npm
+ollama-vulkan
+php-apache
+php-sqlite
+phpmyadmin
 qemu-desktop
 renderdoc
 rpi-imager

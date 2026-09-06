@@ -1,7 +1,7 @@
 ![Preview](./preview.png)
 > Wallpaper: [$HOME/.config/hypr/wallpaper.jpg](./home/.config/hypr/wallpaper.jpg)
 
-# [Packages (787)](./pkgs.lock)
+# [Packages (819)](./pkgs.lock)
 
 ### Prerequisites
 
@@ -73,11 +73,19 @@
 | unzip                                   | ZIP support for atool                   |
 | zip                                     | ZIP support for atool                   |
 
-### Productivity
+### Programming
 
 | Package                                 | Description                             |
 |:---------------------------------------:|:----------------------------------------|
+| claude-code (AUR)                       |                                         |
+| composer                                |                                         |
+| mariadb                                 |                                         |
 | mingw-w64-gcc                           | x86-64 Windows compiler for C, C++      |
+| npm                                     |                                         |
+| ollama-vulkan                           |                                         |
+| php-apache                              |                                         |
+| php-sqlite                              |                                         |
+| phpmyadmin                              |                                         |
 | qemu-desktop                            | Virtualization tool                     |
 | renderdoc                               | OpenGL and Vulkan debugging tool        |
 | rpi-imager                              | Raspberry Pi imager                     |
