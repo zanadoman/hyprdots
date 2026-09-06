@@ -1,5 +1,7 @@
 [commit]
 	gpgsign = true
+[core]
+	quotepath = false
 [credential]
 	helper = store
 [gpg]

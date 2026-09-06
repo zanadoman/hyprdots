@@ -72,10 +72,10 @@ end
 
 if vim.fn.exepath "git" ~= "" and vim.fn.exepath "curl" ~= "" and vim.fn.exepath "tar" ~= "" and vim.fn.exepath "cc" ~= "" and vim.fn.exepath "tree-sitter" ~= "" then
     vim.pack.add { "https://github.com/nvim-treesitter/nvim-treesitter" }
-    require "nvim-treesitter".install { "dart", "lua", "rust", "wgsl" }
+    require "nvim-treesitter".install { "blade", "dart", "html", "lua", "php", "rust", "wgsl" }
     vim.api.nvim_create_autocmd("FileType", {
         callback = function() vim.treesitter.start() end,
-        pattern = { "dart", "lua", "rust", "wgsl" }
+        pattern = { "blade", "dart", "lua", "php", "rust", "wgsl" }
     })
 end
 
@@ -86,10 +86,11 @@ end
 if vim.fn.exepath "git" ~= "" then
     vim.pack.add { "https://github.com/williamboman/mason.nvim", "https://github.com/neovim/nvim-lspconfig", "https://github.com/williamboman/mason-lspconfig.nvim" }
     require "mason".setup()
-    require "mason-lspconfig".setup { ensure_installed = { "lua_ls", "rust_analyzer" } }
+    require "mason-lspconfig".setup { ensure_installed = { "lua_ls", "phpactor", "rust_analyzer" } }
     vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
     vim.lsp.enable "dartls"
     vim.lsp.config("lua_ls", { settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
+    vim.lsp.config("phpactor", { filetypes = { "blade", "php" } })
     vim.lsp.config("rust_analyzer", { settings = { ["rust-analyzer"] = { check = { command = "clippy" } } } })
     vim.api.nvim_create_autocmd("LspAttach", {
         callback = function(ev)
