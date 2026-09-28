@@ -25,6 +25,17 @@ vim.o.undofile = true
 vim.o.winborder = "rounded"
 vim.o.wrap = false
 
+for _, shell in ipairs { "bash", "zsh", "sh" } do
+    shell = vim.fn.exepath(shell)
+    if shell ~= "" then
+        vim.o.shell = "\"" .. shell .. "\""
+        vim.o.shellcmdflag = "-c"
+        vim.o.shellslash = true
+        vim.o.shellxquote = ""
+        break
+    end
+end
+
 vim.api.nvim_create_autocmd("FileType", { callback = function() vim.o.shiftwidth = 2 end, pattern = "dart" })
 vim.diagnostic.config { severity_sort = true, virtual_text = true }
 vim.keymap.set("i", "<C-f>", function() return vim.fn.pumvisible() == 0 and "<C-f>" or "<C-y>" end, { expr = true })
@@ -44,10 +55,9 @@ for pattern, commentstring in pairs { wgsl = "// %s" } do
     })
 end
 
-local notify = vim.notify
-vim.notify = function(msg, level, opts) notify(msg, level == vim.log.levels.ERROR and vim.log.levels.WARN or level, opts) end
+if vim.fn.exepath "git" == "" then return end
 
-if vim.fn.exepath "git" ~= "" then
+do
     vim.pack.add { "https://github.com/nvim-lualine/lualine.nvim" }
     require "lualine".setup {
         options = { component_separators = { left = "|", right = "|" }, section_separators = { left = "", right = "" }, globalstatus = true },
@@ -55,7 +65,7 @@ if vim.fn.exepath "git" ~= "" then
     }
 end
 
-if vim.fn.exepath "git" ~= "" then
+do
     vim.pack.add { "https://github.com/folke/tokyonight.nvim" }
     require "tokyonight".setup {
         style = "night",
@@ -70,27 +80,23 @@ if vim.fn.exepath "git" ~= "" then
     vim.cmd.colorscheme "tokyonight"
 end
 
-if vim.fn.exepath "git" ~= "" and vim.fn.exepath "curl" ~= "" and vim.fn.exepath "tar" ~= "" and vim.fn.exepath "cc" ~= "" and vim.fn.exepath "tree-sitter" ~= "" then
+if vim.fn.exepath "curl" ~= "" and vim.fn.exepath "tar" ~= "" and vim.fn.exepath "tree-sitter" ~= "" then
     vim.pack.add { "https://github.com/nvim-treesitter/nvim-treesitter" }
-    require "nvim-treesitter".install { "blade", "dart", "html", "lua", "php", "rust", "wgsl" }
-    vim.api.nvim_create_autocmd("FileType", {
-        callback = function() vim.treesitter.start() end,
-        pattern = { "blade", "dart", "lua", "php", "rust", "wgsl" }
-    })
+    local languages = { "blade", "dart", "lua", "php", "rust", "wgsl" }
+    require "nvim-treesitter".install(languages)
+    vim.api.nvim_create_autocmd("FileType", { callback = function() vim.treesitter.start() end, pattern = languages })
+    vim.lsp.semantic_tokens.enable(false)
 end
 
-if vim.fn.exepath "git" ~= "" then
-    vim.pack.add { "https://github.com/MeanderingProgrammer/render-markdown.nvim" }
-end
+do vim.pack.add { "https://github.com/MeanderingProgrammer/render-markdown.nvim" } end
 
-if vim.fn.exepath "git" ~= "" then
+do
     vim.pack.add { "https://github.com/williamboman/mason.nvim", "https://github.com/neovim/nvim-lspconfig", "https://github.com/williamboman/mason-lspconfig.nvim" }
     require "mason".setup()
-    require "mason-lspconfig".setup { ensure_installed = { "lua_ls", "phpactor", "rust_analyzer" } }
+    require "mason-lspconfig".setup { ensure_installed = { "lua_ls", "rust_analyzer" } }
     vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
     vim.lsp.enable "dartls"
     vim.lsp.config("lua_ls", { settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
-    vim.lsp.config("phpactor", { filetypes = { "blade", "php" } })
     vim.lsp.config("rust_analyzer", { settings = { ["rust-analyzer"] = { check = { command = "clippy" } } } })
     vim.api.nvim_create_autocmd("LspAttach", {
         callback = function(ev)
@@ -102,12 +108,7 @@ if vim.fn.exepath "git" ~= "" then
     })
 end
 
-if vim.fn.exepath "git" ~= "" and vim.fn.exepath "flutter" ~= "" then
-    vim.pack.add { "https://github.com/nvim-lua/plenary.nvim", "https://github.com/mfussenegger/nvim-dap", "https://github.com/zanadoman/flutter-tools.nvim" }
-    require "flutter-tools".setup { debugger = { enabled = true }, dev_log = { enabled = false }, dev_tools = { autostart = true, auto_open_browser = true } }
-end
-
-if vim.fn.exepath "git" ~= "" and vim.fn.exepath "fzf" ~= "" then
+if vim.fn.exepath "fzf" ~= "" then
     vim.pack.add { "https://github.com/ibhagwan/fzf-lua" }
     local FzfLua = require "fzf-lua"
     vim.keymap.set("n", "<Leader><Leader>", function() FzfLua.combine { pickers = "buffers;oldfiles" } end)
@@ -117,7 +118,7 @@ if vim.fn.exepath "git" ~= "" and vim.fn.exepath "fzf" ~= "" then
     vim.keymap.set("n", "<Leader>G", function() FzfLua.live_grep { cwd = vim.fn.expand "%:p:h", resume = true } end)
 end
 
-if vim.fn.exepath "git" ~= "" then
+do
     vim.pack.add { "https://github.com/lewis6991/gitsigns.nvim" }
     local gitsigns = require "gitsigns"
     gitsigns.setup {
@@ -140,7 +141,7 @@ if vim.fn.exepath "git" ~= "" then
     }
 end
 
-if vim.fn.exepath "git" ~= "" and vim.fn.exepath "claude" ~= "" then
+if vim.fn.exepath "claude" ~= "" then
     vim.pack.add { "https://github.com/coder/claudecode.nvim" }
     require "claudecode".setup { terminal = { provider = "none" }, diff_opts = { open_in_new_tab = true } }
 end
